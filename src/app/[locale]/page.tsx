@@ -200,6 +200,70 @@ function About() {
   );
 }
 
+function History() {
+  const { t } = useLang();
+  return (
+    <section id="history" className="section" style={{ background: "linear-gradient(180deg, #eee8dd 0%, var(--color-cream) 100%)" }}>
+      <ScrollReveal>
+        <p className="section-label">02</p>
+        <h2 className="section-title">{t.history.title}</h2>
+        <div className="section-divider" />
+      </ScrollReveal>
+      <ScrollReveal>
+        <p className="about-text" style={{ whiteSpace: "pre-line", marginBottom: "3rem" }}>{t.history.intro}</p>
+      </ScrollReveal>
+      <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
+        {t.history.sections.map((sec: { subtitle: string; content: string }, i: number) => (
+          <ScrollReveal key={i}>
+            <div style={{ padding: "2rem", background: "#fff", borderRadius: "8px", borderLeft: "4px solid var(--color-gold)", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
+              <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", fontWeight: 600, color: "var(--color-deep)", marginBottom: "1rem" }}>{sec.subtitle}</h3>
+              <p style={{ fontSize: "1rem", lineHeight: "1.8", color: "var(--color-earth-soft)", whiteSpace: "pre-line" }}>{sec.content}</p>
+            </div>
+          </ScrollReveal>
+        ))}
+      </div>
+      <ScrollReveal>
+        <div style={{ marginTop: "4rem", padding: "2.5rem", background: "var(--color-deep)", borderRadius: "8px", color: "rgba(255,255,255,0.9)" }}>
+          <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.5rem", fontWeight: 600, color: "var(--color-gold)", marginBottom: "1.5rem" }}>
+            {t.history.buildings.title}
+          </h3>
+          <ul style={{ display: "flex", flexDirection: "column", gap: "1rem", paddingLeft: "1.5rem", marginBottom: "2rem" }}>
+            {t.history.buildings.items.map((item: string, i: number) => (
+              <li key={i} style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>{item}</li>
+            ))}
+          </ul>
+          <p style={{ fontSize: "1.05rem", lineHeight: "1.8", color: "#fff", fontStyle: "italic" }}>
+            {t.history.buildings.conclusion}
+          </p>
+        </div>
+      </ScrollReveal>
+    </section>
+  );
+}
+
+function Ecology() {
+  const { t } = useLang();
+  return (
+    <section id="ecology" className="section">
+      <ScrollReveal>
+        <p className="section-label">03</p>
+        <h2 className="section-title">{t.ecology.title}</h2>
+        <div className="section-divider" />
+      </ScrollReveal>
+      <div style={{ display: "grid", gap: "2rem", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+        {t.ecology.sections.map((sec: { subtitle: string; content: string }, i: number) => (
+          <ScrollReveal key={i}>
+            <div className="info-card" style={{ height: "100%" }}>
+              <div className="info-card-title" style={{ color: "var(--color-mountain)", fontSize: "0.9rem", marginBottom: "1rem" }}>{sec.subtitle}</div>
+              <p style={{ fontSize: "1rem", lineHeight: "1.7", color: "var(--color-earth-soft)", whiteSpace: "pre-line" }}>{sec.content}</p>
+            </div>
+          </ScrollReveal>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Visiting() {
   const { t } = useLang();
   const cards = [
@@ -212,7 +276,7 @@ function Visiting() {
     <section id="visiting" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #eee8dd 100%)" }}>
       <div className="section">
         <ScrollReveal>
-          <p className="section-label">02</p>
+          <p className="section-label">04</p>
           <h2 className="section-title">{t.visiting.title}</h2>
           <div className="section-divider" />
         </ScrollReveal>
@@ -256,7 +320,7 @@ function Transportation() {
   return (
     <section id="transportation" className="section">
       <ScrollReveal>
-        <p className="section-label">03</p>
+        <p className="section-label">05</p>
         <h2 className="section-title">{t.transportation.title}</h2>
         <div className="section-divider" />
       </ScrollReveal>
@@ -329,7 +393,7 @@ function Tips() {
     <section id="tips" style={{ background: "linear-gradient(180deg, var(--color-cream) 0%, #e8e2d6 100%)" }}>
       <div className="section">
         <ScrollReveal>
-          <p className="section-label">04</p>
+          <p className="section-label">06</p>
           <h2 className="section-title">{t.tips.title}</h2>
           <div className="section-divider" />
         </ScrollReveal>
@@ -368,7 +432,7 @@ function Gallery() {
   return (
     <section id="gallery" className="section">
       <ScrollReveal>
-        <p className="section-label">05</p>
+        <p className="section-label">07</p>
         <h2 className="section-title">{t.gallery.title}</h2>
         <div className="section-divider" />
       </ScrollReveal>
@@ -409,7 +473,7 @@ function Reviews() {
   return (
     <section id="reviews" className="section">
       <ScrollReveal>
-        <p className="section-label">06</p>
+        <p className="section-label">08</p>
         <h2 className="section-title">{t.reviews.title}</h2>
         <p className="section-subtitle">{t.reviews.subtitle}</p>
         <div className="section-divider" />
@@ -463,7 +527,7 @@ function FAQ() {
     <section id="faq" className="section">
       <div className="section">
         <ScrollReveal>
-          <p className="section-label">07</p>
+          <p className="section-label">09</p>
           <h2 className="section-title">{t.faq.title}</h2>
           <p className="section-subtitle">{t.faq.subtitle}</p>
           <div className="section-divider" />
@@ -510,7 +574,7 @@ function Location() {
   return (
     <section id="location" className="section">
       <ScrollReveal>
-        <p className="section-label">08</p>
+        <p className="section-label">10</p>
         <h2 className="section-title">{t.location.title}</h2>
         <div className="section-divider" />
       </ScrollReveal>
@@ -583,6 +647,8 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
       <Nav />
       <Hero />
       <About />
+      <History />
+      <Ecology />
       <Visiting />
       <Transportation />
       <Tips />
