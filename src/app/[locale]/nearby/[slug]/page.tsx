@@ -15,8 +15,6 @@ async function resolve(params: Props["params"]) {
   return { lang, place };
 }
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return nearby.map(({ slug }) => ({ slug }));
 }
