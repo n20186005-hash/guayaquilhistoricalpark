@@ -33,7 +33,7 @@ export const translations: Record<Locale, Translations> = {
       title: "公园概览",
       p1: "瓜亚基尔历史公园位于厄瓜多尔瓜亚斯省瓜亚基尔市郊的桑博龙东半岛，占地约 8 公顷。这是一个融合了生态自然、传统文化与历史建筑的综合性主题公园，同时兼具露天博物馆和小型动物园的性质。\n\n公园旨在保护和展示厄瓜多尔沿海地区的生物多样性，以及 19 世纪末至 20 世纪初的城市与乡村历史。整个公园被巧妙地划分为三个核心主题区：野生动植物区、传统农业区、历史建筑区。",
       p2: "公园环境幽静，非常适合家庭出游、生态摄影爱好者以及对人文历史感兴趣的游客。园内设有由历史建筑改造而成的精品酒店和提供当地美食的景观餐厅。建议安排在清晨或傍晚时分游览，此时的光线非常适合拍照并能欣赏到美丽的日落。",
-      highlights: { title: "景点速览", items: ["地理位置：厄瓜多尔，桑博龙东市，Av. Rio Esmeraldas", "面积：约 8 公顷", "三大主题区：野生动植物区、传统农业区、历史建筑区", "开放时间：周三至周日 09:00 – 17:00（周一、周二闭园）", "配套设施：精品酒店、景观餐厅"] },
+      highlights: { title: "景点速览", items: ["地理位置：厄瓜多尔，桑博龙东市，Av. Rio Esmeraldas", "面积：约 8 公顷", "三大主题区：野生动植物区、传统农业区、历史建筑区", "开放时间：每天 09:00–17:00", "配套设施：精品酒店、景观餐厅"] },
       timeline: { title: "公园发展时间轴", events: [
         { period: "1997年: 构想与立项", description: "由厄瓜多尔中央银行（Banco Central del Ecuador）发起，旨在抢救性保护瓜亚基尔日益消失的传统木制建筑与红树林生态。" },
         { period: "1999年 - 2000年: 一期工程开放", description: "野生动植物区与传统农业区率先落成并向公众开放，成为展示厄瓜多尔沿海生物多样性的重要窗口。" },
@@ -70,8 +70,8 @@ export const translations: Record<Locale, Translations> = {
     },
     visiting: {
       title: "游览指南",
-      hours: { title: "开放时间", content: "星期三至星期五：09:00 – 17:00\n星期六至星期日：09:00 – 17:00\n星期一：休息\n星期二：休息", note: "节假日开放时间可能有所调整，建议出发前通过官方渠道确认。" },
-      price: { title: "门票参考", content: "免费对外开放，无需预约", note: "只有部分特殊导览或园内的私人餐厅/酒店可能产生费用。" },
+      hours: { title: "开放时间", content: "每天 09:00–17:00", note: "节假日开放时间可能有所调整，建议出发前通过官方渠道确认。" },
+      price: { title: "门票参考", content: "成人 4 美元；12 岁及以下儿童、长者及残障人士 2 美元。", note: "请在出发前向管理方核实优惠条件和活动费用。" },
       duration: { title: "建议游览时长与气候", content: "建议预留 3 - 5 小时", note: "瓜亚基尔属热带草原气候，全年气温较高（25-32°C）。建议穿着轻便透气的衣物，并做好防晒准备。" },
       animals: { title: "公园居民：丰富的沿海生态系统", content: "野生动植物区是厄瓜多尔西南部沿海红树林生态系统的缩影。这里栖息着超过 50 种鸟类、哺乳动物和爬行动物，包括树懒、鹦鹉、凯门鳄、多种猴子等。" },
       bring: { title: "游览准备", items: ["高倍数防晒霜和遮阳帽", "轻便透气的衣物和舒适的步行鞋", "饮用水和防蚊液", "雨具（雨季1-4月来访时必备）", "相机或手机"] }
@@ -89,8 +89,8 @@ export const translations: Record<Locale, Translations> = {
     gallery: { title: "精彩照片", viewMore: "在 Google Maps 查看更多相片" },
     reviews: { title: "游客评价", subtitle: "来自 Google Maps 的真实评价", viewMore: "在 Google Maps 查看更多评价" },
     faq: { title: "常见问题", subtitle: "深入了解瓜亚基尔历史公园", items: [
-      { question: "瓜亚基尔历史公园的开放时间是？", answer: "星期三至星期五 09:00 - 17:00，星期六至星期日 09:00 - 17:00。每周一、周二闭园。" },
-      { question: "公园的门票价格是多少？", answer: "基础入园是免费的，无需预约。只有部分特殊导览或园内的私人餐厅/酒店可能产生费用。" },
+      { question: "瓜亚基尔历史公园的开放时间是？", answer: "每天 09:00–17:00。" },
+      { question: "公园的门票价格是多少？", answer: "成人 4 美元；12 岁及以下儿童、长者及残障人士 2 美元。" },
       { question: "公园适合儿童游玩吗？", answer: "非常适合！公园是一个集教育、娱乐、文化于一体的家庭友好型景点。" },
       { question: "园内可以用餐或住宿吗？", answer: "可以。公园内设有精品酒店和景观餐厅，为游客提供餐饮住宿服务。" },
       { question: "如果只会说英语，游览时会有障碍吗？", answer: "基本不会。公园的工作人员通常能用西班牙语和基本的英语进行沟通。" },
@@ -114,7 +114,7 @@ export const translations: Record<Locale, Translations> = {
       title: "Overview",
       p1: "Guayaquil Historical Park is located on the Samborondon Peninsula, covering approximately 8 hectares. This is a comprehensive theme park that combines ecological nature, traditional culture, and historical architecture, while also functioning as an open-air museum and a small zoo.\n\nThe park aims to preserve and showcase the biodiversity of Ecuador's coastal region, as well as the urban and rural history from the late 19th century to the early 20th century. The entire park is divided into three core thematic zones: Wildlife Zone, Traditional Agriculture Zone, and Historical Architecture Zone.",
       p2: "The park is very suitable for family outings, eco-photography enthusiasts, and tourists interested in cultural history. The park has a boutique hotel converted from historical buildings and a scenic restaurant offering local cuisine. It is recommended to arrange your visit in the early morning or late afternoon when the light is perfect for photography.",
-      highlights: { title: "Quick Facts", items: ["Location: Av. Rio Esmeraldas, 092301 Samborondon, Ecuador", "Area: Approximately 8 hectares", "Three Thematic Zones: Wildlife, Traditional Agriculture, Historical Architecture", "Opening Hours: Wednesday to Sunday 09:00 - 17:00 (Closed on Monday and Tuesday)", "Supporting Facilities: Boutique hotel, scenic restaurant"] },
+      highlights: { title: "Quick Facts", items: ["Location: Av. Rio Esmeraldas, 092301 Samborondon, Ecuador", "Area: Approximately 8 hectares", "Three Thematic Zones: Wildlife, Traditional Agriculture, Historical Architecture", "Opening Hours: Daily, 09:00–17:00", "Supporting Facilities: Boutique hotel, scenic restaurant"] },
       timeline: { title: "Park Development Timeline", events: [
         { period: "1997: Initiation and Planning", description: "Initiated by the Central Bank of Ecuador to rescue and protect the disappearing traditional wooden architecture and mangrove ecosystems of Guayaquil." },
         { period: "1999 - 2000: Phase I Opening", description: "The Wildlife Zone and Traditional Agriculture Zone opened to the public, becoming an important window to showcase Ecuador's coastal biodiversity." },
@@ -151,8 +151,8 @@ export const translations: Record<Locale, Translations> = {
     },
     visiting: {
       title: "Visitor Information",
-      hours: { title: "Operating Hours", content: "Wednesday to Friday: 09:00 – 17:00\nSaturday to Sunday: 09:00 – 17:00\nMonday: Closed\nTuesday: Closed", note: "Opening hours during holidays may be adjusted, please confirm via official channels before departure." },
-      price: { title: "Ticket Information", content: "Free admission, no reservation required", note: "Only specific guided tours or private restaurants/hotels within the park may incur charges." },
+      hours: { title: "Operating Hours", content: "Daily, 09:00–17:00", note: "Opening hours during holidays may be adjusted, please confirm via official channels before departure." },
+      price: { title: "Ticket Information", content: "Adults US$4. Children aged 12 and under, older adults and visitors with disabilities US$2.", note: "Check discount eligibility and activity fees with the park operator before visiting." },
       duration: { title: "Recommended Duration & Climate", content: "Recommended visit duration: 3 - 5 hours", note: "Guayaquil has a tropical savanna climate with high temperatures year-round (25-32°C). Wear lightweight, breathable clothing and prepare for sun protection." },
       animals: { title: "Park Residents: Rich Coastal Ecosystem", content: "The Wildlife Zone is a microcosm of the coastal mangrove ecosystem of Ecuador. Over 50 species of birds, mammals, and reptiles inhabit this area, including sloths, parrots, caimans, and various species of monkeys." },
       bring: { title: "Preparation", items: ["High-SPF sunscreen and sun hat", "Lightweight, breathable clothing and comfortable walking shoes", "Drinking water and mosquito repellent", "Rain gear (essential during the rainy season, January-April)", "Camera or smartphone"] }
@@ -170,8 +170,8 @@ export const translations: Record<Locale, Translations> = {
     gallery: { title: "Photo Gallery", viewMore: "View More Photos on Google Maps" },
     reviews: { title: "Visitor Reviews", subtitle: "Real reviews from Google Maps", viewMore: "View More Reviews on Google Maps" },
     faq: { title: "Frequently Asked Questions", subtitle: "Learn more about Guayaquil Historical Park", items: [
-      { question: "What are the opening hours of Guayaquil Historical Park?", answer: "Wednesday to Friday 09:00 - 17:00, Saturday to Sunday 09:00 - 17:00. The park is closed on Mondays and Tuesdays." },
-      { question: "How much are the tickets to the park?", answer: "Basic admission to the park is free, with no reservation required. Only specific guided tours or private restaurants/hotels within the park may incur charges." },
+      { question: "What are the opening hours of Guayaquil Historical Park?", answer: "Daily, 09:00–17:00." },
+      { question: "How much are the tickets to the park?", answer: "Adults US$4. Children aged 12 and under, older adults and visitors with disabilities US$2." },
       { question: "Is the park suitable for children?", answer: "Very suitable! The park is a family-friendly attraction that combines education, entertainment, and culture." },
       { question: "Can I dine or stay overnight in the park?", answer: "Yes. The park has a boutique hotel and a scenic restaurant, providing dining and accommodation services for visitors." },
       { question: "Will there be barriers if I only speak English?", answer: "Basically no. The park staff can usually communicate in Spanish and basic English." },
@@ -195,7 +195,7 @@ export const translations: Record<Locale, Translations> = {
       title: "Descripción General",
       p1: "El Parque Histórico de Guayaquil está ubicado en la Península de Samborondón, cubriendo aproximadamente 8 hectáreas. Este es un parque temático integral que combina naturaleza ecológica, cultura tradicional y arquitectura histórica.\n\nEl parque tiene como objetivo preservar y mostrar la biodiversidad de la región costera del Ecuador, así como la historia urbana y rural del finales del siglo XIX y principios del siglo XX. Todo el parque está dividido en tres zonas temáticas centrales: Zona de Vida Silvestre, Zona de Tradiciones, y Zona Histórico-Arquitectónica.",
       p2: "El parque es muy adecuado para salidas familiares y entusiastas de la historia cultural. El parque tiene un hotel boutique convertido de edificios históricos y un restaurante panorámico que ofrece cocina local. Se recomienda organizar su visita en la madrugada o tarde cuando la luz es perfecta para la fotografía.",
-      highlights: { title: "Datos Rápidos", items: ["Ubicación: Av. Rio Esmeraldas, 092301 Samborondón, Ecuador", "Área: Aproximadamente 8 hectáreas", "Tres Zonas Temáticas: Vida Silvestre, Agricultura Tradicional, Arquitectura Histórica", "Horario de Apertura: Miércoles a Domingo 09:00 - 17:00 (Cerrado los Lunes y Martes)", "Instalaciones: Hotel boutique, restaurante panorámico"] },
+      highlights: { title: "Datos Rápidos", items: ["Ubicación: Av. Rio Esmeraldas, 092301 Samborondón, Ecuador", "Área: Aproximadamente 8 hectáreas", "Tres Zonas Temáticas: Vida Silvestre, Agricultura Tradicional, Arquitectura Histórica", "Horario de apertura: todos los días, de 09:00 a 17:00", "Instalaciones: Hotel boutique, restaurante panorámico"] },
       timeline: { title: "Línea de Tiempo", events: [
         { period: "1997: Iniciación y Planificación", description: "Iniciado por el Banco Central del Ecuador para rescatar y proteger la arquitectura tradicional de madera y los ecosistemas de manglares de Guayaquil." },
         { period: "1999 - 2000: Apertura de la Fase I", description: "Las Zonas de Vida Silvestre y Agricultura Tradicional se abrieron al público, convirtiéndose en una ventana importante para la biodiversidad costera." },
@@ -232,8 +232,8 @@ export const translations: Record<Locale, Translations> = {
     },
     visiting: {
       title: "Información para Visitantes",
-      hours: { title: "Horario de Operación", content: "Miércoles a Viernes: 09:00 – 17:00\nSábado a Domingo: 09:00 – 17:00\nLunes: Cerrado\nMartes: Cerrado", note: "El horario durante los feriados puede ser ajustado, por favor confirme a través de canales oficiales." },
-      price: { title: "Información de Boletos", content: "Entrada gratuita, sin necesidad de reserva", note: "Solo ciertos recorridos guiados o restaurantes/hoteles privados dentro del parque pueden tener costo." },
+      hours: { title: "Horario de Operación", content: "Todos los días, de 09:00 a 17:00", note: "El horario durante los feriados puede ser ajustado, por favor confirme a través de canales oficiales." },
+      price: { title: "Información de Boletos", content: "Adultos USD 4. Niños de hasta 12 años, adultos mayores y personas con discapacidad USD 2.", note: "Consulta al administrador las condiciones de los descuentos y los precios de actividades especiales." },
       duration: { title: "Duración Recomendada", content: "Duración recomendada: 3 - 5 horas", note: "Guayaquil tiene un clima de sabana tropical con temperaturas altas durante todo el año (25-32°C)." },
       animals: { title: "Residentes del Parque", content: "La Zona de Vida Silvestre alberga más de 50 especies de aves, mamíferos y reptiles, incluyendo perezosos, loros, caimanes y varias especies de monos." },
       bring: { title: "Preparación", items: ["Protector solar y sombrero", "Ropa ligera y zapatos cómodos", "Agua potable y repelente de mosquitos", "Equipo de lluvia", "Cámara o teléfono inteligente"] }
@@ -251,8 +251,8 @@ export const translations: Record<Locale, Translations> = {
     gallery: { title: "Galería de Fotos", viewMore: "Ver Más Fotos en Google Maps" },
     reviews: { title: "Reseñas de Visitantes", subtitle: "Reseñas reales de Google Maps", viewMore: "Ver Más Reseñas en Google Maps" },
     faq: { title: "Preguntas Frecuentes", subtitle: "Conozca más sobre el Parque Histórico de Guayaquil", items: [
-      { question: "¿Cuál es el horario de apertura del parque?", answer: "Miércoles a viernes 09:00 - 17:00, sábado a domingo 09:00 - 17:00. El parque está cerrado los lunes y martes." },
-      { question: "¿Cuánto cuestan los boletos?", answer: "La entrada básica al parque es gratuita, sin necesidad de reserva. Solo ciertos recorridos guiados o restaurantes/hoteles privados dentro del parque pueden tener costo." },
+      { question: "¿Cuál es el horario de apertura del parque?", answer: "Todos los días, de 09:00 a 17:00." },
+      { question: "¿Cuánto cuestan los boletos?", answer: "Adultos USD 4. Niños de hasta 12 años, adultos mayores y personas con discapacidad USD 2." },
       { question: "¿Es el parque adecuado para niños?", answer: "¡Muy adecuado! El parque es una atracción amigable para familias." },
       { question: "¿Puedo cenar o alojarme en el parque?", answer: "Sí. El parque tiene un hotel boutique y un restaurante panorámico." },
       { question: "¿Habrá barreras si solo hablo inglés?", answer: "Básicamente no. El personal del parque generalmente puede comunicarse en español e inglés básico." },
