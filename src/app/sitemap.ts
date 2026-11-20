@@ -1,3 +1,4 @@
+import { nearby, nearbyLanguages, nearbyPath } from "@/content/nearby";
 import type { MetadataRoute } from "next";
 import { guideLanguages, guidePath, locales, siteUrl, slugs } from "@/i18n/guides";
 
@@ -12,6 +13,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return locales.flatMap((locale) => [
     { url: absolute(`/${locale}`), alternates: absoluteLanguages(homeLanguages) },
+    { url: absolute(nearbyPath(locale)), alternates: absoluteLanguages(nearbyLanguages()) },
+    ...nearby.map(({ slug }) => ({
+      url: absolute(nearbyPath(locale, slug)),
+      alternates: absoluteLanguages(nearbyLanguages(slug)),
+    })),
     ...slugs.map((slug) => ({
       url: absolute(guidePath(locale, slug)),
       alternates: absoluteLanguages(guideLanguages(slug)),

@@ -1107,3 +1107,8 @@ body {
 .guide-facts { margin-bottom: .75rem; }
 .guide-facts dt { font-weight: 700; }
 .guide-facts dd + dt { margin-top: .75rem; }
+
+.guide-hero { background-color: #14281e; }
+.nearby-photo { margin-top: 1rem; }
+.nearby-photo img { display: block; max-width: 100%; max-height: 32rem; object-fit: contain; }
+.nearby-photo figcaption { margin-top: .5rem; }
