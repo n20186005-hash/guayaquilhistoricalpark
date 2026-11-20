@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { nearby, nearbyLabels, nearbyLanguages, nearbyPath, placeAuthority, placeCity, placeMap, placePhoto, placeSource, placeTransit } from "@/content/nearby";
-import { areaTransit, areas, getVisit, kinds, visitAccess, visitLabels, visitNotice } from "@/content/nearby-visit";
+import { areaTransit, areas, getVisit, kinds, operatorNotes, practicalLabels, visitAccess, visitLabels, visitNotice } from "@/content/nearby-visit";
 import { locales, siteUrl } from "@/i18n/guides";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -46,12 +46,22 @@ export default async function NearbyAttraction({ params }: Props) {
   const name = place.names[lang];
   const copy = visitLabels[lang];
   const visit = getVisit(place.slug);
+  const practical = practicalLabels[lang];
+  const operatorNote = operatorNotes[place.slug]?.[lang];
+  const visitText = visit.text[lang];
+  const tagline = "tagline" in visitText ? visitText.tagline : text.history;
   const area = areas[lang][visit.area];
   const kind = kinds[lang][visit.kind];
   const { hours, price, operator } = visitAccess(lang, visit.access);
   const accessSource = operator ?? source;
   const city = placeCity(place);
   const address = `${place.address}, ${city}, ${copy.countryName}`;
+  const directions = new URL("https://www.google.com/maps/dir/");
+  directions.search = new URLSearchParams({
+    api: "1",
+    origin: "Parque Histórico de Guayaquil, Av. Río Esmeraldas, Samborondón, Ecuador",
+    destination: [place.names.es, place.address, city, "Ecuador"].join(", "),
+  }).toString();
   const url = siteUrl + nearbyPath(lang, place.slug);
   const details = {
     "@context": "https://schema.org",
@@ -77,6 +87,7 @@ export default async function NearbyAttraction({ params }: Props) {
             ))}
           </nav>
           <h1>{name}</h1>
+          <p className="guide-tagline">{tagline}</p>
           <p>{kind} · {area[0]}</p>
           <p><a href={map}>{copy.rating}</a></p>
           <p>{hours}</p>
@@ -88,6 +99,12 @@ export default async function NearbyAttraction({ params }: Props) {
         <section>
           <h2>{copy.intro} · {name}</h2>
           <p>{text.history}</p>
+          <h3>{practical.overview}</h3>
+          <ul>
+            <li>{practical.location} · {place.address}</li>
+            <li>{practical.time} · {visit.duration} {copy.minutes}</li>
+            <li>{copy.ticket} · {price}</li>
+          </ul>
           <h3>{copy.advice}</h3>
           <p>{visit.text[lang].tip}</p>
           <h3>{copy.highlights}</h3>
@@ -96,6 +113,8 @@ export default async function NearbyAttraction({ params }: Props) {
         <section>
           <h2>{labels.about} · {name}</h2>
           <p>{labels.authority} · <a href={manager.url}>{manager.name}</a></p>
+          {operatorNote && <p>{operatorNote}</p>}
+          <p><a href={accessSource}>{practical.source}</a></p>
         </section>
         <section>
           <h2>{labels.facts}</h2>
@@ -123,7 +142,7 @@ export default async function NearbyAttraction({ params }: Props) {
         </section>
         <section>
           <h2>{labels.route}</h2>
-          <ol>{visit.route.map((stop) => <li key={stop} lang="es">{stop}</li>)}</ol>
+          <ol>{visit.route.map((stop, index) => <li key={stop}><strong>{practical.arrival[index]}</strong> · <span lang="es">{stop}</span></li>)}</ol>
           <p>{text.walk}</p>
         </section>
         <section>
@@ -143,7 +162,7 @@ export default async function NearbyAttraction({ params }: Props) {
         </section>
         <section><h2>{copy.stay}</h2><p>{area[1]}</p></section>
         <section><h2>{labels.reviews}</h2><p><a href={map}>{labels.reviewLink}</a></p></section>
-        <section><h2>{copy.directions}</h2><p>{address}</p><a href={map}>{labels.map}</a></section>
+        <section><h2>{copy.directions}</h2><p>{address}</p><ul><li><a href={map}>{labels.map}</a></li><li><a href={directions.href}>{practical.route}</a></li></ul></section>
         {place.related.length > 0 && (
           <section>
             <h2>{labels.title}</h2>

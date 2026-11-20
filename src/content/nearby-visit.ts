@@ -18,9 +18,9 @@ export const visitLabels = {
 };
 
 export const kinds = {
-  en: { forest: "Protected forest", zoo: "Zoo", cable: "Cable-car station", riverfront: "Waterfront promenade", monument: "Historic monument", ride: "Observation wheel", garden: "Public park or garden", square: "Public square", museum: "Museum", district: "Historic streetscape", hill: "Hill and stairway", viewpoint: "Lighthouse and viewpoint", church: "Cathedral", civic: "Civic building", sports: "Sports and recreation park", wetland: "Protected wetland", theatre: "Performing arts venue" },
-  es: { forest: "Bosque protector", zoo: "Zoológico", cable: "Estación de teleférico", riverfront: "Paseo ribereño", monument: "Monumento histórico", ride: "Noria panorámica", garden: "Parque o jardín público", square: "Plaza pública", museum: "Museo", district: "Entorno urbano histórico", hill: "Cerro y escalinata", viewpoint: "Faro y mirador", church: "Catedral", civic: "Edificio cívico", sports: "Parque deportivo y recreativo", wetland: "Humedal protegido", theatre: "Recinto de artes escénicas" },
-  zh: { forest: "保护林", zoo: "动物园", cable: "空中缆车站", riverfront: "滨水步道", monument: "历史纪念建筑", ride: "观景摩天轮", garden: "公共公园或园林", square: "公共广场", museum: "博物馆", district: "历史街区", hill: "山丘与登山阶梯", viewpoint: "灯塔与观景台", church: "主教座堂", civic: "市政建筑", sports: "运动休闲公园", wetland: "受保护湿地", theatre: "表演艺术场馆" },
+  en: { parish: "Historic church", cemetery: "Heritage cemetery", market: "Craft market", racecourse: "Racecourse", library: "Library", rail: "Heritage railway station", reservoir: "Reservoir recreation area", forest: "Protected forest", zoo: "Zoo", cable: "Cable-car station", riverfront: "Waterfront promenade", monument: "Historic monument", ride: "Observation wheel", garden: "Public park or garden", square: "Public square", museum: "Museum", district: "Historic streetscape", hill: "Hill and stairway", viewpoint: "Lighthouse and viewpoint", church: "Cathedral", civic: "Civic building", sports: "Sports and recreation park", wetland: "Protected wetland", theatre: "Performing arts venue" },
+  es: { parish: "Iglesia histórica", cemetery: "Cementerio patrimonial", market: "Mercado artesanal", racecourse: "Hipódromo", library: "Biblioteca", rail: "Estación ferroviaria patrimonial", reservoir: "Área recreativa de embalse", forest: "Bosque protector", zoo: "Zoológico", cable: "Estación de teleférico", riverfront: "Paseo ribereño", monument: "Monumento histórico", ride: "Noria panorámica", garden: "Parque o jardín público", square: "Plaza pública", museum: "Museo", district: "Entorno urbano histórico", hill: "Cerro y escalinata", viewpoint: "Faro y mirador", church: "Catedral", civic: "Edificio cívico", sports: "Parque deportivo y recreativo", wetland: "Humedal protegido", theatre: "Recinto de artes escénicas" },
+  zh: { parish: "历史教堂", cemetery: "历史公墓", market: "手工艺市场", racecourse: "赛马场", library: "公共图书馆", rail: "历史铁路车站", reservoir: "水库游憩区", forest: "保护林", zoo: "动物园", cable: "空中缆车站", riverfront: "滨水步道", monument: "历史纪念建筑", ride: "观景摩天轮", garden: "公共公园或园林", square: "公共广场", museum: "博物馆", district: "历史街区", hill: "山丘与登山阶梯", viewpoint: "灯塔与观景台", church: "主教座堂", civic: "市政建筑", sports: "运动休闲公园", wetland: "受保护湿地", theatre: "表演艺术场馆" },
 };
 
 export const areas = {
@@ -92,7 +92,10 @@ const access = {
 export function visitAccess(locale: Locale, kind: keyof typeof access.en | keyof typeof newAccess.en) {
   const operator = kind === "river" ? "https://malecon.org.ec/" :
     kind === "perla" || kind === "separate" ? "https://malecon.org.ec/entretenimiento.php" :
-    kind === "theatre" ? "https://teatrosanchezaguilar.org/" : undefined;
+    kind === "theatre" ? "https://teatrosanchezaguilar.org/" :
+    kind === "botanical" ? "https://www.orquideasecuador.org.ec/jard%C3%ADnbot%C3%A1nico" :
+    kind === "zoo" ? "https://www.zoologicoelpantanal.com/informacion.html" :
+    kind === "cerroblanco" ? "https://bosquecerroblanco.org/?page_id=2383" : undefined;
   const [hours, price] = { ...access[locale], ...newAccess[locale] }[kind];
   return { hours, price, operator };
 }
@@ -130,9 +133,12 @@ export function visitNotice(locale: Locale, kind: keyof typeof kinds.en) {
     case "hill":
     case "viewpoint": return text.slopes;
     case "museum": return text.collections;
+    case "reservoir":
     case "forest":
     case "riverfront":
     case "wetland": return text.water;
+    case "parish":
+    case "cemetery":
     case "church":
     case "civic":
     case "monument":
@@ -175,45 +181,92 @@ export const areaTransit = {
 
 const newAccess = {
   en: {
+    cerroblanco: ["Daily and holidays, 08:00–16:00 by reservation. The operator recommends booking two to three working days ahead.", "Ask the operator for the admission and guiding fee for your chosen trail."],
     oldhall: ["The municipal listing gives Tuesday–Sunday, 08:00–14:00. Check before travelling.", "The municipal listing describes free admission."],
     library: ["Monday–Friday 08:30–17:00. Ask about guided visits separately.", "General admission is free; confirm arrangements for group visits."],
     aerovia: ["Check the ATM service status before crossing.", "Use the fare and payment method currently published by ATM."],
     forest: ["Verify trail and visitor access with the operator before departing.", "Confirm whether the chosen trail has a ticket, guide fee or booking requirement."],
-    zoo: ["Check the zoo’s latest public opening notice.", "Confirm current admission and any different child rates before departure."],
+    zoo: ["Daily 10:00–16:00, as published by the zoo.", "US$10 adults; US$5 students, older adults and children."],
     racing: ["Public access follows the race schedule.", "Confirm spectator access and any ticketing with the racecourse."],
     match: ["Entry follows the event schedule; exterior viewing is possible from public streets.", "Match or event ticket prices are published by the organiser."],
     cemetery: ["Ask the operator about the visitor gate and heritage route.", "Confirm any guided tour conditions with the cemetery operator."],
-    botanical: ["Check garden entry hours and any closures affecting the paths.", "Confirm general admission and guided visit charges with the garden."],
+    botanical: ["Daily 08:00–17:00, as listed by the orchid association. Confirm before travelling.", "US$3 adults. US$1.50 for students, children under 12 and older adults. Infants enter free. Confirm with the garden."],
     astillero: ["Check which Astillero museum rooms are open before setting off.", "The municipal museum circuit lists free admission. Check for special activities separately."],
     lake: ["The protected-area guide lists 08:00–17:00 for the picnic area and 06:00–17:00 for the lookout and cycle route.", "Check current entry arrangements and any activity costs with the protected-area authority."],
     campus: ["Confirm both campus and museum access with the university.", "Ask the university about admission for individuals or groups."],
   },
   es: {
+    cerroblanco: ["Todos los días y feriados, 08:00–16:00, con reserva. El operador recomienda reservar con dos o tres días laborables de antelación.", "Consulta el costo de entrada y guía para el sendero elegido."],
     oldhall: ["La ficha municipal indica de martes a domingo, 08:00–14:00. Confirma antes de viajar.", "La ficha municipal indica entrada libre."],
     library: ["Lunes a viernes, 08:30–17:00. Consulta por separado las visitas guiadas.", "Entrada general gratuita. Confirma las condiciones para grupos."],
     aerovia: ["Consulta el estado del servicio de la ATM antes de cruzar.", "Usa la tarifa y el medio de pago que publica la ATM."],
     forest: ["Confirma los senderos y accesos disponibles con el operador.", "Verifica si el recorrido elegido requiere entrada, guía o reserva."],
-    zoo: ["Consulta el aviso vigente de apertura del zoológico.", "Verifica las tarifas actuales, incluidas las infantiles."],
+    zoo: ["Todos los días de 10:00 a 16:00, según el zoológico.", "USD 10 adultos; USD 5 estudiantes, adultos mayores y niños."],
     racing: ["El acceso público sigue la programación hípica.", "Consulta las condiciones de acceso a las gradas con el hipódromo."],
     match: ["El acceso sigue la programación. El exterior se observa desde las calles públicas.", "Los precios de cada partido o evento los publica el organizador."],
     cemetery: ["Consulta al operador el acceso de visitantes y el circuito patrimonial.", "Confirma con el cementerio si hay condiciones para visitas guiadas."],
-    botanical: ["Verifica el horario del jardín y posibles cierres de senderos.", "Consulta la entrada general y las tarifas de visitas guiadas."],
+    botanical: ["Todos los días de 08:00 a 17:00, según la asociación de orquideología. Confirma antes de salir.", "USD 3 adultos; USD 1,50 estudiantes, menores de 12 años y adultos mayores; infantes gratis. Confirma con el jardín."],
     astillero: ["Comprueba qué salas del Astillero están abiertas antes de salir.", "El circuito municipal indica entrada libre. Consulta las actividades especiales."],
     lake: ["La guía del área indica 08:00–17:00 para el picnic y 06:00–17:00 para el mirador y la ruta ciclista.", "Confirma el acceso y los posibles costos de actividades con la administración del área."],
     campus: ["Confirma con la universidad el acceso al campus y al museo.", "Consulta a la universidad las condiciones para visitas individuales o en grupo."],
   },
   zh: {
+    cerroblanco: ["每天及节假日 08:00–16:00，需预约；管理方建议提前两至三个工作日办理。", "门票和导览费用请按拟走的路线向管理方确认。"],
     oldhall: ["市政府资料列出周二至周日 08:00–14:00，出发前请核实。", "市政府资料列为免费开放。"],
     library: ["周一至周五 08:30–17:00，导览需另查。", "普通入场免费，团体请先核对接待条件。"],
     aerovia: ["跨河前查询 ATM 发布的当前运营状态。", "以 ATM 公布的票价和支付方式为准。"],
     forest: ["出发前向管理方确认访客入口与可走步道。", "了解所选路线是否另外需要门票、导览费或预约。"],
-    zoo: ["出发前查看动物园最新开放公告。", "确认当天入场价格及儿童票安排。"],
+    zoo: ["园方公布每天 10:00–16:00。", "成人 10 美元；学生、长者及儿童 5 美元。"],
     racing: ["公众入场随赛事日程安排。", "看台开放和票务请向赛马场查询。"],
     match: ["按比赛或活动场次开放，外观可从公共道路观察。", "比赛及活动门票以主办方公布为准。"],
     cemetery: ["请向管理方核实访客入口及遗产游览路线。", "若需导览，入口与费用安排请向公墓管理方查询。"],
-    botanical: ["请核实植物园入场时间和步道开放情况。", "普通门票和导览费用请向园方查询。"],
+    botanical: ["兰花协会公布每天 08:00–17:00；出发前请与园方核实。", "成人 3 美元；学生、未满 12 岁儿童和长者 1.50 美元；婴幼儿免费。以园方确认为准。"],
     astillero: ["出发前确认阿斯蒂列罗大楼当天开放哪些展厅。", "市政府博物馆路线列为免费；特别活动另行核实。"],
     lake: ["保护区指南列明野餐区 08:00–17:00，观景区和自行车路线 06:00–17:00。", "实际入场和活动费用请向保护区管理方核实。"],
     campus: ["先向校方核实校园与博物馆的访客准入时间。", "散客及团体访问条件请向校方确认。"],
+  },
+};
+
+export const practicalLabels = {
+  en: { overview: "Plan your visit", route: "Get directions from Historical Park", source: "Operator or visitor information", arrival: ["Start at", "Main stop", "Finish at"], time: "Suggested time", location: "Visitor entrance" },
+  es: { overview: "Planifica tu visita", route: "Indicaciones desde el Parque Histórico", source: "Operador o información para visitantes", arrival: ["Comienza en", "Parada principal", "Termina en"], time: "Tiempo sugerido", location: "Acceso para visitantes" },
+  zh: { overview: "出发前速览", route: "查询从历史公园出发的路线", source: "管理方或访客资料", arrival: ["起点", "主要看点", "终点"], time: "建议停留", location: "访客入口" },
+};
+
+export const operatorNotes: Record<string, Record<Locale, string>> = {
+  "antiguo-palacio-samborondon": {
+    en: "Samborondón’s municipality identifies the building as a former private home, later used by the council and restored as a local traditions museum. Its wooden stair and furnished rooms are part of the visit.",
+    es: "El Municipio de Samborondón identifica el inmueble como una vivienda que pasó a ser sede del cabildo y fue restaurada como museo de tradiciones. Su escalera de madera y sus ambientes amueblados forman parte de la visita.",
+    zh: "桑博龙东市政府记载，这座建筑原为私人住宅，后改作市政办公场所，经修复成为地方传统博物馆。木楼梯和保有旧家具的房间是参观重点。",
+  },
+  "plaza-san-francisco": {
+    en: "Guayaquil’s municipal works department renovated the square, including the fountain around the Vicente Rocafuerte monument. The church entrance and public square have separate access arrangements.",
+    es: "La Dirección de Obras Públicas de Guayaquil renovó la plaza y la pileta que rodea el monumento a Vicente Rocafuerte. La entrada al templo y el acceso a la plaza se organizan por separado.",
+    zh: "瓜亚基尔市公共工程部门整修了广场，包括环绕比森特·罗卡富埃尔特纪念像的喷泉。广场与教堂分别开放。",
+  },
+  "biblioteca-municipal": {
+    en: "The municipal library offers guided visits to its reading rooms and heritage collections. Schools and other groups can use its visitor page to check the request process before arriving.",
+    es: "La Biblioteca Municipal ofrece visitas guiadas a las salas de lectura y colecciones patrimoniales. Los centros educativos y otros grupos pueden consultar cómo solicitar una visita en la página de la biblioteca.",
+    zh: "市立图书馆提供阅览室与历史文献收藏导览。学校及其他团体可先在图书馆访客页查询申请方式。",
+  },
+  "museo-bae": {
+    en: "The Maritime History Institute of the Ecuadorian Navy manages the naval museums in the Jambelí complex. Ask specifically for the Calderón gunboat, one of several collections on the site.",
+    es: "El Instituto de Historia Marítima de la Armada del Ecuador administra los museos del Complejo Jambelí. Pregunta por el cañonero Calderón, una de las colecciones del recinto.",
+    zh: "厄瓜多尔海军海事历史研究所管理汉贝利综合区的海军博物馆。园区内有多处展馆，到场可指名询问卡尔德龙炮舰。",
+  },
+  "cerro-blanco": {
+    en: "Fundación Pro-Bosque manages the protected forest. Its booking instructions ask for the chosen trail, date, time and group size. The operator prohibits bringing pets into the reserve.",
+    es: "La Fundación Pro-Bosque administra el bosque protector. Para reservar pide indicar sendero, fecha, hora y número de personas. El operador no permite el ingreso de mascotas.",
+    zh: "保护林由 Pro-Bosque 基金会管理。预约时须提供拟走的步道、日期、时间与人数。管理方规定宠物不得进入保护区。",
+  },
+  "parque-lago": {
+    en: "The environmental authority lists separate opening times for the picnic area, the lookout and the cycle route. When planning the visit, choose a specific recreation area before setting off for the main entrance at kilometre 26.",
+    es: "La autoridad ambiental publica horarios distintos para el área de picnic, el mirador y la ruta ciclista. Elige el sector antes de salir hacia el acceso principal del kilómetro 26.",
+    zh: "环境主管部门分别列出了野餐区、观景区和自行车路线的开放时段。出发前先选定游憩区，再导航至 26 公里处的主入口。",
+  },
+  "zoologico-pantanal": {
+    en: "The zoo asks visitors to stay with their guide, respect enclosure barriers and refrain from touching or feeding animals. It permits water and excludes other food and drinks.",
+    es: "El zoológico pide mantener el grupo con su guía, respetar las barreras y evitar tocar o alimentar a los animales. Permite llevar agua y restringe otros alimentos y bebidas.",
+    zh: "园方要求访客随导览同行，遵守围栏规定，勿触摸或投喂动物。可携带饮用水，其他食品及饮料按园方规定不得带入。",
   },
 };
