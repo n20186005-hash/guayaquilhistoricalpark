@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { nearby, nearbyLabels, nearbyLanguages, nearbyPath, placeAdmission, placeAuthority, placeMap, placePhoto, placeSource, placeTransit } from "@/content/nearby";
+import { nearby, nearbyLabels, nearbyLanguages, nearbyPath, placeAuthority, placeMap, placePhoto, placeSource, placeTransit } from "@/content/nearby";
+import { areaTransit, areas, getVisit, kinds, visitAccess, visitLabels, visitNotice } from "@/content/nearby-visit";
 import { locales, siteUrl } from "@/i18n/guides";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -43,6 +44,14 @@ export default async function NearbyAttraction({ params }: Props) {
   const source = placeSource(place);
   const photo = placePhoto(place.slug);
   const name = place.names[lang];
+  const copy = visitLabels[lang];
+  const visit = getVisit(place.slug);
+  const area = areas[lang][visit.area];
+  const kind = kinds[lang][visit.kind];
+  const { hours, price, operator } = visitAccess(lang, visit.access);
+  const accessSource = operator ?? source;
+  const city = place.manager === "theatre" ? "Samborondón" : "Guayaquil";
+  const address = `${place.address}, ${city}, ${copy.countryName}`;
   const url = siteUrl + nearbyPath(lang, place.slug);
   const details = {
     "@context": "https://schema.org",
@@ -51,7 +60,7 @@ export default async function NearbyAttraction({ params }: Props) {
     url,
     description: text.history,
     hasMap: map,
-    address: place.address,
+    address: { "@type": "PostalAddress", streetAddress: place.address, addressLocality: city, addressCountry: "EC" },
     ...(photo && { image: siteUrl + photo.src }),
   };
   return (
@@ -68,26 +77,60 @@ export default async function NearbyAttraction({ params }: Props) {
             ))}
           </nav>
           <h1>{name}</h1>
-          <p>{text.history}</p>
+          <p>{kind} · {area[0]}</p>
+          <p><a href={map}>{copy.rating}</a></p>
+          <p>{hours}</p>
           <p>{place.address}</p>
           <a href={map}>{labels.map}</a>
         </div>
       </header>
       <div className="guide-wrap guide-body">
         <section>
+          <h2>{copy.intro} · {name}</h2>
+          <p>{text.history}</p>
+          <h3>{copy.advice}</h3>
+          <p>{visit.text[lang].tip}</p>
+          <h3>{copy.highlights}</h3>
+          <ul>{visit.route.slice(1).map((stop) => <li key={stop} lang="es">{stop}</li>)}</ul>
+        </section>
+        <section>
           <h2>{labels.about} · {name}</h2>
           <p>{labels.authority} · <a href={manager.url}>{manager.name}</a></p>
         </section>
         <section>
           <h2>{labels.facts}</h2>
-          <dl className="info-card guide-facts">
-            <dt>{labels.officialName}</dt><dd lang="es">{place.names.es}</dd>
-            <dt>{labels.address}</dt><dd>{place.address}, {place.manager === "theatre" ? "Samborondón" : "Guayaquil"}, Ecuador</dd>
-            <dt>{labels.hours}</dt><dd>{placeAdmission(lang, place.slug) ?? labels.current} <a href={source}>{labels.source}</a></dd>
-          </dl>
+          <table className="guide-info-table">
+            <tbody>
+              <tr><th scope="row">{labels.officialName}</th><td lang="es">{place.names.es}</td></tr>
+              <tr><th scope="row">{copy.kind}</th><td>{kind}</td></tr>
+              <tr><th scope="row">{copy.country}</th><td>{copy.countryName}</td></tr>
+              <tr><th scope="row">{copy.city}</th><td>{city}</td></tr>
+              <tr><th scope="row">{copy.area}</th><td>{area[0]}</td></tr>
+              <tr><th scope="row">{labels.address}</th><td>{address}</td></tr>
+              <tr><th scope="row">{copy.manager}</th><td><a href={manager.url}>{manager.name}</a></td></tr>
+              <tr><th scope="row">{copy.duration}</th><td>{visit.duration} {copy.minutes}. {copy.editorial}</td></tr>
+              <tr><th scope="row">{labels.reviews}</th><td><a href={map}>{labels.reviewLink}</a></td></tr>
+            </tbody>
+          </table>
         </section>
-        <section><h2>{labels.transport}</h2><p>{placeTransit(lang, place)}</p><a href={map}>{labels.map}</a></section>
-        <section><h2>{labels.route}</h2><p>{text.walk}</p></section>
+        <section><h2>{copy.hour}</h2><p>{hours}</p><p>{copy.info} <a href={accessSource}>{labels.source}</a></p></section>
+        <section><h2>{copy.ticket}</h2><p>{price}</p><a href={accessSource}>{labels.source}</a></section>
+        <section><h2>{labels.transport}</h2><p>{placeTransit(lang, place)}</p><p>{areaTransit[lang][visit.area]}</p><a href={map}>{labels.map}</a></section>
+        <section>
+          <h2>{copy.discovery}</h2>
+          <p>{visit.text[lang].detail}</p>
+          <p><a href={source}>{labels.source}</a></p>
+        </section>
+        <section>
+          <h2>{labels.route}</h2>
+          <ol>{visit.route.map((stop) => <li key={stop} lang="es">{stop}</li>)}</ol>
+          <p>{text.walk}</p>
+        </section>
+        <section>
+          <h2>{copy.notice}</h2>
+          <p>{visitNotice(lang, visit.kind)}</p>
+          <h3>{copy.faq}</h3><p><strong>{text.question}</strong> {text.answer}</p>
+        </section>
         <section>
           <h2>{labels.photo}</h2><p>{text.photo}</p>
           {photo && (
@@ -98,8 +141,9 @@ export default async function NearbyAttraction({ params }: Props) {
             </figure>
           )}
         </section>
-        <section><h2>{labels.faq}</h2><h3>{text.question}</h3><p>{text.answer}</p></section>
+        <section><h2>{copy.stay}</h2><p>{area[1]}</p></section>
         <section><h2>{labels.reviews}</h2><p><a href={map}>{labels.reviewLink}</a></p></section>
+        <section><h2>{copy.directions}</h2><p>{address}</p><a href={map}>{labels.map}</a></section>
         {place.related.length > 0 && (
           <section>
             <h2>{labels.title}</h2>

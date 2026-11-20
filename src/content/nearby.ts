@@ -63,49 +63,6 @@ export const nearbyLabels = {
   zh: { title: "周边游览", intro: "从瓜亚基尔历史公园出发，可搭配桑博龙东、瓜亚斯河岸、历史中心或萨拉多河口的景点。", all: "查看全部周边景点", history: "历史背景与特色", about: "关于景点", authority: "管理机构与访客咨询", facts: "基础信息", officialName: "当地名称", address: "地址或访客入口", hours: "开放时间与门票", current: "请出发前查阅访客信息。个别设施及活动的开放和费用可能另有安排。", transport: "交通方式", cityTransit: "从历史公园出发，请按下列地址定位目的地。自驾或搭出租车从拉蓬蒂利亚前往瓜亚基尔时，预留通勤时间。搭公共交通可先在地图核对当日线路和步行接驳。", localTransit: "从历史公园出发，请导航至桑博龙东大道的剧院入口。观看晚间演出时，可先核对公共交通接驳或安排出租车。", route: "建议步行路线", photo: "拍摄机位", faq: "常见问题", reviews: "游客评分与评价", reviewLink: "到 Google 地图查看当前评分和评价", source: "访客资料来源", photoSource: "照片来源", map: "在 Google 地图查看本景点", back: "瓜亚基尔历史公园" },
 } satisfies Record<Locale, Record<string, string>>;
 
-const admission = {
-  en: {
-    tuesSat: "Tuesday–Saturday, 10:00–17:00. Free admission.",
-    municipal: "Tuesday–Saturday, 09:00–17:30. Free admission.",
-    cacao: "Tuesday–Sunday, 10:00–17:00. Free admission.",
-    nahim: "Tuesday–Saturday, 09:00–17:00. Free admission.",
-    events: "See the theatre’s programme for performance times and ticket prices.",
-    lighthouse: "Check the city’s latest notice for tower entry. The outdoor lookout and tower may have different access conditions.",
-  },
-  es: {
-    tuesSat: "Martes a sábado, de 10:00 a 17:00. Entrada libre.",
-    municipal: "Martes a sábado, de 09:00 a 17:30. Entrada libre.",
-    cacao: "Martes a domingo, de 10:00 a 17:00. Entrada libre.",
-    nahim: "Martes a sábado, de 09:00 a 17:00. Entrada libre.",
-    events: "Consulta la cartelera del teatro para horarios y precios de cada función.",
-    lighthouse: "Consulta el último aviso municipal para entrar en la torre. El mirador exterior puede tener condiciones distintas.",
-  },
-  zh: {
-    tuesSat: "周二至周六 10:00–17:00，免费入场。",
-    municipal: "周二至周六 09:00–17:30，免费入场。",
-    cacao: "周二至周日 10:00–17:00，免费入场。",
-    nahim: "周二至周六 09:00–17:00，免费入场。",
-    events: "演出时间和门票价格请按场次查询剧院节目单。",
-    lighthouse: "登塔前请查阅市政府最新公告，公共观景区与灯塔内部的开放安排可能不同。",
-  },
-} as const;
-
-const publishedAdmission: Record<string, keyof typeof admission.en> = {
-  "museo-bomberos": "tuesSat",
-  "museo-julio-jaramillo": "tuesSat",
-  "museo-municipal": "municipal",
-  "museo-cacao": "cacao",
-  "museo-nahim-isaias": "nahim",
-  maac: "cacao",
-  "teatro-sanchez-aguilar": "events",
-  "faro-santa-ana": "lighthouse",
-};
-
-export function placeAdmission(locale: Locale, slug: string) {
-  const kind = publishedAdmission[slug];
-  return kind ? admission[locale][kind] : undefined;
-}
-
 const santayTransit = {
   en: "From La Puntilla, head toward the Guayaquil bridge entrance by Calle El Oro. Verify whether the bridge is open. For a boat alternative, check Guayas river departures with the protected-area administration before travelling to a pier.",
   es: "Desde La Puntilla, dirígete al acceso del puente en el sector de la calle El Oro. Confirma que el paso esté abierto. Si prefieres ir en lancha, consulta las salidas con la administración del área protegida antes de ir al muelle.",
