@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { ThemeProvider } from "next-themes";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "../globals.css";
+import { siteUrl } from "@/i18n/guides";
 
 const cormorant = Cormorant_Garamond({
   weight: ["400", "600", "700"],
@@ -17,20 +19,33 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const baseUrl = `https://${process.env.CURRENT_SITE_DOMAIN || "guayaquilhistoricalpark.com"}`;
+const homeMetadata = {
+  en: {
+    title: "Guayaquil Historical Park | Hours, Tickets & What to See",
+    description: "Plan your visit to Guayaquil Historical Park in Samborondón. Check opening hours and admission, find the entrance, and explore wildlife and historic houses.",
+  },
+  es: {
+    title: "Parque Histórico de Guayaquil | Horarios, precios y qué ver",
+    description: "Organiza tu visita al Parque Histórico de Samborondón. Consulta horarios y precios, ubica la entrada y descubre la zona de fauna y las casas históricas.",
+  },
+  zh: {
+    title: "瓜亚基尔历史公园｜开放时间、门票与游览指南",
+    description: "查询桑博龙东瓜亚基尔历史公园的开放时间、门票和入口位置，规划野生动植物区、历史建筑区与乡村传统区的行程。",
+  },
+};
 
 export async function generateMetadata(
   { params }: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
   const { locale } = await params;
+  const { title, description } = locale === "es" ? homeMetadata.es : locale === "zh" ? homeMetadata.zh : homeMetadata.en;
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(siteUrl),
     title: {
-      default: "Guayaquil Historical Park — Samborondón, Ecuador",
+      default: title,
       template: "%s | Guayaquil Historical Park",
     },
-    description:
-      "A travel guide to Guayaquil Historical Park (Parque Histórico de Guayaquil) in Samborondón, Ecuador. Explore the historical heritage, wildlife, and botanical gardens.",
+    description,
     keywords: [
       "Guayaquil Historical Park",
       "Parque Histórico de Guayaquil",
@@ -51,10 +66,9 @@ export async function generateMetadata(
       type: "website",
       locale: locale === 'es' ? 'es_EC' : locale === 'zh' ? 'zh_CN' : 'en_US',
       alternateLocale: ["en_US", "es_EC", "zh_CN"].filter(l => !l.startsWith(locale)),
-      url: `${baseUrl}/${locale}`,
-      title: "Guayaquil Historical Park — Samborondón, Ecuador",
-      description:
-        "A travel guide to Guayaquil Historical Park in Samborondón, Ecuador. Explore the historical heritage, wildlife, and botanical gardens.",
+      url: `${siteUrl}/${locale}`,
+      title,
+      description,
       siteName: "Guayaquil Historical Park Travel Guide",
       images: [
         {
@@ -67,9 +81,8 @@ export async function generateMetadata(
     },
     twitter: {
       card: "summary_large_image",
-      title: "Guayaquil Historical Park — Samborondón, Ecuador",
-      description:
-        "A travel guide to Guayaquil Historical Park in Samborondón, Ecuador.",
+      title,
+      description,
       images: ["/gallery/guayaquil-historical-park (1).jpg"],
     },
     robots: {
@@ -113,8 +126,8 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
   return (
-    <html lang={locale} className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+    <html lang={locale} suppressHydrationWarning className={`${cormorant.variable} ${dmSans.variable}`}>
+      <body className="antialiased"><ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>{children}</ThemeProvider></body>
     </html>
   );
 }

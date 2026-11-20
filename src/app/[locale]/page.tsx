@@ -5,6 +5,7 @@ import Link from "next/link";
 import { LangProvider, useLang } from "@/components/LangProvider";
 import { useTheme } from "next-themes";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { guideLabels, guidePath, guides, slugs } from "@/i18n/guides";
 import galleryImagesData from "@/gallery-data.json";
 
 const MAPS_URL = "https://maps.app.goo.gl/ze1Vao4UNpSs79hY8";
@@ -608,9 +609,19 @@ function Location() {
 }
 
 function Footer() {
-  const { t } = useLang();
+  const { locale, t } = useLang();
   return (
     <footer className="site-footer">
+      <section className="footer-links" aria-labelledby="park-guides">
+        <h2 id="park-guides" className="footer-links-title">{guideLabels[locale].guides}</h2>
+        <div className="footer-links-grid">
+          {slugs.map((slug) => (
+            <Link className="footer-link-item" key={slug} href={guidePath(locale, slug)}>
+              {guides[locale][slug].title}
+            </Link>
+          ))}
+        </div>
+      </section>
       <div className="footer-links">
         <p className="footer-links-title">{t.footer.linksTitle}</p>
         <div className="footer-links-grid">

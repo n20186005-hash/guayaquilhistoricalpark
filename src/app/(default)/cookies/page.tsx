@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CookiesClient from "./CookiesClient";
 
 export const metadata: Metadata = {
-  title: "Cookie Settings | Parque Bicentenario Travel Guide",
+  title: "Cookie Settings | Guayaquil Historical Park Travel Guide",
   description: "Manage your cookie preferences",
 };
 
