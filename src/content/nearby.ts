@@ -13,13 +13,33 @@ export const nearbyLanguages = (slug?: string) => ({
   "x-default": nearbyPath("en", slug),
 });
 
+export const placeCity = (place: NearbyPlace) =>
+  ("city" in place ? place.city : undefined) ?? (place.slug === "teatro-sanchez-aguilar" ? "Samborondón" : "Guayaquil");
+
 export const placeMap = (place: NearbyPlace) => {
-  const city = place.slug === "teatro-sanchez-aguilar" ? "Samborondón" : "Guayaquil";
+  const city = placeCity(place);
   const query = [place.names.es, place.address, city, "Ecuador"].join(", ");
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 };
 
 const authorities: Record<string, { name: string; url: string }> = {
+  sambo: { name: "Municipio de Samborondón", url: "https://www.samborondon.gob.ec/" },
+  samboparish: { name: "Parroquia Santa Ana de Samborondón", url: "https://www.samborondon.gob.ec/lugares-que-visitar-en-ciudad-samborondon/" },
+  uees: { name: "Universidad Espíritu Santo (UEES)", url: "https://uees.edu.ec/" },
+  hipo: { name: "Hipódromo Miguel Salem Dibo", url: "https://www.samborondon.gob.ec/lugares-que-visitar-en-la-puntilla/hipodromo-miguel-salemn-dibo/" },
+  junta: { name: "Junta de Beneficencia de Guayaquil", url: "https://www.juntadebeneficencia.org.ec/cementerios/" },
+  barcelona: { name: "Barcelona Sporting Club", url: "https://barcelonasc.com.ec/" },
+  emelec: { name: "Club Sport Emelec", url: "https://emelec.com.ec/" },
+  fedeguayas: { name: "Federación Deportiva del Guayas", url: "https://fedeguayas.com.ec/" },
+  atm: { name: "Agencia de Tránsito y Movilidad (ATM)", url: "https://atm.gob.ec/movilidad/aerovia/" },
+  duran: { name: "Municipio de Durán", url: "https://duran.gob.ec/" },
+  gobguayas: { name: "Gobernación del Guayas", url: "https://www.gobernacionguayas.gob.ec/" },
+  cultura: { name: "Casa de la Cultura Ecuatoriana, Núcleo del Guayas", url: "https://casadelacultura.gob.ec/" },
+  armada: { name: "Instituto de Historia Marítima, Armada del Ecuador", url: "https://www.armada.mil.ec/blog/armada-en-la-comunidad-3/el-complejo-civico-naval-jambeli-en-constante-actividad-al-servicio-de-la-comunidad-nacional-e-internacional-552" },
+  botanical: { name: "Asociación Ecuatoriana de Orquideología · Jardín Botánico de Guayaquil", url: "https://www.orquideasecuador.org.ec/jardínbotánico" },
+  "pro-bosque": { name: "Fundación Pro-Bosque", url: "https://www.bosqueprotectorcerroblanco.org/" },
+  "environment-park": { name: "Autoridad ambiental del Área Nacional de Recreación Parque Lago", url: "https://www.ambiente.gob.ec/" },
+  pantanal: { name: "Zoológico El Pantanal", url: "https://turismo.guayaquil.gob.ec/es/experiencias/naturaleza" },
   river: { name: "Fundación Malecón 2000", url: "https://malecon.org.ec/fundacion.php" },
   city: { name: "Municipio de Guayaquil", url: "https://guayaquil.gob.ec/" },
   parks: { name: "Parques EP Guayaquil", url: "https://parquesep.gob.ec/" },
@@ -33,6 +53,30 @@ const authorities: Record<string, { name: string; url: string }> = {
 };
 
 const sources: Record<string, string> = {
+  oldhall: "https://www.samborondon.gob.ec/lugares-que-visitar-en-ciudad-samborondon/",
+  sambocenter: "https://www.samborondon.gob.ec/antiguo-palacio-municipal-casa-museo/",
+  uees: "https://www.samborondon.gob.ec/lugares-que-visitar-en-la-puntilla/museo-uess/",
+  hipo: authorities.hipo.url,
+  buijo: "https://www.primicias.ec/noticias/patrocinado/buijo-historico-espacio-clave-para-potenciar-el-turismo/",
+  inventory: "https://www.geoportaligm.gob.ec/geodescargas/guayaquil/mt_guayaquil_socioeconomico.pdf",
+  sanfrancisco: "https://guayaquil.gob.ec/plaza-san-francisco-plaza-rocafuerte-historia-detras-espacios-emblematicos/",
+  faith: "https://guayas.gob.ec/wp-content/uploads/dmdocuments/turismo/GUIA-TURISTICA-GUAYAS-2024-Espanol.pdf",
+  cemetery: authorities.junta.url,
+  carmen: "https://www.primicias.ec/guayaquil/sagrado-corazon-jesus-monumentos-cristo-fiestas-julianas-fundacion-99962/",
+  craft: "https://visita.guayas.gob.ec/que-hacer",
+  barcelona: authorities.barcelona.url,
+  emelec: authorities.emelec.url,
+  fedeguayas: "https://www.elcomercio.com/deportes/futbol/monumento-alberto-spencer-estadio-modelo/",
+  atm: authorities.atm.url,
+  rail: "https://ec.viajandox.com/duran/estacion-del-tren-de-duran-A3596",
+  library: "https://biblioteca.guayaquil.gob.ec/visitas-solicitudes/",
+  culturehouse: "https://www.goraymi.com/es-ec/guayas/guayaquil/museos/museo-casa-cultura-carlos-zevallos-menendez-aec814d0a",
+  naval: authorities.armada.url,
+  naturecity: "https://turismo.guayaquil.gob.ec/es/experiencias/naturaleza",
+  cerroblanco: authorities["pro-bosque"].url,
+  conservation: "https://guayaquil.gob.ec/ocho-areas-conservacion-biodiversidad-guayaquil/",
+  kennedy: "https://guayaquil.gob.ec/fundacion-siglo-xxi-ejecuto-mantenimiento-parque-lineal-ciudadela-kennedy-norte/",
+  parquelago: "https://www.ambiente.gob.ec/wp-content/uploads/downloads/2024/11/COSTA-2-OK.pdf",
   lighthouse: "https://guayaquil.gob.ec/faro-cerro-santa-ana-renueva-obra-artistica-limita-ingreso-mes/",
   miniature: "https://malecon.org.ec/educacion.php",
   malecon: "https://malecon.org.ec/turismo.php",
@@ -71,5 +115,14 @@ const santayTransit = {
 
 export function placeTransit(locale: Locale, place: NearbyPlace) {
   if (place.slug === "isla-santay") return santayTransit[locale];
+  const city = placeCity(place);
+  if (city === "Samborondón" && place.manager !== "theatre") return cantonTransit[locale].samborondon;
+  if (city === "Durán") return cantonTransit[locale].duran;
   return place.manager === "theatre" ? nearbyLabels[locale].localTransit : nearbyLabels[locale].cityTransit;
 }
+
+const cantonTransit = {
+  en: { samborondon: "From Historical Park, use the exact Samborondón destination and visitor entrance. Allow for traffic along Vía a Samborondón and check the return connection.", duran: "From Historical Park, set Durán Railway Station as the destination. If using Aerovía, check the onward connection from the Durán cable-car station; the stations are separate." },
+  es: { samborondon: "Desde el Parque Histórico, marca el nombre y acceso del atractivo en Samborondón. Prevé tráfico en la vía y confirma el regreso.", duran: "Desde el Parque Histórico, marca la estación ferroviaria de Durán. Si usas la Aerovía, comprueba la conexión terrestre desde la estación del teleférico." },
+  zh: { samborondon: "从历史公园出发，请按具体景点与访客入口导航，预留桑博龙东大道的通勤时间，并提前核对回程。", duran: "从历史公园出发，请定位杜兰铁路站。若乘空中缆车到杜兰，还需另查缆车站到铁路站的地面接驳。" },
+};

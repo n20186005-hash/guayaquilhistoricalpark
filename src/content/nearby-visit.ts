@@ -7,7 +7,7 @@ export function getVisit(slug: string) {
     ...visit,
     kind: visit.kind as keyof typeof kinds.en,
     area: visit.area as keyof typeof areas.en,
-    access: visit.access as keyof typeof access.en,
+    access: visit.access as keyof typeof access.en | keyof typeof newAccess.en,
   };
 }
 
@@ -18,15 +18,15 @@ export const visitLabels = {
 };
 
 export const kinds = {
-  en: { riverfront: "Waterfront promenade", monument: "Historic monument", ride: "Observation wheel", garden: "Public park or garden", square: "Public square", museum: "Museum", district: "Historic streetscape", hill: "Hill and stairway", viewpoint: "Lighthouse and viewpoint", church: "Cathedral", civic: "Civic building", sports: "Sports and recreation park", wetland: "Protected wetland", theatre: "Performing arts venue" },
-  es: { riverfront: "Paseo ribereño", monument: "Monumento histórico", ride: "Noria panorámica", garden: "Parque o jardín público", square: "Plaza pública", museum: "Museo", district: "Entorno urbano histórico", hill: "Cerro y escalinata", viewpoint: "Faro y mirador", church: "Catedral", civic: "Edificio cívico", sports: "Parque deportivo y recreativo", wetland: "Humedal protegido", theatre: "Recinto de artes escénicas" },
-  zh: { riverfront: "滨水步道", monument: "历史纪念建筑", ride: "观景摩天轮", garden: "公共公园或园林", square: "公共广场", museum: "博物馆", district: "历史街区", hill: "山丘与登山阶梯", viewpoint: "灯塔与观景台", church: "主教座堂", civic: "市政建筑", sports: "运动休闲公园", wetland: "受保护湿地", theatre: "表演艺术场馆" },
+  en: { forest: "Protected forest", zoo: "Zoo", cable: "Cable-car station", riverfront: "Waterfront promenade", monument: "Historic monument", ride: "Observation wheel", garden: "Public park or garden", square: "Public square", museum: "Museum", district: "Historic streetscape", hill: "Hill and stairway", viewpoint: "Lighthouse and viewpoint", church: "Cathedral", civic: "Civic building", sports: "Sports and recreation park", wetland: "Protected wetland", theatre: "Performing arts venue" },
+  es: { forest: "Bosque protector", zoo: "Zoológico", cable: "Estación de teleférico", riverfront: "Paseo ribereño", monument: "Monumento histórico", ride: "Noria panorámica", garden: "Parque o jardín público", square: "Plaza pública", museum: "Museo", district: "Entorno urbano histórico", hill: "Cerro y escalinata", viewpoint: "Faro y mirador", church: "Catedral", civic: "Edificio cívico", sports: "Parque deportivo y recreativo", wetland: "Humedal protegido", theatre: "Recinto de artes escénicas" },
+  zh: { forest: "保护林", zoo: "动物园", cable: "空中缆车站", riverfront: "滨水步道", monument: "历史纪念建筑", ride: "观景摩天轮", garden: "公共公园或园林", square: "公共广场", museum: "博物馆", district: "历史街区", hill: "山丘与登山阶梯", viewpoint: "灯塔与观景台", church: "主教座堂", civic: "市政建筑", sports: "运动休闲公园", wetland: "受保护湿地", theatre: "表演艺术场馆" },
 };
 
 export const areas = {
-  en: { historic: ["Central Guayaquil and the Guayas riverfront", "Stay in central Guayaquil to link museums and the waterfront on foot. Choose Puerto Santa Ana for a riverfront base close to Las Peñas."], west: ["Estero Salado", "Consider the 9 de Octubre corridor for the estuary and central museums. If ending the evening at Guayarte, check the journey back before booking."], south: ["Southern Guayaquil and the Guayas", "A central Guayaquil base works for a daytime visit. Compare travel time to the south-side entrance and allow time for the return."], north: ["Northern Guayaquil", "For an early start, look in northern Guayaquil and compare the drive to the Paseo del Parque entrance."], puntilla: ["La Puntilla, Samborondón", "Look in La Puntilla if attending an evening show or visiting Historical Park the next morning. If staying in Guayaquil, plan for traffic and arrange the return journey."] },
-  es: { historic: ["Centro de Guayaquil y ribera del Guayas", "Alojarte en el centro facilita enlazar los museos y el malecón a pie. Puerto Santa Ana conviene si priorizas la ribera y Las Peñas."], west: ["Estero Salado", "El corredor de la avenida 9 de Octubre sirve de base para el estero y los museos céntricos. Si terminas en Guayarte por la noche, verifica el regreso."], south: ["Sur de Guayaquil y río Guayas", "El centro funciona como base para una salida diurna. Calcula el traslado al acceso del sur y deja margen para regresar."], north: ["Norte de Guayaquil", "Si quieres empezar temprano, compara alojamientos del norte por su conexión con la entrada de Paseo del Parque."], puntilla: ["La Puntilla, Samborondón", "Busca alojamiento en La Puntilla si vas al teatro por la noche o al Parque Histórico por la mañana. Desde Guayaquil, prevé el tráfico y organiza el regreso."] },
-  zh: { historic: ["瓜亚基尔市中心与瓜亚斯河岸", "住市中心可步行串联博物馆和长廊；想靠近拉斯佩尼亚斯和河岸，可考虑圣安娜港一带。"], west: ["萨拉多河口", "住十月九日大道沿线便于往返河口和市中心博物馆；若晚间在瓜亚尔特结束行程，订房时先核对回程。"], south: ["瓜亚基尔南部与瓜亚斯河", "白天可从市中心出发，选住宿时比较前往城南入口的车程，并留足回程时间。"], north: ["瓜亚基尔北部", "若计划一早到公园，可比较瓜亚基尔北部住宿到 Paseo del Parque 入口的距离。"], puntilla: ["桑博龙东拉蓬蒂利亚", "看晚间演出或隔天逛历史公园，可考虑住拉蓬蒂利亚；若住瓜亚基尔，记得预留过桥通勤时间并安排返程。"] },
+  en: { sambocenter: ["Samborondón cantonal centre", "For an early visit to the town centre, compare the road journey from La Puntilla and the return options before booking."], duran: ["Durán", "Stay near your other planned stops and compare the journey to the rail station before booking. The cable-car and railway stations are separate."], historic: ["Central Guayaquil and the Guayas riverfront", "Stay in central Guayaquil to link museums and the waterfront on foot. Choose Puerto Santa Ana for a riverfront base close to Las Peñas."], west: ["Estero Salado", "Consider the 9 de Octubre corridor for the estuary and central museums. If ending the evening at Guayarte, check the journey back before booking."], south: ["Southern Guayaquil and the Guayas", "A central Guayaquil base works for a daytime visit. Compare travel time to the south-side entrance and allow time for the return."], north: ["Northern Guayaquil", "For an early start, look in northern Guayaquil and compare the drive to the Paseo del Parque entrance."], puntilla: ["La Puntilla, Samborondón", "Look in La Puntilla if attending an evening show or visiting Historical Park the next morning. If staying in Guayaquil, plan for traffic and arrange the return journey."] },
+  es: { sambocenter: ["Cabecera cantonal de Samborondón", "Si quieres visitar temprano el centro cantonal, compara el traslado desde La Puntilla y las opciones de regreso."], duran: ["Durán", "Elige alojamiento según tus otras paradas y calcula el viaje a la estación ferroviaria. El teleférico llega a otra estación."], historic: ["Centro de Guayaquil y ribera del Guayas", "Alojarte en el centro facilita enlazar los museos y el malecón a pie. Puerto Santa Ana conviene si priorizas la ribera y Las Peñas."], west: ["Estero Salado", "El corredor de la avenida 9 de Octubre sirve de base para el estero y los museos céntricos. Si terminas en Guayarte por la noche, verifica el regreso."], south: ["Sur de Guayaquil y río Guayas", "El centro funciona como base para una salida diurna. Calcula el traslado al acceso del sur y deja margen para regresar."], north: ["Norte de Guayaquil", "Si quieres empezar temprano, compara alojamientos del norte por su conexión con la entrada de Paseo del Parque."], puntilla: ["La Puntilla, Samborondón", "Busca alojamiento en La Puntilla si vas al teatro por la noche o al Parque Histórico por la mañana. Desde Guayaquil, prevé el tráfico y organiza el regreso."] },
+  zh: { sambocenter: ["桑博龙东镇中心", "计划一早参观镇中心时，订房前可比较从拉蓬蒂利亚到镇中心的车程和回程安排。"], duran: ["杜兰", "住宿可按其他行程安排，订房前核对到铁路站的车程。空中缆车站与铁路站分开。"], historic: ["瓜亚基尔市中心与瓜亚斯河岸", "住市中心可步行串联博物馆和长廊；想靠近拉斯佩尼亚斯和河岸，可考虑圣安娜港一带。"], west: ["萨拉多河口", "住十月九日大道沿线便于往返河口和市中心博物馆；若晚间在瓜亚尔特结束行程，订房时先核对回程。"], south: ["瓜亚基尔南部与瓜亚斯河", "白天可从市中心出发，选住宿时比较前往城南入口的车程，并留足回程时间。"], north: ["瓜亚基尔北部", "若计划一早到公园，可比较瓜亚基尔北部住宿到 Paseo del Parque 入口的距离。"], puntilla: ["桑博龙东拉蓬蒂利亚", "看晚间演出或隔天逛历史公园，可考虑住拉蓬蒂利亚；若住瓜亚基尔，记得预留过桥通勤时间并安排返程。"] },
 };
 
 const access = {
@@ -89,11 +89,12 @@ const access = {
   },
 };
 
-export function visitAccess(locale: Locale, kind: keyof typeof access.en) {
+export function visitAccess(locale: Locale, kind: keyof typeof access.en | keyof typeof newAccess.en) {
   const operator = kind === "river" ? "https://malecon.org.ec/" :
     kind === "perla" || kind === "separate" ? "https://malecon.org.ec/entretenimiento.php" :
     kind === "theatre" ? "https://teatrosanchezaguilar.org/" : undefined;
-  return { hours: access[locale][kind][0], price: access[locale][kind][1], operator };
+  const [hours, price] = { ...access[locale], ...newAccess[locale] }[kind];
+  return { hours, price, operator };
 }
 
 const notices = {
@@ -129,6 +130,7 @@ export function visitNotice(locale: Locale, kind: keyof typeof kinds.en) {
     case "hill":
     case "viewpoint": return text.slopes;
     case "museum": return text.collections;
+    case "forest":
     case "riverfront":
     case "wetland": return text.water;
     case "church":
@@ -143,6 +145,8 @@ export function visitNotice(locale: Locale, kind: keyof typeof kinds.en) {
 
 export const areaTransit = {
   en: {
+    sambocenter: "The town centre is separate from La Puntilla. Ask for the main square and continue on foot between the civic buildings.",
+    duran: "Confirm the final street approach rather than relying on a general Durán drop-off.",
     historic: "If you are already in the city centre, walk from the nearest named street crossing in the route below. For a taxi, use the attraction’s individual entrance rather than the general waterfront or historic district.",
     west: "For an estuary visit, use the named bridge or avenue as your drop-off point. Check the pedestrian connection before adding another stop on the opposite bank.",
     south: "Ask the driver for the visitor access on the El Oro side when approaching from central Guayaquil. Check the return connection before continuing away from the main road.",
@@ -150,6 +154,8 @@ export const areaTransit = {
     puntilla: "If combining this with the Historical Park, use the two entrances as separate destinations. Check the theatre drop-off point if your performance is in the evening.",
   },
   es: {
+    sambocenter: "La cabecera cantonal queda aparte de La Puntilla. Usa el parque central como referencia y enlaza los edificios a pie.",
+    duran: "Verifica el acceso por calle en lugar de marcar solo Durán como destino.",
     historic: "Si ya estás en el centro, camina desde el cruce señalado en el recorrido. Para un taxi, usa el acceso concreto del atractivo en lugar de indicar solo el malecón o el barrio histórico.",
     west: "Usa el puente o la avenida indicados como punto de bajada. Comprueba la conexión peatonal antes de añadir una parada en la otra orilla.",
     south: "Desde el centro, pide el acceso de visitantes por el sector de El Oro. Verifica cómo regresar antes de alejarte de la vía principal.",
@@ -157,10 +163,57 @@ export const areaTransit = {
     puntilla: "Si combinas esta visita con el Parque Histórico, utiliza las dos entradas como destinos distintos. Verifica el punto de bajada si vas al teatro por la noche.",
   },
   zh: {
+    sambocenter: "镇中心与拉蓬蒂利亚分开定位，可先到中央公园，再步行串联附近公共建筑。",
+    duran: "请以车站所在道路为终点，避免只输入杜兰市名。",
     historic: "已在市中心时，可从下方路线标出的路口步行。搭出租车时直接提供本景点的入口，方便司机找到正确下车点。",
     west: "前往萨拉多河口时，以下文列出的桥梁或大道为下车点。若想走到对岸，再确认当天步行通道。",
     south: "从市中心乘车，可请司机到埃尔奥罗街一侧的访客入口。离开主路前先核对返程接驳。",
     north: "以 Paseo del Parque 辨认入口。公园范围较大，在边界下车后可能还要步行一段才能到运动区。",
     puntilla: "若同一天去历史公园和剧院，请分别导航至各自入口。晚间观演可先查看剧院的乘车下客点。",
+  },
+};
+
+const newAccess = {
+  en: {
+    oldhall: ["The municipal listing gives Tuesday–Sunday, 08:00–14:00. Check before travelling.", "The municipal listing describes free admission."],
+    library: ["Monday–Friday 08:30–17:00. Ask about guided visits separately.", "General admission is free; confirm arrangements for group visits."],
+    aerovia: ["Check the ATM service status before crossing.", "Use the fare and payment method currently published by ATM."],
+    forest: ["Verify trail and visitor access with the operator before departing.", "Confirm whether the chosen trail has a ticket, guide fee or booking requirement."],
+    zoo: ["Check the zoo’s latest public opening notice.", "Confirm current admission and any different child rates before departure."],
+    racing: ["Public access follows the race schedule.", "Confirm spectator access and any ticketing with the racecourse."],
+    match: ["Entry follows the event schedule; exterior viewing is possible from public streets.", "Match or event ticket prices are published by the organiser."],
+    cemetery: ["Ask the operator about the visitor gate and heritage route.", "Confirm any guided tour conditions with the cemetery operator."],
+    botanical: ["Check garden entry hours and any closures affecting the paths.", "Confirm general admission and guided visit charges with the garden."],
+    astillero: ["Check which Astillero museum rooms are open before setting off.", "The municipal museum circuit lists free admission. Check for special activities separately."],
+    lake: ["The protected-area guide lists 08:00–17:00 for the picnic area and 06:00–17:00 for the lookout and cycle route.", "Check current entry arrangements and any activity costs with the protected-area authority."],
+    campus: ["Confirm both campus and museum access with the university.", "Ask the university about admission for individuals or groups."],
+  },
+  es: {
+    oldhall: ["La ficha municipal indica de martes a domingo, 08:00–14:00. Confirma antes de viajar.", "La ficha municipal indica entrada libre."],
+    library: ["Lunes a viernes, 08:30–17:00. Consulta por separado las visitas guiadas.", "Entrada general gratuita. Confirma las condiciones para grupos."],
+    aerovia: ["Consulta el estado del servicio de la ATM antes de cruzar.", "Usa la tarifa y el medio de pago que publica la ATM."],
+    forest: ["Confirma los senderos y accesos disponibles con el operador.", "Verifica si el recorrido elegido requiere entrada, guía o reserva."],
+    zoo: ["Consulta el aviso vigente de apertura del zoológico.", "Verifica las tarifas actuales, incluidas las infantiles."],
+    racing: ["El acceso público sigue la programación hípica.", "Consulta las condiciones de acceso a las gradas con el hipódromo."],
+    match: ["El acceso sigue la programación. El exterior se observa desde las calles públicas.", "Los precios de cada partido o evento los publica el organizador."],
+    cemetery: ["Consulta al operador el acceso de visitantes y el circuito patrimonial.", "Confirma con el cementerio si hay condiciones para visitas guiadas."],
+    botanical: ["Verifica el horario del jardín y posibles cierres de senderos.", "Consulta la entrada general y las tarifas de visitas guiadas."],
+    astillero: ["Comprueba qué salas del Astillero están abiertas antes de salir.", "El circuito municipal indica entrada libre. Consulta las actividades especiales."],
+    lake: ["La guía del área indica 08:00–17:00 para el picnic y 06:00–17:00 para el mirador y la ruta ciclista.", "Confirma el acceso y los posibles costos de actividades con la administración del área."],
+    campus: ["Confirma con la universidad el acceso al campus y al museo.", "Consulta a la universidad las condiciones para visitas individuales o en grupo."],
+  },
+  zh: {
+    oldhall: ["市政府资料列出周二至周日 08:00–14:00，出发前请核实。", "市政府资料列为免费开放。"],
+    library: ["周一至周五 08:30–17:00，导览需另查。", "普通入场免费，团体请先核对接待条件。"],
+    aerovia: ["跨河前查询 ATM 发布的当前运营状态。", "以 ATM 公布的票价和支付方式为准。"],
+    forest: ["出发前向管理方确认访客入口与可走步道。", "了解所选路线是否另外需要门票、导览费或预约。"],
+    zoo: ["出发前查看动物园最新开放公告。", "确认当天入场价格及儿童票安排。"],
+    racing: ["公众入场随赛事日程安排。", "看台开放和票务请向赛马场查询。"],
+    match: ["按比赛或活动场次开放，外观可从公共道路观察。", "比赛及活动门票以主办方公布为准。"],
+    cemetery: ["请向管理方核实访客入口及遗产游览路线。", "若需导览，入口与费用安排请向公墓管理方查询。"],
+    botanical: ["请核实植物园入场时间和步道开放情况。", "普通门票和导览费用请向园方查询。"],
+    astillero: ["出发前确认阿斯蒂列罗大楼当天开放哪些展厅。", "市政府博物馆路线列为免费；特别活动另行核实。"],
+    lake: ["保护区指南列明野餐区 08:00–17:00，观景区和自行车路线 06:00–17:00。", "实际入场和活动费用请向保护区管理方核实。"],
+    campus: ["先向校方核实校园与博物馆的访客准入时间。", "散客及团体访问条件请向校方确认。"],
   },
 };

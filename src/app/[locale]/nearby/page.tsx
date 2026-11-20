@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { nearby, nearbyLabels, nearbyLanguages, nearbyPath } from "@/content/nearby";
+import { nearby, nearbyLabels, nearbyLanguages, nearbyPath, placeCity } from "@/content/nearby";
 import { locales } from "@/i18n/guides";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function NearbyPage({ params }: Props) {
   const locale = await getLocale(params);
   const labels = nearbyLabels[locale];
+  const cities = [...new Set(nearby.map(placeCity))];
   return (
     <main>
       <header className="guide-hero">
@@ -41,11 +42,16 @@ export default async function NearbyPage({ params }: Props) {
         </div>
       </header>
       <div className="guide-wrap guide-body">
-        <ul>
-          {nearby.map((place) => (
-            <li key={place.slug}><Link href={nearbyPath(locale, place.slug)}>{place.names[locale]}</Link></li>
-          ))}
-        </ul>
+        {cities.map((city) => (
+          <section key={city}>
+            <h2>{city}</h2>
+            <ul>
+              {nearby.filter((place) => placeCity(place) === city).map((place) => (
+                <li key={place.slug}><Link href={nearbyPath(locale, place.slug)}>{place.names[locale]}</Link></li>
+              ))}
+            </ul>
+          </section>
+        ))}
       </div>
     </main>
   );

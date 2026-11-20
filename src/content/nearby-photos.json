@@ -122,5 +122,129 @@
   "torre-morisca": {
     "src": "/nearby/torre-morisca.webp",
     "source": "https://commons.wikimedia.org/wiki/File:Torre_del_Reloj_en_Guayaquil.jpg"
+  },
+  "antiguo-palacio-samborondon": {
+    "src": "/nearby/antiguo-palacio-samborondon.webp",
+    "source": "https://www.samborondon.gob.ec/lugares-que-visitar-en-ciudad-samborondon/"
+  },
+  "parque-calixto-romero": {
+    "src": "/nearby/parque-calixto-romero.webp",
+    "source": "https://www.samborondon.gob.ec/galeria-samborondon/parque-calixto-romero/"
+  },
+  "iglesia-santa-ana-samborondon": {
+    "src": "/nearby/iglesia-santa-ana-samborondon.webp",
+    "source": "https://es.wikiloc.com/rutas-a-pie/iglesia-santa-ana-samborondon-39886473"
+  },
+  "museo-uess": {
+    "src": "/nearby/museo-uess.webp",
+    "source": "https://www.samborondon.gob.ec/lugares-que-visitar-en-la-puntilla/museo-uess/"
+  },
+  "hipodromo": {
+    "src": "/nearby/hipodromo.webp",
+    "source": "https://www.eluniverso.com/noticias/2017/06/02/nota/6210253/prefectura-reconoce-hipodromo-como-destino-turistico/"
+  },
+  "buijo": {
+    "src": "/nearby/buijo.webp",
+    "source": "https://www.primicias.ec/noticias/patrocinado/buijo-historico-espacio-clave-para-potenciar-el-turismo-de-samborondon/"
+  },
+  "plaza-san-francisco": {
+    "src": "/nearby/plaza-san-francisco.webp",
+    "source": "https://guayaquil.gob.ec/plaza-san-francisco-renueva-espacio-patrimonial-moderno-seguro/"
+  },
+  "iglesia-la-merced": {
+    "src": "/nearby/iglesia-la-merced.webp",
+    "source": "https://rutasdelguayas.com/ruta-de-las-siete-iglesias-en-guayaquil-ecuador/"
+  },
+  "iglesia-santo-domingo": {
+    "src": "/nearby/iglesia-santo-domingo.webp",
+    "source": "https://rutasdelguayas.com/ruta-de-las-siete-iglesias-en-guayaquil-ecuador/"
+  },
+  "cerro-del-carmen": {
+    "src": "/nearby/cerro-del-carmen.webp",
+    "source": "https://www.primicias.ec/guayaquil/sagrado-corazon-jesus-monumentos-cristo-fiestas-julianas-fundacion-99962/"
+  },
+  "mercado-artesanal": {
+    "src": "/nearby/mercado-artesanal.webp",
+    "source": "https://www.expreso.ec/guayaquil/mercado-artesanal-llena-vida-llegada-murales-98659.html"
+  },
+  "museo-barcelona": {
+    "src": "/nearby/museo-barcelona.webp",
+    "source": "https://www.primicias.ec/guayaquil/municipio-guayaquil-contrato-cuidado-piezas-deportivas-museos-barcelona-emelec-aquiles-alvarez-alcalde-98318/"
+  },
+  "museo-emelec": {
+    "src": "/nearby/museo-emelec.webp",
+    "source": "https://x.com/MuseoEmelec/status/1137374824265867264"
+  },
+  "estadio-capwell": {
+    "src": "/nearby/estadio-capwell.webp",
+    "source": "https://estadiosdb.com/estadios/ecu/estadio_george_capwell"
+  },
+  "aerovia": {
+    "src": "/nearby/aerovia.webp",
+    "source": "https://www.extra.ec/noticia/actualidad/son-zonas-centro-guayaquil-han-sido-vandalizadas-110168.html"
+  },
+  "estacion-duran": {
+    "src": "/nearby/estacion-duran.webp",
+    "source": "https://ec.viajandox.com/duran/estacion-del-tren-de-duran-A3596"
+  },
+  "palacio-gobernacion": {
+    "src": "/nearby/palacio-gobernacion.webp",
+    "source": "https://www.eluniverso.com/guayaquil/2020/09/02/nota/7963831/palacio-gobernacion-guayas-edificio-patrimonial-guayaquil/"
+  },
+  "biblioteca-municipal": {
+    "src": "/nearby/biblioteca-municipal.webp",
+    "source": "https://www.eluniverso.com/guayaquil/comunidad/biblioteca-municipal-de-guayaquil-celebra-162-anos-con-actividades-culturales-nota/"
+  },
+  "museo-casa-cultura": {
+    "src": "/nearby/museo-casa-cultura.webp",
+    "source": "https://www.goraymi.com/es-ec/guayas/guayaquil/museos/museo-casa-cultura-carlos-zevallos-menendez-aec814d0a"
+  },
+  "museo-bae": {
+    "src": "/nearby/museo-bae.webp",
+    "source": "https://www.goraymi.com/es-ec/guayas/guayaquil/museos/museo-naval-bae-abdon-calderon-aff132f28"
+  },
+  "cerro-paraiso": {
+    "src": "/nearby/cerro-paraiso.webp",
+    "source": "https://www.expreso.ec/guayaquil/jornada-siembra-especies-nativas-realizara-cerro-paraiso-198428.html"
+  },
+  "parque-lago": {
+    "src": "/nearby/parque-lago.webp",
+    "source": "https://www.airial.travel/attractions/ecuador/guayaquil/parque-lago-represa-chong%C3%B3n-f2JFf2U7"
+  },
+  "zoologico-pantanal": {
+    "src": "/nearby/zoologico-pantanal.webp",
+    "source": "https://www.descubrecuador.com/item/zoo-el-pantanal/"
+  },
+  "parque-lineal": {
+    "src": "/nearby/parque-lineal.webp",
+    "source": "https://guayaquil.gob.ec/fundacion-siglo-xxi-ejecuto-mantenimiento-parque-lineal-ciudadela-kennedy-norte/"
+  },
+  "iglesia-san-francisco": {
+    "src": "/nearby/iglesia-san-francisco.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco_%28Guayaquil%29.jpg"
+  },
+  "estadio-monumental": {
+    "src": "/nearby/estadio-monumental.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Estadio_Monumental_6.JPG"
+  },
+  "cerro-blanco": {
+    "src": "/nearby/cerro-blanco.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:2022-05-15_Cerro_Blanco_01.jpg"
+  },
+  "plaza-baquerizo": {
+    "src": "/nearby/plaza-baquerizo.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Plaza_Rodolfo_Baquerizo_Moreno.jpg"
+  },
+  "cementerio-patrimonial": {
+    "src": "/nearby/cementerio-patrimonial.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Cementerio_General_de_Guayaquil.JPG"
+  },
+  "estadio-modelo": {
+    "src": "/nearby/estadio-modelo.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Estadio_modelo_ecuador.jpg"
+  },
+  "jardin-botanico": {
+    "src": "/nearby/jardin-botanico.webp",
+    "source": "https://repositorio.ecotec.edu.ec/server/api/core/bitstreams/bec7079d-097a-400e-bdf4-b8f385399249/content#page=47"
   }
 }

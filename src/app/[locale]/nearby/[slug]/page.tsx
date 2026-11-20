@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { nearby, nearbyLabels, nearbyLanguages, nearbyPath, placeAuthority, placeMap, placePhoto, placeSource, placeTransit } from "@/content/nearby";
+import { nearby, nearbyLabels, nearbyLanguages, nearbyPath, placeAuthority, placeCity, placeMap, placePhoto, placeSource, placeTransit } from "@/content/nearby";
 import { areaTransit, areas, getVisit, kinds, visitAccess, visitLabels, visitNotice } from "@/content/nearby-visit";
 import { locales, siteUrl } from "@/i18n/guides";
 
@@ -50,7 +50,7 @@ export default async function NearbyAttraction({ params }: Props) {
   const kind = kinds[lang][visit.kind];
   const { hours, price, operator } = visitAccess(lang, visit.access);
   const accessSource = operator ?? source;
-  const city = place.manager === "theatre" ? "Samborondón" : "Guayaquil";
+  const city = placeCity(place);
   const address = `${place.address}, ${city}, ${copy.countryName}`;
   const url = siteUrl + nearbyPath(lang, place.slug);
   const details = {
