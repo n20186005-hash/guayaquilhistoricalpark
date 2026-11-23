@@ -1,3 +1,4 @@
+import { TravelHero } from "@/components/TravelHero";
 import gallery from "@/gallery-data.json";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -28,13 +29,9 @@ export default async function NearbyPage({ params }: Props) {
   const cities = [...new Set(nearby.map(placeCity))];
   return (
     <main>
-      <header className="guide-hero" style={{ backgroundImage: `linear-gradient(#14281eb0, #14281edc), url("${gallery[0]}")` }}>
-        <div className="guide-wrap">
-          <h1 className="hero-title">{labels.title}</h1>
-          <p>{labels.intro}</p>
-        </div>
-      </header>
-      <div className="guide-wrap guide-body">
+      <TravelHero photo={gallery[0]} title={labels.title} tagline={labels.intro}
+        breadcrumb={{ label: labels.back, href: `/${locale}` }} />
+      <div className="travel-shell guide-body travel-body">
         {cities.map((city) => (
           <section key={city}>
             <h2>{city}</h2>
@@ -44,7 +41,7 @@ export default async function NearbyPage({ params }: Props) {
                   <Link className="info-card nearby-card" href={nearbyPath(locale, place.slug)}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={placePhoto(place.slug)?.src} alt="" loading="lazy" />
-                    <span className="info-card-title">{place.names[locale]}</span>
+                    <span className="info-card-content">{place.names[locale]}</span>
                     <p>{place.text[locale].history}</p>
                   </Link>
                 </li>

@@ -1,3 +1,4 @@
+import { TravelFacts, TravelHero } from "@/components/TravelHero";
 import routeLabels from "@/content/route-labels.json";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -75,24 +76,24 @@ export default async function NearbyAttraction({ params }: Props) {
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(details).replace(/</g, "\\u003c") }} />
-      <header className="guide-hero" style={photo ? { backgroundImage: `linear-gradient(#14281ee8, #14281ebb), url("${photo.src}")` } : undefined}>
-        <div className="guide-wrap">
-          <h1 className="hero-title">{name}</h1>
-          <p className="hero-subtitle">{tagline}</p>
-          <p>{kind} · {area[0]}</p>
-          <p><a href={map}>{copy.rating}</a></p>
-          <p>{hours}</p>
-          <p>{place.address}</p>
-          <a className="hero-cta" href={map}>{labels.map}</a>
-          <nav className="guide-jump-links" aria-label={practical.overview}>
-            <a href="#basics">{labels.facts}</a>
-            <a href="#opening-hours">{copy.hour}</a>
-            <a href="#admission">{copy.ticket}</a>
-            <a href="#walking-route">{labels.route}</a>
-          </nav>
-        </div>
-      </header>
-      <div className="guide-wrap guide-body">
+      <TravelHero photo={photo?.src} title={name} tagline={tagline} eyebrow={`${kind} · ${area[0]}`}
+        breadcrumb={{ label: labels.title, href: nearbyPath(lang) }}
+        action={{ label: labels.map, href: map }}>
+        <a className="travel-review-link" href={map}>{copy.rating}</a>
+      </TravelHero>
+      <TravelFacts items={[
+        { label: copy.hour, value: hours },
+        { label: copy.ticket, value: price },
+        { label: practical.time, value: `${visit.duration} ${copy.minutes}` },
+        { label: practical.location, value: place.address },
+      ]} />
+      <nav className="travel-shell travel-jump-links" aria-label={practical.overview}>
+        <a href="#basics">{labels.facts}</a>
+        <a href="#opening-hours">{copy.hour}</a>
+        <a href="#admission">{copy.ticket}</a>
+        <a href="#walking-route">{labels.route}</a>
+      </nav>
+      <div className="travel-shell guide-body travel-body">
         <section>
           <h2>{copy.intro} · {name}</h2>
           <p>{text.history}</p>
@@ -113,7 +114,7 @@ export default async function NearbyAttraction({ params }: Props) {
           {operatorNote && <p>{operatorNote}</p>}
           <p><a href={accessSource}>{practical.source}</a></p>
         </section>
-        <section id="basics">
+        <section className="travel-panel" id="basics">
           <h2>{labels.facts}</h2>
           <table className="guide-info-table">
             <tbody>
@@ -132,8 +133,10 @@ export default async function NearbyAttraction({ params }: Props) {
             </tbody>
           </table>
         </section>
+        <div className="travel-pair">
         <section id="opening-hours"><h2>{copy.hour}</h2><p>{hours}</p><p>{copy.info} <a href={accessSource}>{labels.source}</a></p></section>
         <section id="admission"><h2>{copy.ticket}</h2><p>{price}</p><a href={accessSource}>{labels.source}</a></section>
+        </div>
         <section><h2>{labels.transport}</h2><p>{placeTransit(lang, place)}</p><p>{areaTransit[lang][visit.area]}</p><a href={map}>{labels.map}</a></section>
         <section>
           <h2>{copy.discovery}</h2>
@@ -141,9 +144,9 @@ export default async function NearbyAttraction({ params }: Props) {
           <p>{visitText.experience}</p>
           <p><a href={source}>{labels.source}</a></p>
         </section>
-        <section id="walking-route">
+        <section className="travel-panel" id="walking-route">
           <h2>{labels.route}</h2>
-          <ol>{visit.route.map((stop, index) => <li key={stop}><strong>{practical.arrival[index === 0 ? 0 : index === visit.route.length - 1 ? 2 : 1]}</strong> · <RouteStop label={stop} locale={lang} /></li>)}</ol>
+          <ol className="travel-route">{visit.route.map((stop, index) => <li key={stop}><strong>{practical.arrival[index === 0 ? 0 : index === visit.route.length - 1 ? 2 : 1]}</strong> · <RouteStop label={stop} locale={lang} /></li>)}</ol>
           <p>{text.walk}</p>
         </section>
         <section>
@@ -154,7 +157,7 @@ export default async function NearbyAttraction({ params }: Props) {
         <section>
           <h2>{labels.photo}</h2><p>{text.photo}</p>
           {photo && (
-            <figure className="nearby-photo">
+            <figure className="nearby-photo travel-photo">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={photo.src} alt={name} loading="lazy" />
               <figcaption><a href={photo.source}>{labels.photoSource}</a></figcaption>
@@ -167,9 +170,15 @@ export default async function NearbyAttraction({ params }: Props) {
         {place.related.length > 0 && (
           <section>
             <h2>{labels.title}</h2>
-            <ul>
+            <ul className="nearby-cards">
               {nearby.filter(({ slug }) => place.related.includes(slug)).map((related) => (
-                <li key={related.slug}><Link href={nearbyPath(lang, related.slug)}>{related.names[lang]}</Link></li>
+                <li key={related.slug}>
+                  <Link className="info-card nearby-card" href={nearbyPath(lang, related.slug)}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={placePhoto(related.slug)?.src} alt="" loading="lazy" />
+                    <span className="info-card-content">{related.names[lang]}</span>
+                  </Link>
+                </li>
               ))}
             </ul>
           </section>

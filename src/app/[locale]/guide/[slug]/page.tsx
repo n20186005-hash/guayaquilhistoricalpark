@@ -1,3 +1,4 @@
+import { TravelFacts, TravelHero } from "@/components/TravelHero";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -65,16 +66,17 @@ export default async function GuidePage({ params }: Props) {
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs).replace(/</g, "\\u003c") }} />
-      <header className="guide-hero" style={{ backgroundImage: `linear-gradient(#14281ee0, #14281eba), url("${gallery[0]}")` }}>
-        <div className="guide-wrap">
-          <h1 className="hero-title">{guide.title}</h1>
-          <p>{guide.description}</p>
-          <p>{labels.time}</p>
-          <p><a href={parkMap}>{park.rating}</a></p>
-          <a className="hero-cta" href={parkMap}>{labels.map}</a>
-        </div>
-      </header>
-      <div className="guide-wrap guide-body">
+      <TravelHero photo={gallery[0]} title={guide.title} tagline={guide.description}
+        breadcrumb={{ label: labels.home, href: home }}
+        action={{ label: labels.map, href: parkMap }}>
+        <a className="travel-review-link" href={parkMap}>{park.rating}</a>
+      </TravelHero>
+      <TravelFacts items={[
+        { label: labels.hours, value: labels.time },
+        { label: labels.fees, value: labels.price },
+        { label: labels.address, value: `Av. Río Esmeraldas, Samborondón 092301, ${park.country}` },
+      ]} />
+      <div className="travel-shell guide-body travel-body">
         <section>
           <h2>{labels.explore}</h2>
           <h3>{guide.sections[0][0]}</h3>
@@ -95,7 +97,7 @@ export default async function GuidePage({ params }: Props) {
           <p>{labels.check}</p>
         </section>
         <section><h2>{labels.transport}</h2><p>{labels.directions}</p><a href={parkMap}>{labels.map}</a></section>
-        <section><h2>{labels.route}</h2><ol>{guide.route.map((step) => <li key={step}>{step}</li>)}</ol></section>
+        <section><h2>{labels.route}</h2><ol className="travel-route">{guide.route.map((step) => <li key={step}>{step}</li>)}</ol></section>
         <section><h2>{guide.sections[1][0]}</h2><p>{guide.sections[1][1]}</p></section>
         {topic === "photo-guide" && (
           <section>
