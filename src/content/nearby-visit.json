@@ -13,15 +13,18 @@
     "text": {
       "en": {
         "tip": "Use the river as your bearings and choose a northern or southern exit before setting off.",
-        "detail": "Compare the civic monuments of the central stretch with the lagoons and planted walks at the northern end."
+        "detail": "Compare the civic monuments of the central stretch with the lagoons and planted walks at the northern end.",
+        "experience": "Begin at the river rail and compare the promenade’s open views with its planted interior paths."
       },
       "es": {
         "tip": "Usa el río como referencia y elige una salida al norte o al sur antes de empezar.",
-        "detail": "Compara los monumentos cívicos del tramo central con las lagunas y senderos arbolados del norte."
+        "detail": "Compara los monumentos cívicos del tramo central con las lagunas y senderos arbolados del norte.",
+        "experience": "Empieza junto al río y compara las vistas abiertas del paseo con los senderos ajardinados interiores."
       },
       "zh": {
         "tip": "以瓜亚斯河辨认方向，出发前先选好从南端还是北端离开。",
-        "detail": "中段主看城市纪念建筑，北端则看人工湖和树荫步道。"
+        "detail": "中段主看城市纪念建筑，北端则看人工湖和树荫步道。",
+        "experience": "先到河边栏杆，再走内侧园路，对照开阔水面和林荫步道。"
       }
     }
   },
@@ -38,15 +41,18 @@
     "text": {
       "en": {
         "tip": "Pause in the centre, then move to the side to read the monument without blocking the main axis.",
-        "detail": "Compare the two figures at the centre with the repeated columns and flags behind them."
+        "detail": "Compare the two figures at the centre with the repeated columns and flags behind them.",
+        "experience": "Approach from Avenida 9 de Octubre to see how the monument closes the avenue’s sightline."
       },
       "es": {
         "tip": "Detente en el centro y pasa a un costado para leer el monumento sin bloquear el eje principal.",
-        "detail": "Compara las dos figuras centrales con la repetición de columnas y banderas."
+        "detail": "Compara las dos figuras centrales con la repetición de columnas y banderas.",
+        "experience": "Acércate por la avenida 9 de Octubre para ver cómo el monumento cierra su eje visual."
       },
       "zh": {
         "tip": "先在中轴看整体，再移到侧面阅读碑文，给行人留出通道。",
-        "detail": "把两位人物雕像与背后的弧形柱列、旗帜一起看。"
+        "detail": "把两位人物雕像与背后的弧形柱列、旗帜一起看。",
+        "experience": "从十月九日大道走向纪念碑，观察半圆柱廊如何成为街道视线的终点。"
       }
     }
   },
@@ -63,15 +69,18 @@
     "text": {
       "en": {
         "tip": "Look at the base from the promenade before stepping back to see the upper levels.",
-        "detail": "Find the transition from the solid base to the ornament around the clock."
+        "detail": "Find the transition from the solid base to the ornament around the clock.",
+        "experience": "Walk to the side of the tower to compare its silhouette against the river and against the civic buildings."
       },
       "es": {
         "tip": "Mira la base desde el paseo y luego aléjate para ver los niveles altos.",
-        "detail": "Fíjate en la transición entre la base maciza y la decoración del reloj."
+        "detail": "Fíjate en la transición entre la base maciza y la decoración del reloj.",
+        "experience": "Rodea la torre para comparar su perfil frente al río y frente a los edificios cívicos."
       },
       "zh": {
         "tip": "先从长廊近看塔基，再后退观察塔顶和钟面。",
-        "detail": "注意厚重塔基与钟面周围几何装饰的反差。"
+        "detail": "注意厚重塔基与钟面周围几何装饰的反差。",
+        "experience": "绕到钟楼侧面，分别以河面和行政建筑作为背景观察塔身轮廓。"
       }
     }
   },
@@ -88,15 +97,18 @@
     "text": {
       "en": {
         "tip": "Allow extra time for a queue and keep a ground-level option if the ride pauses.",
-        "detail": "Look for the change in sightlines from the gardens to the river and hill as the wheel rises."
+        "detail": "Look for the change in sightlines from the gardens to the river and hill as the wheel rises.",
+        "experience": "Use the waterfront as a fallback if the ride is paused. The observation wheel has a separate ticket from the promenade."
       },
       "es": {
         "tip": "Prevé tiempo para la fila y deja un plan a pie si se suspende la operación.",
-        "detail": "Al subir, observa cómo cambia la vista desde los jardines hacia el río y el cerro."
+        "detail": "Al subir, observa cómo cambia la vista desde los jardines hacia el río y el cerro.",
+        "experience": "Si la noria se detiene, continúa por el malecón. El paseo y la noria tienen condiciones de ingreso distintas."
       },
       "zh": {
         "tip": "给排队留时间；如暂停运营，可改走北端滨河步道。",
-        "detail": "乘坐时可观察视线如何从花园逐渐越过河岸、移向山坡。"
+        "detail": "乘坐时可观察视线如何从花园逐渐越过河岸、移向山坡。",
+        "experience": "摩天轮暂停时可沿河岸步行。公共长廊与摩天轮分别安排入场。"
       }
     }
   },
@@ -113,15 +125,18 @@
     "text": {
       "en": {
         "tip": "Choose a shaded garden path and leave exposed promenades for a cooler part of the day.",
-        "detail": "Notice how small bridges and lagoon edges interrupt the otherwise linear waterfront walk."
+        "detail": "Notice how small bridges and lagoon edges interrupt the otherwise linear waterfront walk.",
+        "experience": "Choose one lagoon and walk around it before heading north. The water level, reflections and shade change the view from each side."
       },
       "es": {
         "tip": "Elige un sendero sombreado y deja el paseo sin sombra para una hora más fresca.",
-        "detail": "Observa cómo puentes y lagunas interrumpen el trazado lineal del paseo fluvial."
+        "detail": "Observa cómo puentes y lagunas interrumpen el trazado lineal del paseo fluvial.",
+        "experience": "Rodea una laguna antes de seguir al norte. El agua, los reflejos y la sombra cambian la vista desde cada lado."
       },
       "zh": {
         "tip": "炎热时优先走树荫小径，较凉快时再走无遮阴的河岸。",
-        "detail": "观察小桥、池岸和曲径如何改变滨河长廊的直线节奏。"
+        "detail": "观察小桥、池岸和曲径如何改变滨河长廊的直线节奏。",
+        "experience": "选一处人工湖沿岸绕行，再向北走；从不同方向看倒影与树荫的变化。"
       }
     }
   },
@@ -138,15 +153,18 @@
     "text": {
       "en": {
         "tip": "Use the square as the start of a northbound walk and agree on a meeting point by the monument.",
-        "detail": "Read the monument in the context of independence before following the waterfront to its later civic landmarks."
+        "detail": "Read the monument in the context of independence before following the waterfront to its later civic landmarks.",
+        "experience": "Read the statue’s surroundings as a southern gateway to the promenade, then follow the river north toward Aguirre."
       },
       "es": {
         "tip": "Usa la plaza como inicio del paseo al norte y acuerda un punto de encuentro junto al monumento.",
-        "detail": "Relaciona el monumento con la independencia antes de seguir hacia otros hitos cívicos del malecón."
+        "detail": "Relaciona el monumento con la independencia antes de seguir hacia otros hitos cívicos del malecón.",
+        "experience": "Lee el entorno de la estatua como entrada sur del paseo y sigue el río hacia Aguirre."
       },
       "zh": {
         "tip": "适合作为向北步行的起点；同行者可以在雕像周边约定集合。",
-        "detail": "先理解奥尔梅多与瓜亚基尔独立的关系，再比较长廊上其他城市纪念物。"
+        "detail": "先理解奥尔梅多与瓜亚基尔独立的关系，再比较长廊上其他城市纪念物。",
+        "experience": "把雕像作为滨河步行的南端起点，再沿河向北走到阿吉雷街一带。"
       }
     }
   },
@@ -163,15 +181,18 @@
     "text": {
       "en": {
         "tip": "Keep enough time to follow the dioramas in order instead of skipping between cases.",
-        "detail": "Look for changes in street forms and buildings as the scenes move from pre-Hispanic times to the modern city."
+        "detail": "Look for changes in street forms and buildings as the scenes move from pre-Hispanic times to the modern city.",
+        "experience": "Look for differences between scenes rather than rushing from model to model. Building heights and street layouts show changes in the city."
       },
       "es": {
         "tip": "Reserva tiempo para seguir los dioramas en orden y entender el relato completo.",
-        "detail": "Busca cambios en calles y edificios desde los tiempos prehispánicos hasta la ciudad contemporánea."
+        "detail": "Busca cambios en calles y edificios desde los tiempos prehispánicos hasta la ciudad contemporánea.",
+        "experience": "Compara las escenas con calma. Las alturas de los edificios y los trazados de calles muestran cambios en la ciudad."
       },
       "zh": {
         "tip": "预留时间按展陈顺序观看，避免把不同时期的场景混在一起。",
-        "detail": "对照不同时期的街道、建筑和人物服饰，看城市如何变化。"
+        "detail": "对照不同时期的街道、建筑和人物服饰，看城市如何变化。",
+        "experience": "慢慢比较模型：不同时期的建筑高度和街道布局能看出城市变化。"
       }
     }
   },
@@ -188,15 +209,18 @@
     "text": {
       "en": {
         "tip": "Check the temporary exhibitions before deciding how long to spend in each gallery.",
-        "detail": "Compare one labelled archaeological object with a contemporary work that uses a different material or scale."
+        "detail": "Compare one labelled archaeological object with a contemporary work that uses a different material or scale.",
+        "experience": "Pair one archaeological gallery with one temporary display to make a shorter visit manageable."
       },
       "es": {
         "tip": "Revisa las exposiciones temporales antes de repartir el tiempo entre las salas.",
-        "detail": "Compara una pieza arqueológica identificada con una obra contemporánea de otro material o escala."
+        "detail": "Compara una pieza arqueológica identificada con una obra contemporánea de otro material o escala.",
+        "experience": "Combina una sala arqueológica con una exposición temporal para organizar una visita breve."
       },
       "zh": {
         "tip": "先确认临展，再决定在考古和当代艺术展区各停留多久。",
-        "detail": "选一件有说明的考古展品，再对照不同材质或尺度的当代作品。"
+        "detail": "选一件有说明的考古展品，再对照不同材质或尺度的当代作品。",
+        "experience": "行程较短时，可各选一个考古展厅和临时展览深入看。"
       }
     }
   },
@@ -213,15 +237,18 @@
     "text": {
       "en": {
         "tip": "Keep the heritage street and the stair climb as two separate legs if the group walks at different speeds.",
-        "detail": "Look for how balconies, doorways and eaves follow the contours of the hillside."
+        "detail": "Look for how balconies, doorways and eaves follow the contours of the hillside.",
+        "experience": "On Numa Pompilio Llona, notice how entrances and balconies adapt to the slope. Keep private doorways clear."
       },
       "es": {
         "tip": "Divide la calle patrimonial y la subida en dos tramos si el grupo camina a distintos ritmos.",
-        "detail": "Fíjate en cómo balcones, puertas y aleros acompañan la forma de la ladera."
+        "detail": "Fíjate en cómo balcones, puertas y aleros acompañan la forma de la ladera.",
+        "experience": "En Numa Pompilio Llona, observa cómo puertas y balcones se adaptan a la pendiente. Deja libres las entradas privadas."
       },
       "zh": {
         "tip": "同行者步速不同时，把山脚老街和上山阶梯分开安排。",
-        "detail": "沿坡观察阳台、门洞和屋檐如何顺着地势展开。"
+        "detail": "沿坡观察阳台、门洞和屋檐如何顺着地势展开。",
+        "experience": "在努马·蓬皮略·廖纳街留意门口、阳台如何适应坡地，并避开私人住宅入口。"
       }
     }
   },
@@ -238,15 +265,18 @@
     "text": {
       "en": {
         "tip": "Climb in short stretches and use the landings for breaks without occupying the full stair width.",
-        "detail": "The view shifts from the narrow stepped lane to an open panorama of the Guayas at the top."
+        "detail": "The view shifts from the narrow stepped lane to an open panorama of the Guayas at the top.",
+        "experience": "From the lower stairway, break the climb into short segments. The river view opens up gradually as the roofs drop below eye level."
       },
       "es": {
         "tip": "Sube por tramos y descansa en los rellanos dejando paso.",
-        "detail": "La vista pasa de la calle escalonada y estrecha a la panorámica abierta del Guayas."
+        "detail": "La vista pasa de la calle escalonada y estrecha a la panorámica abierta del Guayas.",
+        "experience": "Divide la subida en tramos cortos. La vista del río se abre a medida que los tejados quedan por debajo."
       },
       "zh": {
         "tip": "分段上楼，在平台歇脚时留出通行宽度。",
-        "detail": "视野从狭长的阶梯街道逐步打开，到山顶可看瓜亚斯河全景。"
+        "detail": "视野从狭长的阶梯街道逐步打开，到山顶可看瓜亚斯河全景。",
+        "experience": "把登高分成几段，观察屋顶逐渐低于视线、河景逐步展开的过程。"
       }
     }
   },
@@ -263,15 +293,18 @@
     "text": {
       "en": {
         "tip": "Add the tower only if access is confirmed. Treat the exterior viewpoint as the main stop.",
-        "detail": "Read the lighthouse as a marker of river-port identity and compare the hilltop perspective with the view from the waterfront."
+        "detail": "Read the lighthouse as a marker of river-port identity and compare the hilltop perspective with the view from the waterfront.",
+        "experience": "Spend time in the summit plaza even if the tower interior is closed. The plaza gives a ground-level view of the tower and the river bend."
       },
       "es": {
         "tip": "Añade el interior solo si hay acceso confirmado; el mirador exterior puede ser la parada principal.",
-        "detail": "Interpreta el faro como símbolo portuario y compara la vista de la cima con la del malecón."
+        "detail": "Interpreta el faro como símbolo portuario y compara la vista de la cima con la del malecón.",
+        "experience": "Dedica tiempo a la plaza de la cima aunque cierre el interior. Desde allí se ven la torre y el meandro del río."
       },
       "zh": {
         "tip": "先按外部观景安排时间，确认塔内开放后再加登塔。",
-        "detail": "把灯塔和港城历史联系起来，再比较山顶与河岸两处视角。"
+        "detail": "把灯塔和港城历史联系起来，再比较山顶与河岸两处视角。",
+        "experience": "即使不能登塔，也可先看山顶广场，从平层观察塔身和河道转弯的位置。"
       }
     }
   },
@@ -288,15 +321,18 @@
     "text": {
       "en": {
         "tip": "Use the plaza to orient yourself before choosing between a flat museum stop and the hill stairs.",
-        "detail": "The bust and neighbouring museum mark the transition from the urban centre to the slope of Las Peñas."
+        "detail": "The bust and neighbouring museum mark the transition from the urban centre to the slope of Las Peñas.",
+        "experience": "Use the Orellana bust as an orientation point. The square lets you choose between the museum entrance and the hill approach."
       },
       "es": {
         "tip": "Oriéntate en la plaza antes de elegir entre el museo y la subida por la escalinata.",
-        "detail": "El busto y el museo vecino marcan el paso del centro urbano a la ladera de Las Peñas."
+        "detail": "El busto y el museo vecino marcan el paso del centro urbano a la ladera de Las Peñas.",
+        "experience": "Usa el busto de Orellana para orientarte y elegir entre el acceso al museo y la subida al cerro."
       },
       "zh": {
         "tip": "先在广场辨认方向，再选择平路去消防博物馆或登山。",
-        "detail": "从半身像和相邻的博物馆，可以看到老城区如何过渡到山坡街区。"
+        "detail": "从半身像和相邻的博物馆，可以看到老城区如何过渡到山坡街区。",
+        "experience": "以奥雷利亚纳半身像辨向，再决定进入消防博物馆或走向登山入口。"
       }
     }
   },
@@ -313,15 +349,18 @@
     "text": {
       "en": {
         "tip": "With children, begin with the vehicles, then choose two smaller objects to compare.",
-        "detail": "Compare how the vehicles store water and tools, then look for changes in handling and protective gear."
+        "detail": "Compare how the vehicles store water and tools, then look for changes in handling and protective gear.",
+        "experience": "Compare an older vehicle with later equipment to see how water transport and firefighter protection changed."
       },
       "es": {
         "tip": "Con niños, empieza por los vehículos y elige después dos objetos pequeños para comparar.",
-        "detail": "Compara dónde guardan agua y herramientas los vehículos y observa los cambios de mandos y protecciones."
+        "detail": "Compara dónde guardan agua y herramientas los vehículos y observa los cambios de mandos y protecciones.",
+        "experience": "Compara un vehículo antiguo con equipos posteriores para observar cambios en el transporte de agua y la protección."
       },
       "zh": {
         "tip": "带孩子可先看消防车，再比较两件小型消防工具。",
-        "detail": "观察不同车辆放置水箱和工具的位置，再比较车辆操控和防护装备的变化。"
+        "detail": "观察不同车辆放置水箱和工具的位置，再比较车辆操控和防护装备的变化。",
+        "experience": "选一辆早期消防车和一件后期装备，比较运水与消防员防护方式的变化。"
       }
     }
   },
@@ -338,15 +377,18 @@
     "text": {
       "en": {
         "tip": "Check which paths are open and keep the museum schedule separate from the public walk.",
-        "detail": "Compare the modern riverfront scale with the smaller hillside buildings of nearby Las Peñas."
+        "detail": "Compare the modern riverfront scale with the smaller hillside buildings of nearby Las Peñas.",
+        "experience": "Follow the open riverside paths to compare the scale of the modern waterfront with the narrower Las Peñas streets."
       },
       "es": {
         "tip": "Comprueba los caminos abiertos y verifica aparte el horario del museo.",
-        "detail": "Compara la escala de la ribera moderna con las casas más pequeñas de Las Peñas."
+        "detail": "Compara la escala de la ribera moderna con las casas más pequeñas de Las Peñas.",
+        "experience": "Sigue los pasos abiertos junto al río para comparar la escala de la ribera moderna y las calles estrechas de Las Peñas."
       },
       "zh": {
         "tip": "沿对公众开放的步道行走，若要参观博物馆，另查馆舍开放时间。",
-        "detail": "对比现代滨水区的大体量建筑和山坡老街的小尺度住宅。"
+        "detail": "对比现代滨水区的大体量建筑和山坡老街的小尺度住宅。",
+        "experience": "沿开放滨河步道观察现代建筑体量，再和拉斯佩尼亚斯窄街的尺度对照。"
       }
     }
   },
@@ -363,15 +405,18 @@
     "text": {
       "en": {
         "tip": "Find the correct building and floor before you set off along the rest of the waterfront.",
-        "detail": "Follow the recordings, performers and instruments as a story about popular music across generations."
+        "detail": "Follow the recordings, performers and instruments as a story about popular music across generations.",
+        "experience": "Use the display chronology to connect performers with recordings, then spend time at one listening or instrument display if open."
       },
       "es": {
         "tip": "Localiza el edificio y el piso antes de continuar por el resto de la ribera.",
-        "detail": "Relaciona grabaciones, intérpretes e instrumentos para seguir la música popular entre generaciones."
+        "detail": "Relaciona grabaciones, intérpretes e instrumentos para seguir la música popular entre generaciones.",
+        "experience": "Sigue la cronología de intérpretes y grabaciones, y detente ante un punto de escucha o una vitrina de instrumentos si está disponible."
       },
       "zh": {
         "tip": "先确认阿斯蒂列罗一号楼及楼层，再安排其余滨河路线。",
-        "detail": "串起录音、演唱者和乐器展品，了解不同年代的流行音乐。"
+        "detail": "串起录音、演唱者和乐器展品，了解不同年代的流行音乐。",
+        "experience": "按年代串起演唱者和录音，开放时再选一处试听或乐器展柜细看。"
       }
     }
   },
@@ -388,15 +433,18 @@
     "text": {
       "en": {
         "tip": "Avoid building your visit around a street performance unless it appears on the current programme.",
-        "detail": "Distinguish the historic cacao-trade setting from newer murals and cultural programming."
+        "detail": "Distinguish the historic cacao-trade setting from newer murals and cultural programming.",
+        "experience": "Spend a block on foot looking at the street-level façades before entering the cacao museum. That gives context for the trade story inside."
       },
       "es": {
         "tip": "No bases la visita en una actuación callejera sin consultar la agenda vigente.",
-        "detail": "Distingue el antiguo entorno comercial del cacao de los murales y actividades culturales recientes."
+        "detail": "Distingue el antiguo entorno comercial del cacao de los murales y actividades culturales recientes.",
+        "experience": "Recorre una manzana a pie y observa las fachadas antes de entrar al museo del cacao para entender el contexto comercial."
       },
       "zh": {
         "tip": "若主要想看街头活动，先查当天节目，再规划抵达时间。",
-        "detail": "把与可可贸易有关的历史建筑，与近年的壁画及文化活动对照着看。"
+        "detail": "把与可可贸易有关的历史建筑，与近年的壁画及文化活动对照着看。",
+        "experience": "先步行看一段街边立面再进可可博物馆，馆内贸易史会更容易与街区联系起来。"
       }
     }
   },
@@ -413,15 +461,18 @@
     "text": {
       "en": {
         "tip": "Give the displays their own stop before adding food or shopping on Calle Panamá.",
-        "detail": "Trace the cacao story from cultivation to commerce and compare the displays with the surrounding heritage block."
+        "detail": "Trace the cacao story from cultivation to commerce and compare the displays with the surrounding heritage block.",
+        "experience": "Follow the exhibition from the plant itself to trade and transport. Use the building’s doorway as the starting point for a short walk along Calle Panamá."
       },
       "es": {
         "tip": "Dedica una parada a las exposiciones antes de comer o comprar en la calle Panamá.",
-        "detail": "Sigue el cacao desde el cultivo hasta el comercio y vincula las salas con la manzana patrimonial."
+        "detail": "Sigue el cacao desde el cultivo hasta el comercio y vincula las salas con la manzana patrimonial.",
+        "experience": "Sigue la exposición desde la planta hasta el comercio y transporte; al salir, continúa por la calle Panamá."
       },
       "zh": {
         "tip": "给展览单独留时间，再去巴拿马街用餐或购物。",
-        "detail": "沿种植、运输和贸易的线索参观，再回到街区理解可可产业留下的空间痕迹。"
+        "detail": "沿种植、运输和贸易的线索参观，再回到街区理解可可产业留下的空间痕迹。",
+        "experience": "从可可植物看起，接着了解贸易与运输，出馆后再沿巴拿马街观察周围建筑。"
       }
     }
   },
@@ -438,15 +489,18 @@
     "text": {
       "en": {
         "tip": "Watch the iguanas from the path and allow a few minutes for the cathedral frontage.",
-        "detail": "Compare the formal paths and Bolívar monument with the informal places where iguanas rest."
+        "detail": "Compare the formal paths and Bolívar monument with the informal places where iguanas rest.",
+        "experience": "Keep to the garden paths and let iguanas move freely. Then turn toward the cathedral to compare the park’s scale with the façade."
       },
       "es": {
         "tip": "Observa las iguanas desde el sendero y reserva unos minutos para la fachada de la catedral.",
-        "detail": "Compara los senderos formales y el monumento a Bolívar con los lugares donde se posan las iguanas."
+        "detail": "Compara los senderos formales y el monumento a Bolívar con los lugares donde se posan las iguanas.",
+        "experience": "Camina por los senderos y deja que las iguanas se muevan libremente. Mira luego la fachada de la catedral desde el parque."
       },
       "zh": {
         "tip": "沿步道观察鬣蜥，再留几分钟看旁边的大教堂立面。",
-        "detail": "比较规整的园路、玻利瓦尔纪念像和鬣蜥停留的树下空间。"
+        "detail": "比较规整的园路、玻利瓦尔纪念像和鬣蜥停留的树下空间。",
+        "experience": "沿园路观察，给鬣蜥留出活动空间；再面向大教堂，比较园林与立面的尺度。"
       }
     }
   },
@@ -463,15 +517,18 @@
     "text": {
       "en": {
         "tip": "Plan the exterior visit first and enter only when worship and local instructions allow.",
-        "detail": "Look for the pointed arches and vertical emphasis of the neo-Gothic façade from across the park."
+        "detail": "Look for the pointed arches and vertical emphasis of the neo-Gothic façade from across the park.",
+        "experience": "Stand across the street to read the paired towers and pointed arches before approaching the entrance."
       },
       "es": {
         "tip": "Planea primero el exterior y entra cuando el culto y las indicaciones lo permitan.",
-        "detail": "Desde el parque, localiza arcos apuntados y líneas verticales en la fachada neogótica."
+        "detail": "Desde el parque, localiza arcos apuntados y líneas verticales en la fachada neogótica.",
+        "experience": "Colócate al otro lado de la calle para observar las torres y arcos apuntados antes de acercarte al acceso."
       },
       "zh": {
         "tip": "先安排外观参观，入内以礼拜安排和现场指引为准。",
-        "detail": "从公园隔街看新哥特式的尖拱、双塔和垂直线条。"
+        "detail": "从公园隔街看新哥特式的尖拱、双塔和垂直线条。",
+        "experience": "走近入口前先在街对面看双塔与尖拱，较容易看清立面的整体比例。"
       }
     }
   },
@@ -488,15 +545,18 @@
     "text": {
       "en": {
         "tip": "Use the passage as a short connector and keep government-building access separate.",
-        "detail": "The narrow civic passage frames the waterfront and lets you compare contrasting façades across a small space."
+        "detail": "The narrow civic passage frames the waterfront and lets you compare contrasting façades across a small space.",
+        "experience": "Walk through Pasaje Arosemena from inland toward the river and notice how the civic façades frame the opening."
       },
       "es": {
         "tip": "Usa el pasaje como conexión y verifica por separado el acceso a edificios públicos.",
-        "detail": "El pasaje enmarca la ribera y permite comparar fachadas cívicas enfrentadas."
+        "detail": "El pasaje enmarca la ribera y permite comparar fachadas cívicas enfrentadas.",
+        "experience": "Cruza el pasaje Arosemena hacia el río para observar cómo las fachadas cívicas enmarcan la salida."
       },
       "zh": {
         "tip": "把通道当作步行连接点，办公建筑内部另按开放规定安排。",
-        "detail": "狭窄通道朝河岸打开，适合近距离比较两侧行政建筑的立面。"
+        "detail": "狭窄通道朝河岸打开，适合近距离比较两侧行政建筑的立面。",
+        "experience": "从内街沿阿罗塞梅纳通道朝河边走，观察两侧行政建筑如何框住滨河出口。"
       }
     }
   },
@@ -513,15 +573,18 @@
     "text": {
       "en": {
         "tip": "Set aside a short exterior stop and check the city notice if you want a tour.",
-        "detail": "Compare the formal upper façade with the street-level arcades used to approach the civic area."
+        "detail": "Compare the formal upper façade with the street-level arcades used to approach the civic area.",
+        "experience": "Compare the street-level arcades with the upper façade before walking through the adjoining civic passage."
       },
       "es": {
         "tip": "Reserva una visita exterior corta y consulta avisos municipales para un recorrido interior.",
-        "detail": "Compara la fachada alta con los soportales que organizan el paso a nivel de calle."
+        "detail": "Compara la fachada alta con los soportales que organizan el paso a nivel de calle.",
+        "experience": "Compara los soportales a nivel de calle con la fachada superior antes de cruzar el pasaje cívico."
       },
       "zh": {
         "tip": "先按短时间外观参观规划；想入内可查询市政府的公开导览通知。",
-        "detail": "对照上层正式立面与底层临街柱廊，理解建筑与步行空间的关系。"
+        "detail": "对照上层正式立面与底层临街柱廊，理解建筑与步行空间的关系。",
+        "experience": "先比较沿街柱廊和上层立面，再走进相邻的行政广场通道。"
       }
     }
   },
@@ -538,15 +601,18 @@
     "text": {
       "en": {
         "tip": "Put the city museum before the nearby cathedral so the chronological displays get a dedicated block of time.",
-        "detail": "Follow how the exhibition connects pre-Hispanic settlement, independence and the later city."
+        "detail": "Follow how the exhibition connects pre-Hispanic settlement, independence and the later city.",
+        "experience": "Begin with the earliest gallery and pick an object from each period to follow how the city changed."
       },
       "es": {
         "tip": "Visita primero el museo y luego la catedral para dedicar tiempo a la secuencia histórica.",
-        "detail": "Observa cómo la exposición enlaza el poblamiento prehispánico, la independencia y la ciudad posterior."
+        "detail": "Observa cómo la exposición enlaza el poblamiento prehispánico, la independencia y la ciudad posterior.",
+        "experience": "Empieza por la sala más antigua y elige una pieza por periodo para seguir los cambios de la ciudad."
       },
       "zh": {
         "tip": "建议先看市立博物馆，再去教堂，给按年代展开的展览留足时间。",
-        "detail": "梳理展览如何串联早期聚落、独立时期及此后的城市发展。"
+        "detail": "梳理展览如何串联早期聚落、独立时期及此后的城市发展。",
+        "experience": "从最早的历史展厅开始，每个时期挑一件展品，梳理瓜亚基尔的城市变化。"
       }
     }
   },
@@ -563,15 +629,18 @@
     "text": {
       "en": {
         "tip": "Pick one painting and one sculpture to examine slowly and check the labels for context.",
-        "detail": "Compare how painters and sculptors portray the same religious subject in different media."
+        "detail": "Compare how painters and sculptors portray the same religious subject in different media.",
+        "experience": "Compare how painted and carved figures use different materials to convey similar religious themes."
       },
       "es": {
         "tip": "Elige una pintura y una escultura para mirar despacio y lee sus cartelas.",
-        "detail": "Compara cómo pintura y escultura presentan un tema religioso en materiales distintos."
+        "detail": "Compara cómo pintura y escultura presentan un tema religioso en materiales distintos.",
+        "experience": "Compara cómo pintura y talla usan materiales distintos para expresar temas religiosos semejantes."
       },
       "zh": {
         "tip": "各选一件绘画和雕塑慢看，结合展签了解年代和主题。",
-        "detail": "对照宗教题材在绘画与雕塑中的不同表达。"
+        "detail": "对照宗教题材在绘画与雕塑中的不同表达。",
+        "experience": "对照绘画与雕刻如何用不同材料表现相近的宗教题材。"
       }
     }
   },
@@ -588,15 +657,18 @@
     "text": {
       "en": {
         "tip": "Allow time for the formal park layout before continuing west toward the museum area.",
-        "detail": "Read the central column and the paths that align with it as parts of the same independence memorial."
+        "detail": "Read the central column and the paths that align with it as parts of the same independence memorial.",
+        "experience": "Enter from 9 de Octubre or Pedro Moncayo and look down one of the main paths toward the Independence memorial column."
       },
       "es": {
         "tip": "Recorre el trazado formal antes de seguir al oeste hacia los museos.",
-        "detail": "Lee la columna y los senderos alineados con ella como partes del mismo conjunto conmemorativo."
+        "detail": "Lee la columna y los senderos alineados con ella como partes del mismo conjunto conmemorativo.",
+        "experience": "Entra por 9 de Octubre o Pedro Moncayo y sigue uno de los ejes principales hacia la columna conmemorativa."
       },
       "zh": {
         "tip": "先走完园内轴线，再沿十月九日大道向西去博物馆。",
-        "detail": "把中央纪念柱与对齐的园路视为同一个独立纪念空间。"
+        "detail": "把中央纪念柱与对齐的园路视为同一个独立纪念空间。",
+        "experience": "可从十月九日大道或佩德罗·蒙卡约街进入，沿一条主轴走向独立纪念柱。"
       }
     }
   },
@@ -613,15 +685,18 @@
     "text": {
       "en": {
         "tip": "Spend a few minutes on the villa exterior before seeing the archaeological collection.",
-        "detail": "Notice how the room sizes and domestic proportions change the experience of looking at archaeological objects."
+        "detail": "Notice how the room sizes and domestic proportions change the experience of looking at archaeological objects.",
+        "experience": "Look at the villa outside before entering. Its domestic scale offers a contrast with purpose-built museum galleries."
       },
       "es": {
         "tip": "Dedica unos minutos a la fachada de la villa antes de visitar la colección arqueológica.",
-        "detail": "Observa cómo la escala doméstica cambia la manera de recorrer la colección arqueológica."
+        "detail": "Observa cómo la escala doméstica cambia la manera de recorrer la colección arqueológica.",
+        "experience": "Mira primero la villa desde fuera. Su escala doméstica contrasta con las galerías construidas como museo."
       },
       "zh": {
         "tip": "进馆前先看别墅外观，再看馆内考古陈列。",
-        "detail": "留意住宅房间的尺度如何影响陈列与观展动线。"
+        "detail": "留意住宅房间的尺度如何影响陈列与观展动线。",
+        "experience": "入馆前先看别墅外观，再对照住宅尺度与专用博物馆展厅的差别。"
       }
     }
   },
@@ -638,15 +713,18 @@
     "text": {
       "en": {
         "tip": "Choose Estero Salado as the destination and check which stretch of the promenade is open.",
-        "detail": "Use the bridge and the shape of the inlet as reference points when looking across the water."
+        "detail": "Use the bridge and the shape of the inlet as reference points when looking across the water.",
+        "experience": "Use the bridge as a landmark and follow one open bank before attempting a crossing or adding Guayarte."
       },
       "es": {
         "tip": "Marca Estero Salado como destino y comprueba qué tramo del paseo está abierto.",
-        "detail": "Toma el puente y la forma de la ensenada como referencias al mirar el estero."
+        "detail": "Toma el puente y la forma de la ensenada como referencias al mirar el estero.",
+        "experience": "Usa el puente como referencia y recorre primero una orilla abierta antes de cruzar o añadir Guayarte."
       },
       "zh": {
         "tip": "导航时输入萨拉多河口，先核实开放的滨水区段。",
-        "detail": "隔水观察时，用桥体和水湾形状辨认河口空间。"
+        "detail": "隔水观察时，用桥体和水湾形状辨认河口空间。",
+        "experience": "先以桥梁辨向，沿一侧开放滨水步道走，再决定是否过桥或去瓜亚尔特。"
       }
     }
   },
@@ -663,15 +741,18 @@
     "text": {
       "en": {
         "tip": "Check the day’s events before planning a meal or crossing the estuary.",
-        "detail": "Look at how performance areas, dining spaces and the pedestrian crossing meet the waterfront."
+        "detail": "Look at how performance areas, dining spaces and the pedestrian crossing meet the waterfront.",
+        "experience": "Start from the public plaza and check what is open along the waterside before committing to a meal or event."
       },
       "es": {
         "tip": "Consulta los eventos del día antes de planear una comida o cruzar el estero.",
-        "detail": "Observa cómo los espacios de actuaciones y comida se conectan con el paso peatonal y el estero."
+        "detail": "Observa cómo los espacios de actuaciones y comida se conectan con el paso peatonal y el estero.",
+        "experience": "Empieza en la plaza pública y revisa qué hay abierto junto al estero antes de programar una comida o un evento."
       },
       "zh": {
         "tip": "想看活动、用餐或走到水道对岸时，先核实当天安排。",
-        "detail": "观察演出、餐饮与步行桥如何围绕水道组织在一起。"
+        "detail": "观察演出、餐饮与步行桥如何围绕水道组织在一起。",
+        "experience": "先走公共广场，再核对水边店铺和活动是否开放，然后决定是否停留用餐。"
       }
     }
   },
@@ -688,15 +769,18 @@
     "text": {
       "en": {
         "tip": "Use the theatre as a landmark and consult the event calendar independently.",
-        "detail": "Compare the park’s open green areas with the architectural volume of the civic theatre."
+        "detail": "Compare the park’s open green areas with the architectural volume of the civic theatre.",
+        "experience": "Use the civic theatre as an orientation point while walking the park. Tickets and opening times for performances belong to the theatre programme."
       },
       "es": {
         "tip": "Usa el teatro para orientarte y consulta su cartelera por separado.",
-        "detail": "Compara las áreas verdes abiertas con el volumen arquitectónico del teatro cívico."
+        "detail": "Compara las áreas verdes abiertas con el volumen arquitectónico del teatro cívico.",
+        "experience": "Usa el teatro cívico para orientarte en el parque. Los horarios y entradas de funciones dependen de su cartelera."
       },
       "zh": {
         "tip": "把剧院当作辨认方向的地标；入场演出另查节目单。",
-        "detail": "从开阔绿地观察市民中心剧院的体量与形态。"
+        "detail": "从开阔绿地观察市民中心剧院的体量与形态。",
+        "experience": "园内可用市民中心剧院辨向；演出时段与票务另外查节目单。"
       }
     }
   },
@@ -713,15 +797,18 @@
     "text": {
       "en": {
         "tip": "Choose the entrance by activity and check whether the sports facility needs a reservation.",
-        "detail": "Look at how the large sports areas connect with paths and planted spaces."
+        "detail": "Look at how the large sports areas connect with paths and planted spaces.",
+        "experience": "Choose a gate based on the sports or walking area you want to reach. Avoid treating the entire park as one short circuit."
       },
       "es": {
         "tip": "Elige el acceso según tu actividad y verifica si la cancha requiere reserva.",
-        "detail": "Observa cómo las instalaciones deportivas se conectan con los senderos y áreas verdes."
+        "detail": "Observa cómo las instalaciones deportivas se conectan con los senderos y áreas verdes.",
+        "experience": "Elige el acceso según la cancha o zona de paseo que quieres visitar. El parque completo requiere más que una vuelta corta."
       },
       "zh": {
         "tip": "按计划活动选择入口，使用球场前确认是否要预约。",
-        "detail": "步行时留意大型球场如何连接绿地和园内路径。"
+        "detail": "步行时留意大型球场如何连接绿地和园内路径。",
+        "experience": "先按球场或步行区选择入口。园区范围较大，短程游览可只选一个区域。"
       }
     }
   },
@@ -738,15 +825,18 @@
     "text": {
       "en": {
         "tip": "Check the return route before crossing and allow extra time for the out-and-back walk.",
-        "detail": "From the boardwalk, compare the mangrove edge with the open width of the Guayas without leaving the marked path."
+        "detail": "From the boardwalk, compare the mangrove edge with the open width of the Guayas without leaving the marked path.",
+        "experience": "Confirm the bridge and boardwalk access separately. Once on the island, use the marked trail and allow time to return before closing."
       },
       "es": {
         "tip": "Confirma el regreso antes de cruzar y deja tiempo adicional para el recorrido de ida y vuelta.",
-        "detail": "Desde la pasarela, compara el borde de manglar con la amplitud del Guayas sin salir del sendero."
+        "detail": "Desde la pasarela, compara el borde de manglar con la amplitud del Guayas sin salir del sendero.",
+        "experience": "Confirma por separado el acceso al puente y a las pasarelas. En la isla, sigue los senderos y reserva tiempo para volver antes del cierre."
       },
       "zh": {
         "tip": "过桥前先确认回程方式，给往返步行预留时间。",
-        "detail": "从栈道比较红树林边缘和瓜亚斯河开阔水面，全程留在标示路线。"
+        "detail": "从栈道比较红树林边缘和瓜亚斯河开阔水面，全程留在标示路线。",
+        "experience": "步行桥与岛内栈道要分别确认。上岛后按标示路线走，并预留关闭前的返程时间。"
       }
     }
   },
@@ -763,15 +853,18 @@
     "text": {
       "en": {
         "tip": "Use this time for arrival and orientation; the performance duration depends on the programme.",
-        "detail": "Look at how the front plaza and lobby guide audiences toward different performance halls."
+        "detail": "Look at how the front plaza and lobby guide audiences toward different performance halls.",
+        "experience": "Allow for the foyer and ticket checks in addition to the time shown for the performance. Plan the return pickup before leaving for an evening show."
       },
       "es": {
         "tip": "El tiempo indicado es para llegada y orientación; la duración del espectáculo depende del programa.",
-        "detail": "Observa cómo la explanada y el vestíbulo orientan al público hacia distintas salas."
+        "detail": "Observa cómo la explanada y el vestíbulo orientan al público hacia distintas salas.",
+        "experience": "Añade tiempo para el vestíbulo y el control de boletos. Si vas por la noche, organiza el regreso de antemano."
       },
       "zh": {
         "tip": "建议时长用于抵达与找演出厅，演出时长以节目单为准。",
-        "detail": "留意前广场和大厅如何把观众分流至不同演出厅。"
+        "detail": "留意前广场和大厅如何把观众分流至不同演出厅。",
+        "experience": "演出时间之外还要安排入场与找座。晚场观演前先确定返程上车点。"
       }
     }
   },
@@ -789,17 +882,20 @@
       "en": {
         "tip": "Compare the carved entrance, timber staircase and period furnishings.",
         "detail": "The city’s account identifies owner Francisco Jiménez Viteri and notes that the building later became the centre of local traditions.",
-        "tagline": "A timber house turned museum on Samborondón’s civic square"
+        "tagline": "A timber house turned museum on Samborondón’s civic square",
+        "experience": "Start with the timber staircase and compare how rooms of the former house were adapted for public use."
       },
       "es": {
         "tip": "Compara el portón labrado, la escalera de madera y los muebles de época.",
         "detail": "La ficha municipal identifica al propietario Francisco Jiménez Viteri y señala que el edificio pasó a ser un centro de tradiciones locales.",
-        "tagline": "Una casa de madera convertida en museo frente al parque central"
+        "tagline": "Una casa de madera convertida en museo frente al parque central",
+        "experience": "Empieza por la escalera de madera y observa cómo se adaptaron las habitaciones de la casa al uso público."
       },
       "zh": {
         "tip": "比较雕刻大门、木阶梯与旧家具。",
         "detail": "市政府资料记载原屋主是弗朗西斯科·希门尼斯·维特里；建筑后来成为地方传统文化中心。",
-        "tagline": "镇中心广场旁，由木构老宅改建的地方历史博物馆"
+        "tagline": "镇中心广场旁，由木构老宅改建的地方历史博物馆",
+        "experience": "从木楼梯开始，比较旧宅房间怎样被改作公共使用空间。"
       }
     }
   },
@@ -817,17 +913,20 @@
       "en": {
         "tip": "Walk the open paths before crossing to either heritage building.",
         "detail": "From the centre of the park, compare the short street crossings that connect the former municipal offices and the parish church.",
-        "tagline": "A shaded pause between the old town hall and the parish church"
+        "tagline": "A shaded pause between the old town hall and the parish church",
+        "experience": "Use the square as a rest stop between short visits to the church and former town hall."
       },
       "es": {
         "tip": "Recorre los caminos abiertos antes de cruzar a cualquiera de los edificios patrimoniales.",
         "detail": "Desde el centro del parque, compara los cruces cortos que enlazan la antigua sede municipal y el templo parroquial.",
-        "tagline": "Una pausa entre el antiguo palacio municipal y la iglesia parroquial"
+        "tagline": "Una pausa entre el antiguo palacio municipal y la iglesia parroquial",
+        "experience": "Usa el parque para hacer una pausa entre las visitas a la iglesia y al antiguo palacio."
       },
       "zh": {
         "tip": "先走园内开放步道，再过街到两栋历史建筑。",
         "detail": "从公园中央观察两处过街点，理解旧市政厅和堂区教堂如何围绕公园布局。",
-        "tagline": "旧市政厅与堂区教堂之间的镇中心休憩点"
+        "tagline": "旧市政厅与堂区教堂之间的镇中心休憩点",
+        "experience": "把中央公园安排在教堂和旧市政厅之间，作为步行休息点。"
       }
     }
   },
@@ -845,17 +944,20 @@
       "en": {
         "tip": "Start on the square and look at the façade before checking for visitor access.",
         "detail": "Observe how the church front and its approach face the same public space as the old municipal hall.",
-        "tagline": "A parish landmark on the cantonal centre’s civic square"
+        "tagline": "A parish landmark on the cantonal centre’s civic square",
+        "experience": "Look toward the church from the park first. The distance makes it easier to see how the façade faces the civic square."
       },
       "es": {
         "tip": "Empieza en la plaza y observa la fachada antes de consultar el acceso.",
         "detail": "Observa cómo la fachada y el acceso del templo miran al mismo espacio público que el antiguo palacio.",
-        "tagline": "Un templo parroquial en el conjunto cívico de la cabecera cantonal"
+        "tagline": "Un templo parroquial en el conjunto cívico de la cabecera cantonal",
+        "experience": "Mira primero el templo desde el parque para apreciar cómo su fachada se orienta hacia el espacio cívico."
       },
       "zh": {
         "tip": "先从广场观察立面，再核实是否可以入内。",
         "detail": "观察教堂立面和入口如何与旧市政厅共同朝向镇中心公共空间。",
-        "tagline": "桑博龙东镇中心广场旁的堂区教堂"
+        "tagline": "桑博龙东镇中心广场旁的堂区教堂",
+        "experience": "先站在公园内看教堂，隔一段距离更容易看出立面朝向镇中心的关系。"
       }
     }
   },
@@ -873,17 +975,20 @@
       "en": {
         "tip": "Ask about campus and museum entry before travelling; follow the chronology in the displays.",
         "detail": "Use dates on the displays to distinguish portraits of presidents from objects that explain the institutions around them.",
-        "tagline": "Ecuador’s presidential history inside the UEES campus"
+        "tagline": "Ecuador’s presidential history inside the UEES campus",
+        "experience": "Allow time for campus reception, especially if the museum is your only planned stop. Ask which galleries are open before entering."
       },
       "es": {
         "tip": "Consulta el acceso al campus y al museo antes de salir; sigue la cronología de las salas.",
         "detail": "Usa las fechas de las vitrinas para distinguir los retratos presidenciales de los objetos que explican las instituciones.",
-        "tagline": "Historia presidencial del Ecuador dentro del campus de la UEES"
+        "tagline": "Historia presidencial del Ecuador dentro del campus de la UEES",
+        "experience": "Deja tiempo para la recepción del campus y pregunta qué galerías están abiertas antes de entrar."
       },
       "zh": {
         "tip": "先确认校园和馆舍入场规定，再按展陈年代参观。",
         "detail": "通过展签年代区分总统肖像和介绍制度背景的展品。",
-        "tagline": "在 UEES 校园内循年代认识厄瓜多尔总统史"
+        "tagline": "在 UEES 校园内循年代认识厄瓜多尔总统史",
+        "experience": "若专程进校看展，请为访客登记留时间，并在接待处核实开放的展厅。"
       }
     }
   },
@@ -901,17 +1006,20 @@
       "en": {
         "tip": "Confirm a race programme before making the trip and find the public grandstand entrance.",
         "detail": "The rail defines the racecourse from the spectator’s perspective; compare the near straight with the wider curve in the distance.",
-        "tagline": "Race-day grandstands and equestrian culture in the Buijo sector"
+        "tagline": "Race-day grandstands and equestrian culture in the Buijo sector",
+        "experience": "Check the race card and choose a public viewing area before the start. The bend shows how the horses regroup before the straight."
       },
       "es": {
         "tip": "Confirma la cartelera hípica y localiza la entrada pública al graderío.",
         "detail": "El carril ordena la vista del público: compara la recta cercana con la curva amplia al fondo.",
-        "tagline": "Graderías y tradición hípica en el sector de Buijo"
+        "tagline": "Graderías y tradición hípica en el sector de Buijo",
+        "experience": "Consulta el programa y elige una zona pública antes de la salida. Desde la curva se ve cómo cambia el grupo antes de la recta."
       },
       "zh": {
         "tip": "先查赛事日程，再找到面向观众的看台入口。",
         "detail": "从看台对照近处直道、护栏和远处大弯道，了解观赛视角。",
-        "tagline": "在布伊霍一带体验赛马看台与当地马术文化"
+        "tagline": "在布伊霍一带体验赛马看台与当地马术文化",
+        "experience": "先查赛事安排并找好公众观赛区；从弯道可观察马群进入直道前的位置变化。"
       }
     }
   },
@@ -929,17 +1037,20 @@
       "en": {
         "tip": "Walk the main lanes slowly and leave space for residents near house entrances.",
         "detail": "Beyond the decorated lane, the connection between houses and the river explains why this is best experienced as a village walk.",
-        "tagline": "A riverside village walk through lived-in Samborondón streets"
+        "tagline": "A riverside village walk through lived-in Samborondón streets",
+        "experience": "Use the main pedestrian lane as a starting point, then look for public stretches that turn toward the river."
       },
       "es": {
         "tip": "Recorre las calles principales con calma y deja libres los accesos de las viviendas.",
         "detail": "Además de la calle decorada, la relación entre las casas y el río explica por qué conviene recorrer el recinto a pie.",
-        "tagline": "Un paseo ribereño por un recinto habitado de Samborondón"
+        "tagline": "Un paseo ribereño por un recinto habitado de Samborondón",
+        "experience": "Toma la calle peatonal como inicio y busca luego los tramos públicos que llevan hacia la ribera."
       },
       "zh": {
         "tip": "步行浏览主要街巷，避免占用住户门口。",
         "detail": "除了装饰街巷，还可以观察民居与河岸相连的位置关系，体会村落布局。",
-        "tagline": "沿滨河老街步行，观察布伊霍的日常村落生活"
+        "tagline": "沿滨河老街步行，观察布伊霍的日常村落生活",
+        "experience": "从主要步行街开始，再寻找通往河边的开放路段。"
       }
     }
   },
@@ -957,17 +1068,20 @@
       "en": {
         "tip": "Walk around the fountain to compare the monument, church entrance and avenue.",
         "detail": "The fountain and Rocafuerte monument define the centre of the plaza, while the avenue connects it to the waterfront.",
-        "tagline": "Rocafuerte’s monument on the city’s historic avenue"
+        "tagline": "Rocafuerte’s monument on the city’s historic avenue",
+        "experience": "Look at the monument from the avenue and again from the church side. Each angle shows a different relationship between the fountain and plaza."
       },
       "es": {
         "tip": "Rodea la pileta para comparar monumento, atrio y avenida.",
         "detail": "La pileta y el monumento a Rocafuerte marcan el centro de la plaza; la avenida la conecta con el malecón.",
-        "tagline": "El monumento a Rocafuerte sobre la avenida histórica de la ciudad"
+        "tagline": "El monumento a Rocafuerte sobre la avenida histórica de la ciudad",
+        "experience": "Observa el monumento desde la avenida y desde el templo para comparar la relación de la fuente con la plaza."
       },
       "zh": {
         "tip": "绕喷泉走一圈，对照纪念像、教堂入口和大道的位置。",
         "detail": "喷泉与罗卡富埃尔特纪念像形成广场中心，十月九日大道则把广场接向河岸。",
-        "tagline": "十月九日大道上，以罗卡富埃尔特纪念像为中心的历史广场"
+        "tagline": "十月九日大道上，以罗卡富埃尔特纪念像为中心的历史广场",
+        "experience": "分别从大道侧和教堂侧观察纪念像，比较喷泉与广场空间的关系。"
       }
     }
   },
@@ -985,17 +1099,20 @@
       "en": {
         "tip": "Compare the twin towers and the central entrance; check whether worship permits a visit.",
         "detail": "The church and the plaza tell different stories from the same approach: look first at the street-facing towers, then at the public square.",
-        "tagline": "Twin towers looking onto San Francisco Square"
+        "tagline": "Twin towers looking onto San Francisco Square",
+        "experience": "The square offers a clear view of the two towers. If there is a service, keep the visit to the exterior and forecourt."
       },
       "es": {
         "tip": "Compara las torres y la entrada central; verifica el acceso según el culto.",
         "detail": "El templo y la plaza cuentan historias distintas desde el mismo acceso: mira las torres que dan a la calle y luego el espacio público.",
-        "tagline": "Dos torres frente a la plaza San Francisco"
+        "tagline": "Dos torres frente a la plaza San Francisco",
+        "experience": "Desde la plaza se ven las dos torres. Si hay culto, limita la visita al exterior y al atrio."
       },
       "zh": {
         "tip": "对照双塔与中央门户，礼拜期间按现场安排参观。",
         "detail": "从同一个路口可先看教堂朝向街道的双塔，再看前方广场的开放布局。",
-        "tagline": "面向圣弗朗西斯科广场的双塔教堂"
+        "tagline": "面向圣弗朗西斯科广场的双塔教堂",
+        "experience": "广场上视野开阔，可以看清双塔。遇礼拜时以外观与前庭为主。"
       }
     }
   },
@@ -1013,17 +1130,20 @@
       "en": {
         "tip": "Look up at the vertical lines of the frontage before entering, when services permit.",
         "detail": "Focus on the relationship between the tall entrance, upper windows and flanking elements rather than viewing the façade from a single close angle.",
-        "tagline": "A vertical church façade on Víctor Manuel Rendón"
+        "tagline": "A vertical church façade on Víctor Manuel Rendón",
+        "experience": "View the doorway head-on, then move to the corner to read the upper windows and vertical details."
       },
       "es": {
         "tip": "Observa las líneas verticales de la fachada antes de entrar, si el culto lo permite.",
         "detail": "Compara el pórtico, los vanos altos y los elementos laterales en lugar de mirar toda la fachada desde cerca.",
-        "tagline": "Una fachada de líneas verticales en Víctor Manuel Rendón"
+        "tagline": "Una fachada de líneas verticales en Víctor Manuel Rendón",
+        "experience": "Mira el pórtico de frente y después desde la esquina para leer los vanos altos y los detalles verticales."
       },
       "zh": {
         "tip": "先抬头看建筑立面的垂直线条，再视礼拜安排决定是否入内。",
         "detail": "不要只在入口仰望，可后退比较高门廊、上层窗洞与两侧构件。",
-        "tagline": "在伦东街近看高耸立面与入口构造"
+        "tagline": "在伦东街近看高耸立面与入口构造",
+        "experience": "先正面看门廊，再从街角观察较高的窗洞和纵向装饰。"
       }
     }
   },
@@ -1041,17 +1161,20 @@
       "en": {
         "tip": "Read the entrance from the atrium and connect on foot toward Las Peñas when the route is open.",
         "detail": "The atrium changes the perspective from the busy street to the church’s entry axis; use that change to read the building.",
-        "tagline": "A Dominican church near the approach to Las Peñas"
+        "tagline": "A Dominican church near the approach to Las Peñas",
+        "experience": "From the street, pause at the forecourt to see how the approach narrows toward the main doorway."
       },
       "es": {
         "tip": "Observa la entrada desde el atrio y continúa a pie hacia Las Peñas si el paso está habilitado.",
         "detail": "El atrio cambia la perspectiva de la calle al eje del templo; aprovecha la transición para leer el edificio.",
-        "tagline": "Un templo dominicano próximo al acceso a Las Peñas"
+        "tagline": "Un templo dominicano próximo al acceso a Las Peñas",
+        "experience": "Desde la calle, detente en el atrio para ver cómo el acceso se estrecha hacia la entrada principal."
       },
       "zh": {
         "tip": "站在前庭观察入口，再从开放通道步行往拉斯佩尼亚斯。",
         "detail": "前庭把街道视线收向教堂入口中轴，可利用这一过渡观察建筑。",
-        "tagline": "通往拉斯佩尼亚斯途中可停留的多明我会教堂"
+        "tagline": "通往拉斯佩尼亚斯途中可停留的多明我会教堂",
+        "experience": "从路边走到前庭，观察进深和视线如何收向教堂正门。"
       }
     }
   },
@@ -1069,17 +1192,20 @@
       "en": {
         "tip": "Ask for the heritage circuit and give funerals and private visitors space.",
         "detail": "The managing charity dates the cemetery’s national heritage designation to 2003. Compare mausoleums by materials and family inscriptions.",
-        "tagline": "Mausoleum sculpture and Guayaquil’s civic memory"
+        "tagline": "Mausoleum sculpture and Guayaquil’s civic memory",
+        "experience": "Set aside time to read inscriptions along one open avenue rather than trying to cover the entire grounds."
       },
       "es": {
         "tip": "Consulta el recorrido patrimonial y deja espacio a ceremonias y visitantes.",
         "detail": "La entidad gestora fecha la declaratoria patrimonial nacional en 2003. Compara mausoleos por materiales e inscripciones familiares.",
-        "tagline": "Escultura funeraria y memoria cívica de Guayaquil"
+        "tagline": "Escultura funeraria y memoria cívica de Guayaquil",
+        "experience": "Dedica tiempo a leer las inscripciones en una avenida abierta, sin intentar recorrer todo el cementerio."
       },
       "zh": {
         "tip": "先查询遗产参观路线，遇到葬礼或祭扫人士请留出空间。",
         "detail": "管理机构记载公墓于 2003 年列为国家文化遗产；可比较墓室材质与家族铭文。",
-        "tagline": "沿墓园大道看家族墓室、石雕与城市历史"
+        "tagline": "沿墓园大道看家族墓室、石雕与城市历史",
+        "experience": "在一条开放主路上慢慢读铭文，比一次走完整个墓园更容易了解背景。"
       }
     }
   },
@@ -1097,17 +1223,20 @@
       "en": {
         "tip": "Verify the current visitor approach before climbing and use open public viewpoints.",
         "detail": "From the open lookout, look back toward the old centre. From below, the monument acts as a hilltop orientation mark.",
-        "tagline": "A Sacred Heart monument above the old city"
+        "tagline": "A Sacred Heart monument above the old city",
+        "experience": "Keep the summit visit conditional on the open approach. From below, use the statue to orient yourself around the northern centre."
       },
       "es": {
         "tip": "Consulta el acceso vigente antes de subir y usa los miradores públicos habilitados.",
         "detail": "Desde el mirador abierto, vuelve la vista al centro antiguo; desde abajo, el monumento sirve de referencia en la cima.",
-        "tagline": "El monumento al Sagrado Corazón sobre el casco antiguo"
+        "tagline": "El monumento al Sagrado Corazón sobre el casco antiguo",
+        "experience": "Deja la visita de la cima sujeta al acceso. Desde abajo, usa la estatua para orientarte en el norte del centro."
       },
       "zh": {
         "tip": "上山前核实开放入口，仅使用开放的公共观景区。",
         "detail": "在开放观景区回望老城区；从低处则可把山顶纪念像作为辨向地标。",
-        "tagline": "从卡门山的耶稣圣心纪念像辨认老城地形"
+        "tagline": "从卡门山的耶稣圣心纪念像辨认老城地形",
+        "experience": "山顶以当天开放入口为准；在山下也可用雕像辨认历史中心北侧方向。"
       }
     }
   },
@@ -1125,17 +1254,20 @@
       "en": {
         "tip": "Compare materials and origin across stalls before choosing; keep aisles clear.",
         "detail": "The variety is easiest to see by comparing the textile stalls with woodwork and souvenir displays along the aisles.",
-        "tagline": "Textiles and craft stalls a short walk from the northern waterfront"
+        "tagline": "Textiles and craft stalls a short walk from the northern waterfront",
+        "experience": "Compare the handling and finish of similar pieces across stalls. Ask vendors where each item was made."
       },
       "es": {
         "tip": "Compara materiales y procedencia entre puestos antes de elegir; deja libres los pasillos.",
         "detail": "La variedad se aprecia al comparar los puestos textiles con las artesanías de madera y los recuerdos de los pasillos.",
-        "tagline": "Textiles y artesanías a pocos pasos del malecón norte"
+        "tagline": "Textiles y artesanías a pocos pasos del malecón norte",
+        "experience": "Compara el acabado de piezas similares en varios puestos y pregunta dónde se elaboraron."
       },
       "zh": {
         "tip": "购买前可比较材质和产地，驻足时留出通道。",
         "detail": "沿巷道分别观察纺织品、木作和纪念品摊位，理解市场的商品分布。",
-        "tagline": "北段滨河长廊附近，适合比较纺织品与手工艺的市场"
+        "tagline": "北段滨河长廊附近，适合比较纺织品与手工艺的市场",
+        "experience": "可在不同摊位比较同类物件的做工，并询问产地。"
       }
     }
   },
@@ -1153,17 +1285,20 @@
       "en": {
         "tip": "Start with the chronology and then choose one tournament or player to follow.",
         "detail": "Use the years on trophies, programmes and photographs to place club milestones in order.",
-        "tagline": "Club trophies and match history in the Astillero building"
+        "tagline": "Club trophies and match history in the Astillero building",
+        "experience": "Use match dates or tournament labels to put trophies and memorabilia in order. Pair it with Emelec only if both galleries are open."
       },
       "es": {
         "tip": "Empieza por la cronología y sigue después un torneo o un jugador.",
         "detail": "Usa los años de trofeos, programas y fotografías para ordenar los hitos del club.",
-        "tagline": "Trofeos e historia deportiva en el edificio Astillero"
+        "tagline": "Trofeos e historia deportiva en el edificio Astillero",
+        "experience": "Ordena trofeos y recuerdos con las fechas de torneos. Combina con Emelec solo si ambas salas están abiertas."
       },
       "zh": {
         "tip": "先看年代线，再选一项赛事或一位球员深入了解。",
         "detail": "依据奖杯、赛程资料与照片上的年份串起俱乐部重要节点。",
-        "tagline": "在阿斯蒂列罗大楼通过奖杯与赛事资料认识俱乐部历史"
+        "tagline": "在阿斯蒂列罗大楼通过奖杯与赛事资料认识俱乐部历史",
+        "experience": "按赛事年代串起奖杯和纪念物，两馆都开放时再与埃梅莱克展馆一起安排。"
       }
     }
   },
@@ -1181,17 +1316,20 @@
       "en": {
         "tip": "Compare kit design and the historic labels; identify the Emelec entrance in Astillero.",
         "detail": "Read the changes in club colours, kit patterns and sponsor lettering across periods where the displays permit comparison.",
-        "tagline": "Emelec kits and memorabilia in Puerto Santa Ana"
+        "tagline": "Emelec kits and memorabilia in Puerto Santa Ana",
+        "experience": "Compare two generations of shirts and their emblems before looking at the trophies. Use the club entrance to distinguish the two museums."
       },
       "es": {
         "tip": "Compara camisetas y cartelas; identifica el ingreso de Emelec en el Astillero.",
         "detail": "Compara colores, diseños de camisetas y rótulos de patrocinadores entre épocas cuando el montaje lo permita.",
-        "tagline": "Camisetas y recuerdos de Emelec en Puerto Santa Ana"
+        "tagline": "Camisetas y recuerdos de Emelec en Puerto Santa Ana",
+        "experience": "Compara dos generaciones de camisetas y escudos antes de ver los trofeos. Usa el acceso del club para distinguir los museos."
       },
       "zh": {
         "tip": "对照各时期球衣与展签，并确认进入的是阿斯蒂列罗的埃梅莱克展馆。",
         "detail": "通过展览允许比较的球衣，观察各时代的颜色、图案与赞助标识变化。",
-        "tagline": "圣安娜港内，展示球队球衣与纪念物的独立博物馆"
+        "tagline": "圣安娜港内，展示球队球衣与纪念物的独立博物馆",
+        "experience": "先比较两个年代的球衣与队徽，再看奖杯，进门前用俱乐部门牌辨认展馆。"
       }
     }
   },
@@ -1209,17 +1347,20 @@
       "en": {
         "tip": "For a match, identify the stand and street access on the ticket before leaving.",
         "detail": "Look at the large stadium perimeter before a match and identify where the different spectator approaches diverge.",
-        "tagline": "A match-day landmark in the Bellavista sector"
+        "tagline": "A match-day landmark in the Bellavista sector",
+        "experience": "On a match day, walk directly to the gate printed on the ticket. Use the exterior perimeter on a separate visit if you want a wider view."
       },
       "es": {
         "tip": "Para un partido, identifica en el boleto la tribuna y su acceso antes de salir.",
         "detail": "Observa el perímetro antes del partido y localiza dónde se separan los accesos del público.",
-        "tagline": "Un punto de referencia futbolístico en Bellavista"
+        "tagline": "Un punto de referencia futbolístico en Bellavista",
+        "experience": "En día de partido, ve a la puerta del boleto. Para ver el conjunto, recorre el perímetro exterior en otra ocasión."
       },
       "zh": {
         "tip": "看球前先对照票面确认看台及对应道路入口。",
         "detail": "比赛前可观察球场大尺度外围，以及各看台入口如何分流观众。",
-        "tagline": "贝拉维斯塔一带的大型足球主场"
+        "tagline": "贝拉维斯塔一带的大型足球主场",
+        "experience": "比赛日直接按票面找入口；想观察球场整体，可另行绕公共外缘步行。"
       }
     }
   },
@@ -1237,17 +1378,20 @@
       "en": {
         "tip": "Check the gate before circling the block and plan the post-match pickup separately.",
         "detail": "The Capwell is integrated into city streets, so the relationship between its stands and the neighbourhood is clearest from a corner.",
-        "tagline": "A football stadium woven into the streets around Avenida Quito"
+        "tagline": "A football stadium woven into the streets around Avenida Quito",
+        "experience": "Look up from a street corner to see how the stands sit against the surrounding city blocks. Arrange your post-match pickup away from the gate."
       },
       "es": {
         "tip": "Verifica la puerta antes de rodear la manzana y organiza por separado el regreso.",
         "detail": "El Capwell se integra en las calles de la ciudad y su relación con el barrio se aprecia mejor desde una esquina.",
-        "tagline": "Un estadio de fútbol integrado en las calles junto a la avenida Quito"
+        "tagline": "Un estadio de fútbol integrado en las calles junto a la avenida Quito",
+        "experience": "Desde una esquina, observa cómo las gradas se integran en las manzanas vecinas. Acuerda la recogida lejos de la puerta."
       },
       "zh": {
         "tip": "绕场前核对入口，提前安排比赛结束后的接驳。",
         "detail": "卡普韦尔球场嵌在街区中，从街角最容易看出看台与周围街道的关系。",
-        "tagline": "嵌在基多大道周边街区内的埃梅莱克主场"
+        "tagline": "嵌在基多大道周边街区内的埃梅莱克主场",
+        "experience": "从街角抬头看球场看台与街区的关系，赛后把接车点约在远离入场口的位置。"
       }
     }
   },
@@ -1265,17 +1409,20 @@
       "en": {
         "tip": "Check which entrance serves your event and leave time to cross the wider avenue.",
         "detail": "The public monument to Spencer near the stadium makes a separate exterior stop even when there is no event.",
-        "tagline": "A city stadium and a public tribute to Alberto Spencer"
+        "tagline": "A city stadium and a public tribute to Alberto Spencer",
+        "experience": "Allow a short stop at Spencer’s public monument before your event. Check the gate separately from the sculpture’s location."
       },
       "es": {
         "tip": "Comprueba cuál acceso corresponde a tu evento y deja tiempo para cruzar la avenida.",
         "detail": "El monumento público a Spencer permite una parada en el exterior aun cuando no haya un evento.",
-        "tagline": "Un estadio urbano y un homenaje público a Alberto Spencer"
+        "tagline": "Un estadio urbano y un homenaje público a Alberto Spencer",
+        "experience": "Haz una parada breve en el monumento a Spencer antes de tu evento y confirma por separado la entrada."
       },
       "zh": {
         "tip": "先确认活动使用的入口，并为跨越较宽的主路留时间。",
         "detail": "即使没有比赛，场馆外围的斯潘塞纪念像也可作为单独的外观参观点。",
-        "tagline": "可以独立看外观与斯潘塞纪念像的市区体育场"
+        "tagline": "可以独立看外观与斯潘塞纪念像的市区体育场",
+        "experience": "活动前可在斯潘塞纪念像前短暂停留，之后按票面另找场馆入口。"
       }
     }
   },
@@ -1293,17 +1440,20 @@
       "en": {
         "tip": "Check service and payment first; allow for a separate return ride.",
         "detail": "Compare the view near the northern promenade with the view from the middle of the Guayas crossing.",
-        "tagline": "A cable-car crossing from the northern Malecón toward Durán"
+        "tagline": "A cable-car crossing from the northern Malecón toward Durán",
+        "experience": "The Guayas crossing links two urban areas. Keep enough balance on the card for the return trip and check the land connection in Durán."
       },
       "es": {
         "tip": "Verifica el servicio y el pago; reserva tiempo para el regreso por separado.",
         "detail": "Compara las vistas cerca del malecón norte con las del tramo central del cruce del Guayas.",
-        "tagline": "Un cruce aéreo desde el malecón norte hacia Durán"
+        "tagline": "Un cruce aéreo desde el malecón norte hacia Durán",
+        "experience": "El cruce del Guayas enlaza dos zonas urbanas. Carga saldo para el regreso y revisa el enlace terrestre en Durán."
       },
       "zh": {
         "tip": "先查运营和支付方式，再为独立返程留时间。",
         "detail": "对照北段长廊附近的视角与跨越瓜亚斯河中段时的水面景观。",
-        "tagline": "从北段滨河长廊搭缆车跨瓜亚斯河前往杜兰"
+        "tagline": "从北段滨河长廊搭缆车跨瓜亚斯河前往杜兰",
+        "experience": "缆车横跨瓜亚斯河，连接两座城市。出发前给往返预留储值，并确认杜兰端的地面接驳。"
       }
     }
   },
@@ -1321,17 +1471,20 @@
       "en": {
         "tip": "Plan an exterior heritage stop and check for a separately announced rail service.",
         "detail": "Look for the relationship between the station building, its open forecourt and the railway corridor without entering restricted areas.",
-        "tagline": "Railway heritage on the other side of the Guayas"
+        "tagline": "Railway heritage on the other side of the Guayas",
+        "experience": "Use the forecourt to see the relationship between the station and the track corridor. A rail departure requires separate confirmation."
       },
       "es": {
         "tip": "Planea una parada patrimonial exterior y verifica si hay servicio ferroviario anunciado.",
         "detail": "Observa la relación entre el edificio, la explanada y el corredor ferroviario sin entrar en zonas restringidas.",
-        "tagline": "Patrimonio ferroviario al otro lado del Guayas"
+        "tagline": "Patrimonio ferroviario al otro lado del Guayas",
+        "experience": "Usa la explanada para observar la relación entre la estación y el corredor de vías. Confirma aparte si hay alguna salida."
       },
       "zh": {
         "tip": "先按铁路遗产外观参观规划，乘车安排另查运营公告。",
         "detail": "在公共空间观察站房、站前空地和铁路线的位置关系。",
-        "tagline": "瓜亚斯河对岸，可独立参观外观的铁路遗产"
+        "tagline": "瓜亚斯河对岸，可独立参观外观的铁路遗产",
+        "experience": "站在前广场观察站房与铁路线的位置关系；要乘车需另查公开班次。"
       }
     }
   },
@@ -1349,17 +1502,20 @@
       "en": {
         "tip": "Compare the exterior with the nearby municipal palace before crossing to the clock tower.",
         "detail": "Look along the riverfront façade and the adjacent civic passage to read how the provincial and municipal buildings share the waterfront.",
-        "tagline": "A provincial landmark beside Guayaquil’s riverfront civic passage"
+        "tagline": "A provincial landmark beside Guayaquil’s riverfront civic passage",
+        "experience": "Walk the river-facing side and compare its frontage with the adjoining municipal palace before turning into the passage."
       },
       "es": {
         "tip": "Compara el exterior con el Palacio Municipal antes de cruzar hacia la torre del reloj.",
         "detail": "Mira la fachada fluvial y el pasaje cívico para entender cómo los edificios provincial y municipal comparten la ribera.",
-        "tagline": "Un edificio provincial junto al pasaje cívico del malecón"
+        "tagline": "Un edificio provincial junto al pasaje cívico del malecón",
+        "experience": "Recorre el lado del río y compara su fachada con la del Palacio Municipal antes de entrar al pasaje."
       },
       "zh": {
         "tip": "先和旁边市政厅比较外观，再过街到钟楼。",
         "detail": "沿滨河立面和相邻步行通道观察省、市两座行政建筑如何并列。",
-        "tagline": "滨河行政建筑群中，可与市政厅对照参观的省政府宫"
+        "tagline": "滨河行政建筑群中，可与市政厅对照参观的省政府宫",
+        "experience": "沿朝河的街道比较省政府宫与相邻市政厅，再转入行政广场通道。"
       }
     }
   },
@@ -1377,17 +1533,20 @@
       "en": {
         "tip": "Check the reading-room arrangements and combine it with the neighbouring museum if open.",
         "detail": "The library’s reading and heritage collections have different uses from the adjacent museum galleries; the visitor desk can explain what is open.",
-        "tagline": "A public reading institution and heritage collection in the historic centre"
+        "tagline": "A public reading institution and heritage collection in the historic centre",
+        "experience": "If the visit is short, ask at reception which reading or heritage collections can be seen without disturbing library users."
       },
       "es": {
         "tip": "Consulta el acceso a las salas de lectura y combina la visita con el museo vecino si está abierto.",
         "detail": "Las colecciones de lectura y patrimonio tienen otro uso que las salas del museo vecino; pregunta qué áreas puedes visitar.",
-        "tagline": "Lectura pública y colecciones patrimoniales en el centro histórico"
+        "tagline": "Lectura pública y colecciones patrimoniales en el centro histórico",
+        "experience": "Si dispones de poco tiempo, pregunta qué sala o colección puedes conocer sin interrumpir a los lectores."
       },
       "zh": {
         "tip": "先查询阅览室入场规定，再搭配旁边当日开放的市立博物馆。",
         "detail": "图书馆的阅览与文献收藏有别于旁边的博物馆展厅，访客服务处可说明开放范围。",
-        "tagline": "历史中心的公共阅览机构与文献收藏"
+        "tagline": "历史中心的公共阅览机构与文献收藏",
+        "experience": "短时间到访可先问接待人员哪些阅览区或文献展览开放，参观时避免打扰读者。"
       }
     }
   },
@@ -1405,17 +1564,20 @@
       "en": {
         "tip": "Use exhibit labels to compare materials and forms among pieces.",
         "detail": "Look for comparisons between forms and finishes in the archaeological displays rather than treating each case in isolation.",
-        "tagline": "An archaeology collection at the Casa de la Cultura del Guayas"
+        "tagline": "An archaeology collection at the Casa de la Cultura del Guayas",
+        "experience": "Choose two labeled objects of different materials. Compare form and finish before moving to the next case."
       },
       "es": {
         "tip": "Usa las cartelas para comparar materiales y formas entre piezas.",
         "detail": "Busca relaciones entre las formas y acabados de las piezas arqueológicas a lo largo de las salas.",
-        "tagline": "Una colección arqueológica en la Casa de la Cultura del Guayas"
+        "tagline": "Una colección arqueológica en la Casa de la Cultura del Guayas",
+        "experience": "Elige dos piezas identificadas de materiales distintos y compara forma y acabado antes de pasar a otra vitrina."
       },
       "zh": {
         "tip": "结合展签比较不同文物的材质、形态和用途。",
         "detail": "可跨展柜比较考古文物的形制与表面处理，理解展陈主题。",
-        "tagline": "在文化之家瓜亚斯分馆比较考古展品的形制与材质"
+        "tagline": "在文化之家瓜亚斯分馆比较考古展品的形制与材质",
+        "experience": "选两件不同材质且有说明牌的文物，比较形状与表面处理后再看下一柜。"
       }
     }
   },
@@ -1433,17 +1595,20 @@
       "en": {
         "tip": "Ask which deck areas are open and note narrow passages and stairways.",
         "detail": "Approach the vessel from outside first to understand its size before viewing any public sections on board.",
-        "tagline": "A preserved gunboat at the Jambelí naval complex"
+        "tagline": "A preserved gunboat at the Jambelí naval complex",
+        "experience": "View the gunboat from land first. Its full outline is easier to read before entering any deck area that staff have opened."
       },
       "es": {
         "tip": "Consulta qué cubiertas están abiertas y fíjate en los pasos estrechos y escaleras.",
         "detail": "Mira primero el buque desde fuera para entender su escala antes de recorrer las zonas abiertas a bordo.",
-        "tagline": "Un cañonero conservado en el complejo naval Jambelí"
+        "tagline": "Un cañonero conservado en el complejo naval Jambelí",
+        "experience": "Mira primero el cañonero desde tierra para apreciar el perfil completo antes de subir a una cubierta habilitada."
       },
       "zh": {
         "tip": "先确认开放甲板，留意狭窄通道与梯级。",
         "detail": "先从岸上观察整艘炮舰的尺度，再视开放安排进入访客区域。",
-        "tagline": "在汉贝利海军综合区近看历史炮舰"
+        "tagline": "在汉贝利海军综合区近看历史炮舰",
+        "experience": "先从岸上看完整舰体轮廓，再按工作人员指引进入对访客开放的甲板。"
       }
     }
   },
@@ -1461,17 +1626,20 @@
       "en": {
         "tip": "Follow the signed path and use plant labels to pick a few specimens to compare.",
         "detail": "The orchid association describes the garden as one of its projects; compare the labelled specimens with the surrounding planted landscape.",
-        "tagline": "Plant collections and labelled trails on Cerro Colorado"
+        "tagline": "Plant collections and labelled trails on Cerro Colorado",
+        "experience": "Use the signs to compare two specimens in different light. Photograph the plant and its label separately for later identification."
       },
       "es": {
         "tip": "Sigue el sendero señalizado y usa las etiquetas para comparar algunas plantas.",
         "detail": "La asociación de orquideología identifica el jardín como uno de sus proyectos; compara los ejemplares señalizados con el paisaje plantado.",
-        "tagline": "Colecciones botánicas y senderos señalizados en Cerro Colorado"
+        "tagline": "Colecciones botánicas y senderos señalizados en Cerro Colorado",
+        "experience": "Compara dos ejemplares en condiciones de luz distintas con ayuda de las etiquetas. Fotografía por separado la planta y su ficha."
       },
       "zh": {
         "tip": "沿标示步道走，挑几株有标签的植物比较形态。",
         "detail": "兰花协会将植物园列为其项目之一，游览时可比较有标签的植物与周边种植景观。",
-        "tagline": "沿科罗拉多山的标示步道观察植物与展签"
+        "tagline": "沿科罗拉多山的标示步道观察植物与展签",
+        "experience": "借助标牌比较不同光照环境下的两种植物，另拍植物标签便于事后识别。"
       }
     }
   },
@@ -1489,17 +1657,20 @@
       "en": {
         "tip": "Ask for an open trail suitable for the group and follow guide and reservation rules.",
         "detail": "The operator identifies Cerro Blanco as tropical dry forest. Compare shade, leaf cover and terrain along the open trail.",
-        "tagline": "A tropical dry-forest visit on the west side of Guayaquil"
+        "tagline": "A tropical dry-forest visit on the west side of Guayaquil",
+        "experience": "Ask which dry-forest trail suits the group before booking. Leave time to compare canopy cover from open and shaded sections."
       },
       "es": {
         "tip": "Consulta qué sendero abierto se ajusta al grupo y respeta las reglas de guía y reserva.",
         "detail": "El operador identifica Cerro Blanco como bosque seco tropical. Compara sombra, cobertura vegetal y terreno en el sendero abierto.",
-        "tagline": "Una visita al bosque seco tropical al oeste de Guayaquil"
+        "tagline": "Una visita al bosque seco tropical al oeste de Guayaquil",
+        "experience": "Antes de reservar, consulta qué sendero de bosque seco se adapta al grupo. Compara el dosel entre los tramos abiertos y sombreados."
       },
       "zh": {
         "tip": "向管理方问清适合同行者的开放路线，遵守预约与导览安排。",
         "detail": "管理方将这里列为热带干林；沿开放路线比较树荫、叶冠与地形。",
-        "tagline": "瓜亚基尔西侧、需按路线预约的热带干林"
+        "tagline": "瓜亚基尔西侧、需按路线预约的热带干林",
+        "experience": "预约前先确认哪条干林步道适合同行者，途中比较开阔与阴凉路段的树冠差异。"
       }
     }
   },
@@ -1517,17 +1688,20 @@
       "en": {
         "tip": "Verify access and think of the viewpoint as conditional on the permitted trail.",
         "detail": "The contrast between the hill’s vegetation and built-up Bellavista is best observed from an authorised viewpoint.",
-        "tagline": "A protected hillside above Bellavista"
+        "tagline": "A protected hillside above Bellavista",
+        "experience": "Keep the viewpoint optional until the trail is confirmed open. From the authorized approach, compare the vegetated slope with Bellavista’s buildings."
       },
       "es": {
         "tip": "Consulta el acceso y considera el mirador solo si el sendero está habilitado.",
         "detail": "El contraste entre la vegetación y la zona construida de Bellavista se aprecia desde un mirador habilitado.",
-        "tagline": "Una ladera protegida sobre Bellavista"
+        "tagline": "Una ladera protegida sobre Bellavista",
+        "experience": "Mantén el mirador como opción hasta confirmar el sendero. Desde el acceso autorizado, compara la ladera vegetal con las construcciones de Bellavista."
       },
       "zh": {
         "tip": "先确认准入，只有步道开放时才把观景点排入行程。",
         "detail": "从开放观景点对照山地植被与贝拉维斯塔的城市建筑。",
-        "tagline": "贝拉维斯塔上方受保护的山地与开放观景线路"
+        "tagline": "贝拉维斯塔上方受保护的山地与开放观景线路",
+        "experience": "先核实步道是否开放，再决定是否登观景点。沿合法开放路线观察植被山坡与城建的对比。"
       }
     }
   },
@@ -1545,17 +1719,20 @@
       "en": {
         "tip": "Use the named street to distinguish this neighbourhood walk from the other Salado promenades.",
         "detail": "Look for places where the linear path widens, changing the view from neighbourhood streets to the estuary branch.",
-        "tagline": "A neighbourhood path along an Estero Salado branch"
+        "tagline": "A neighbourhood path along an Estero Salado branch",
+        "experience": "Start from José Santiago Castillo, where the neighbourhood streets meet the path. The route is easier to orient by the water than by the other Salado parks."
       },
       "es": {
         "tip": "Usa la calle como referencia para distinguir el parque de otros malecones del Salado.",
         "detail": "Fíjate en cómo se ensancha el paseo y cambia la vista desde las calles hacia el ramal del estero.",
-        "tagline": "Un paseo vecinal junto a un ramal del Estero Salado"
+        "tagline": "Un paseo vecinal junto a un ramal del Estero Salado",
+        "experience": "Empieza en José Santiago Castillo, donde las calles del barrio se unen al sendero, y usa el ramal de agua para orientarte."
       },
       "zh": {
         "tip": "导航时核对街名，避免走到萨拉多河口的其他长廊。",
         "detail": "留意园道变宽的路段，观察视野如何从街区转向河口支汊。",
-        "tagline": "在肯尼迪北区沿萨拉多河口支汊步行"
+        "tagline": "在肯尼迪北区沿萨拉多河口支汊步行",
+        "experience": "从何塞·圣地亚哥·卡斯蒂略街进入，沿水道辨认方向，避免导航到其他萨拉多河口公园。"
       }
     }
   },
@@ -1573,17 +1750,20 @@
       "en": {
         "tip": "Check access from Vía a la Costa and use only the designated recreation areas.",
         "detail": "The reservoir was created by damming the Chongón River. The open water and planted edges explain the area’s landscape.",
-        "tagline": "Reservoir landscapes and designated recreation at Chongón"
+        "tagline": "Reservoir landscapes and designated recreation at Chongón",
+        "experience": "Pick the picnic area, lookout or cycle route before arrival. Their schedules differ, and a land-based visit is the simplest plan."
       },
       "es": {
         "tip": "Verifica el ingreso desde Vía a la Costa y usa solo las áreas recreativas habilitadas.",
         "detail": "El embalse se formó al represar el río Chongón. El espejo de agua y su borde vegetal explican el paisaje.",
-        "tagline": "Paisaje de embalse y recreación delimitada en Chongón"
+        "tagline": "Paisaje de embalse y recreación delimitada en Chongón",
+        "experience": "Elige antes de llegar entre picnic, mirador o ruta ciclista. Tienen horarios distintos y el paseo terrestre es la opción más sencilla."
       },
       "zh": {
         "tip": "核对滨海道路上的入口，只在指定游憩区活动。",
         "detail": "水库由拦蓄冲贡河形成，开阔水面与库岸植被构成主要景观。",
-        "tagline": "在冲贡水库指定游憩区看水面和岸线"
+        "tagline": "在冲贡水库指定游憩区看水面和岸线",
+        "experience": "抵达前先选野餐区、观景区或自行车路线，各区时段不同，按陆上步道规划更稳妥。"
       }
     }
   },
@@ -1601,17 +1781,20 @@
       "en": {
         "tip": "Check the opening and ticket information, then allow time to follow the signed loop.",
         "detail": "Treat the zoo as a series of designated observation points; enclosure signage helps put each stop into context.",
-        "tagline": "A guided zoo circuit on the road to Daule"
+        "tagline": "A guided zoo circuit on the road to Daule",
+        "experience": "Start with the guide and use the enclosure signs to set the context. Leave room for the group at each designated viewing point."
       },
       "es": {
         "tip": "Consulta horarios y entradas y reserva tiempo para seguir el circuito señalizado.",
         "detail": "Recorre el zoológico por sus puntos de observación; la señalética de cada recinto aporta contexto.",
-        "tagline": "Un circuito guiado de zoológico en la vía a Daule"
+        "tagline": "Un circuito guiado de zoológico en la vía a Daule",
+        "experience": "Comienza con el guía y lee los carteles de los recintos. Deja espacio para el grupo en los puntos de observación."
       },
       "zh": {
         "tip": "先查运营和票务，再为走完整条标示路线留时间。",
         "detail": "按园方指定观察点游览，结合各围栏附近的说明牌了解展区。",
-        "tagline": "通往道莱的大道旁，按园方导览路线观察动物"
+        "tagline": "通往道莱的大道旁，按园方导览路线观察动物",
+        "experience": "随导览出发，结合围栏说明理解展区；在指定观景点给同行访客留出空间。"
       }
     }
   },
@@ -1629,17 +1812,20 @@
       "en": {
         "tip": "Use it as a meeting stop before walking the estuary and check separately for events.",
         "detail": "The bridge, plaza and walkway make three distinct elements of the same approach to Estero Salado.",
-        "tagline": "A meeting point before the Estero Salado waterfront walk"
+        "tagline": "A meeting point before the Estero Salado waterfront walk",
+        "experience": "Meet on the plaza side before walking toward the bridge. The bridge approach makes a clear orientation point for returning."
       },
       "es": {
         "tip": "Úsala como punto de encuentro antes de recorrer el estero y verifica si hay eventos.",
         "detail": "Puente, plaza y paseo forman tres elementos distintos del mismo acceso al Estero Salado.",
-        "tagline": "Un punto de encuentro antes del paseo junto al Estero Salado"
+        "tagline": "Un punto de encuentro antes del paseo junto al Estero Salado",
+        "experience": "Reúnete en el lado de la plaza antes de ir al puente. Usa el acceso al puente para orientarte al volver."
       },
       "zh": {
         "tip": "适合作为沿河口步行前的集合点，活动安排单独查询。",
         "detail": "大桥、广场与步道构成同一河口入口的三个不同空间。",
-        "tagline": "进入萨拉多河口步道前便于会合的广场"
+        "tagline": "进入萨拉多河口步道前便于会合的广场",
+        "experience": "先在广场一侧集合，再走往大桥；返程可把引桥作为明显的辨向点。"
       }
     }
   }

@@ -1,3 +1,5 @@
+import { SiteChrome } from "@/components/SiteChrome";
+import { notFound } from "next/navigation";
 import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "next-themes";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
@@ -125,9 +127,10 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+  if (locale !== "zh" && locale !== "en" && locale !== "es") notFound();
   return (
     <html lang={locale} suppressHydrationWarning className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body className="antialiased"><ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>{children}</ThemeProvider></body>
+      <body className="antialiased"><ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem><SiteChrome locale={locale}>{children}</SiteChrome></ThemeProvider></body>
     </html>
   );
 }

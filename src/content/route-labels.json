@@ -1,0 +1,406 @@
+{
+  "Jardines": {
+    "en": "Gardens",
+    "zh": "花园"
+  },
+  "Hemiciclo": {
+    "en": "Hemicycle",
+    "zh": "半圆柱廊"
+  },
+  "Paseo del Guayas": {
+    "en": "Guayas river walk",
+    "zh": "瓜亚斯河步道"
+  },
+  "Base de la Torre Morisca": {
+    "en": "Base of the Moorish Tower",
+    "zh": "摩尔式钟楼塔基"
+  },
+  "Malecón": {
+    "en": "Waterfront promenade",
+    "zh": "滨河长廊"
+  },
+  "Taquilla La Perla": {
+    "en": "La Perla ticket office",
+    "zh": "拉佩尔拉售票处"
+  },
+  "Paseo hacia MAAC": {
+    "en": "Walk toward MAAC",
+    "zh": "步行至人类学与当代艺术博物馆"
+  },
+  "Lagunas": {
+    "en": "Lagoons",
+    "zh": "人工湖"
+  },
+  "Senderos hacia La Perla": {
+    "en": "Paths toward La Perla",
+    "zh": "通往拉佩尔拉的步道"
+  },
+  "Monumento a Olmedo": {
+    "en": "Olmedo monument",
+    "zh": "奥尔梅多纪念像"
+  },
+  "Tramo hacia Aguirre": {
+    "en": "Path toward Aguirre",
+    "zh": "通往阿吉雷街的路段"
+  },
+  "Dioramas": {
+    "en": "Dioramas",
+    "zh": "微缩展景"
+  },
+  "Explanada del MAAC": {
+    "en": "MAAC forecourt",
+    "zh": "人类学与当代艺术博物馆前广场"
+  },
+  "Salas arqueológicas": {
+    "en": "Archaeology galleries",
+    "zh": "考古展厅"
+  },
+  "Salas de arte contemporáneo": {
+    "en": "Contemporary art galleries",
+    "zh": "当代艺术展厅"
+  },
+  "Escalinata Diego Noboa": {
+    "en": "Diego Noboa staircase",
+    "zh": "迭戈·诺沃亚阶梯"
+  },
+  "Plaza del Faro": {
+    "en": "Lighthouse Square",
+    "zh": "灯塔广场"
+  },
+  "Últimos peldaños de Diego Noboa": {
+    "en": "Upper Diego Noboa steps",
+    "zh": "迭戈·诺沃亚阶梯上段"
+  },
+  "Mirador del Guayas": {
+    "en": "Guayas overlook",
+    "zh": "瓜亚斯河观景台"
+  },
+  "Busto de Orellana": {
+    "en": "Bust of Orellana",
+    "zh": "奥雷利亚纳半身像"
+  },
+  "Museo del Bombero": {
+    "en": "Firefighters Museum",
+    "zh": "消防博物馆"
+  },
+  "Entrada del museo": {
+    "en": "Museum entrance",
+    "zh": "博物馆入口"
+  },
+  "Vehículos y herramientas": {
+    "en": "Vehicles and equipment",
+    "zh": "车辆与工具展区"
+  },
+  "Edificio Astillero": {
+    "en": "Astillero building",
+    "zh": "阿斯蒂列罗大楼"
+  },
+  "Paseo fluvial": {
+    "en": "Riverside promenade",
+    "zh": "滨河步道"
+  },
+  "Segundo piso": {
+    "en": "Second floor",
+    "zh": "二楼"
+  },
+  "Cuadra del Cacao": {
+    "en": "Cacao Museum block",
+    "zh": "可可博物馆街段"
+  },
+  "Salas de historia": {
+    "en": "History galleries",
+    "zh": "历史展厅"
+  },
+  "Senderos del parque": {
+    "en": "Park paths",
+    "zh": "公园步道"
+  },
+  "Fachada de la Catedral": {
+    "en": "Cathedral façade",
+    "zh": "大教堂立面"
+  },
+  "Pórtico de la Catedral": {
+    "en": "Cathedral portico",
+    "zh": "大教堂门廊"
+  },
+  "Soportales": {
+    "en": "Arcades",
+    "zh": "柱廊"
+  },
+  "Salas cronológicas": {
+    "en": "Chronological galleries",
+    "zh": "按年代布置的展厅"
+  },
+  "Salas de arte colonial": {
+    "en": "Colonial art galleries",
+    "zh": "殖民时期艺术展厅"
+  },
+  "Columna de los Próceres": {
+    "en": "Independence memorial column",
+    "zh": "独立纪念柱"
+  },
+  "Salida hacia Carchi": {
+    "en": "Exit toward Carchi",
+    "zh": "通往卡尔奇街的出口"
+  },
+  "Paseo del estero": {
+    "en": "Estuary walk",
+    "zh": "河口步道"
+  },
+  "Salida hacia Guayarte": {
+    "en": "Exit toward Guayarte",
+    "zh": "通往瓜亚尔特的出口"
+  },
+  "Vista del puente Zigzag": {
+    "en": "View of Zigzag Bridge",
+    "zh": "锯齿桥观景点"
+  },
+  "Senderos interiores": {
+    "en": "Interior paths",
+    "zh": "园内步道"
+  },
+  "Sector deportivo": {
+    "en": "Sports area",
+    "zh": "运动区"
+  },
+  "Acceso de calle El Oro": {
+    "en": "El Oro Street access",
+    "zh": "埃尔奥罗街入口"
+  },
+  "Pasarelas autorizadas": {
+    "en": "Authorized boardwalks",
+    "zh": "开放栈道"
+  },
+  "Regreso por el acceso habilitado": {
+    "en": "Return via the open entrance",
+    "zh": "沿开放入口返回"
+  },
+  "Vestíbulo": {
+    "en": "Lobby",
+    "zh": "大厅"
+  },
+  "Sala indicada en la entrada": {
+    "en": "Auditorium named on the ticket",
+    "zh": "票面注明的演出厅"
+  },
+  "Escalera de madera": {
+    "en": "Timber staircase",
+    "zh": "木楼梯"
+  },
+  "Salas de época": {
+    "en": "Period rooms",
+    "zh": "历史陈设展室"
+  },
+  "Parque central": {
+    "en": "Central park",
+    "zh": "中央公园"
+  },
+  "Frente del antiguo Palacio": {
+    "en": "Old town hall frontage",
+    "zh": "旧市政厅正面"
+  },
+  "Fachada": {
+    "en": "Façade",
+    "zh": "建筑立面"
+  },
+  "Pórtico de Santa Ana": {
+    "en": "Santa Ana church portico",
+    "zh": "圣安娜教堂门廊"
+  },
+  "Acceso UEES": {
+    "en": "UEES campus entrance",
+    "zh": "UEES 校园入口"
+  },
+  "Recepción": {
+    "en": "Reception",
+    "zh": "接待处"
+  },
+  "Galerías presidenciales": {
+    "en": "Presidential galleries",
+    "zh": "总统史展厅"
+  },
+  "Acceso público": {
+    "en": "Public entrance",
+    "zh": "公众入口"
+  },
+  "Graderío": {
+    "en": "Grandstand",
+    "zh": "观众看台"
+  },
+  "Ingreso al recinto": {
+    "en": "Village entrance",
+    "zh": "村落入口"
+  },
+  "Calles peatonales": {
+    "en": "Pedestrian streets",
+    "zh": "步行街巷"
+  },
+  "Ribera": {
+    "en": "Riverbank",
+    "zh": "河岸"
+  },
+  "Monumento a Rocafuerte": {
+    "en": "Rocafuerte monument",
+    "zh": "罗卡富埃尔特纪念像"
+  },
+  "Atrio de San Francisco": {
+    "en": "San Francisco church forecourt",
+    "zh": "圣弗朗西斯科教堂前庭"
+  },
+  "Atrio": {
+    "en": "Church forecourt",
+    "zh": "教堂前庭"
+  },
+  "Esquina de Víctor Manuel Rendón": {
+    "en": "Víctor Manuel Rendón Street corner",
+    "zh": "维克托·曼努埃尔·伦东街转角"
+  },
+  "Pórtico": {
+    "en": "Portico",
+    "zh": "门廊"
+  },
+  "Entorno de Las Peñas": {
+    "en": "Las Peñas area",
+    "zh": "拉斯佩尼亚斯街区附近"
+  },
+  "Puerta habilitada": {
+    "en": "Open gate",
+    "zh": "开放入口"
+  },
+  "Avenidas funerarias": {
+    "en": "Cemetery avenues",
+    "zh": "墓园主道"
+  },
+  "Acceso habilitado": {
+    "en": "Open entrance",
+    "zh": "开放入口"
+  },
+  "Monumento": {
+    "en": "Monument",
+    "zh": "纪念像"
+  },
+  "Pasillos del mercado": {
+    "en": "Market aisles",
+    "zh": "市场通道"
+  },
+  "Salida hacia el Malecón": {
+    "en": "Exit toward the waterfront",
+    "zh": "通往滨河长廊的出口"
+  },
+  "Salas del Barcelona SC": {
+    "en": "Barcelona SC galleries",
+    "zh": "巴塞罗那体育俱乐部展厅"
+  },
+  "Entrada del Museo Emelec": {
+    "en": "Emelec Museum entrance",
+    "zh": "埃梅莱克博物馆入口"
+  },
+  "Perímetro": {
+    "en": "Stadium perimeter",
+    "zh": "体育场外围"
+  },
+  "Puerta indicada": {
+    "en": "Designated gate",
+    "zh": "指定入口"
+  },
+  "Fachada del estadio": {
+    "en": "Stadium façade",
+    "zh": "球场立面"
+  },
+  "Puerta de la localidad": {
+    "en": "Gate for your seating section",
+    "zh": "对应座区的入口"
+  },
+  "Acceso del evento": {
+    "en": "Event entrance",
+    "zh": "活动入口"
+  },
+  "Estación E04": {
+    "en": "Station E04",
+    "zh": "E04 站"
+  },
+  "Edificio de la estación": {
+    "en": "Station building",
+    "zh": "站房"
+  },
+  "Explanada": {
+    "en": "Forecourt",
+    "zh": "站前广场"
+  },
+  "Acceso": {
+    "en": "Entrance",
+    "zh": "入口"
+  },
+  "Sala habilitada": {
+    "en": "Open reading room",
+    "zh": "开放阅览室"
+  },
+  "Buque museo": {
+    "en": "Museum ship",
+    "zh": "博物馆船舰"
+  },
+  "Acceso de Cerro Colorado": {
+    "en": "Cerro Colorado entrance",
+    "zh": "科罗拉多山入口"
+  },
+  "Senderos del jardín": {
+    "en": "Garden paths",
+    "zh": "植物园步道"
+  },
+  "Retorno al acceso": {
+    "en": "Return to the entrance",
+    "zh": "返回入口"
+  },
+  "Centro de visitantes": {
+    "en": "Visitor center",
+    "zh": "访客中心"
+  },
+  "Sendero autorizado": {
+    "en": "Authorized trail",
+    "zh": "开放游径"
+  },
+  "Retorno señalizado": {
+    "en": "Marked return route",
+    "zh": "标示回程路线"
+  },
+  "Sendero señalizado": {
+    "en": "Marked trail",
+    "zh": "标示步道"
+  },
+  "Mirador habilitado": {
+    "en": "Open viewpoint",
+    "zh": "开放观景点"
+  },
+  "Andador lineal": {
+    "en": "Linear park path",
+    "zh": "线性公园步道"
+  },
+  "Acceso de Chongón": {
+    "en": "Chongón entrance",
+    "zh": "冲贡入口"
+  },
+  "Área recreativa": {
+    "en": "Recreation area",
+    "zh": "游憩区"
+  },
+  "Vista del embalse": {
+    "en": "Reservoir view",
+    "zh": "水库观景点"
+  },
+  "Ingreso vía a Daule": {
+    "en": "Entrance from Vía a Daule",
+    "zh": "道莱公路入口"
+  },
+  "Circuito señalizado": {
+    "en": "Marked visitor circuit",
+    "zh": "标示参观环线"
+  },
+  "Salida": {
+    "en": "Exit",
+    "zh": "出口"
+  },
+  "Paseo del Salado": {
+    "en": "Salado waterfront walkway",
+    "zh": "萨拉多河口步道"
+  }
+}

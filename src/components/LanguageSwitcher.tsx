@@ -1,31 +1,29 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLang } from "./LangProvider";
-import type { Locale } from "@/i18n/translations";
 
-const LANG_LABELS: Record<Locale, string> = {
-  zh: "中文",
-  en: "EN",
-  es: "ES",
-};
+const languages = { zh: "中文", en: "EN", es: "ES" } as const;
 
 export function LanguageSwitcher() {
   const { locale } = useLang();
+  const pathname = usePathname();
+  const suffix = pathname.split("/").slice(2).join("/");
   return (
     <div className="lang-switcher">
-      {(["zh", "en", "es"] as Locale[]).map((l) => (
-        <button
-          key={l}
-          className={`lang-btn ${locale === l ? "active" : ""}`}
-          onClick={() => {
-            if (l !== locale) {
-              window.location.href = `/${l}${window.location.hash}`;
+      {(["zh", "en", "es"] as const).map((language) => (
+        <Link key={language} href={suffix ? `/${language}/${suffix}` : `/${language}`}
+          className={`lang-btn ${locale === language ? "active" : ""}`}
+          hrefLang={language} lang={language} aria-current={locale === language ? "page" : undefined}
+          onClick={(event) => {
+            if (window.location.hash && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+              event.preventDefault();
+              window.location.assign(event.currentTarget.href + window.location.hash);
             }
-          }}
-          aria-label={`Switch to ${l}`}
-        >
-          {LANG_LABELS[l]}
-        </button>
+          }}>
+          {languages[language]}
+        </Link>
       ))}
     </div>
   );

@@ -34,17 +34,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const parkContext = {
   en: {
     management: "The Municipal Public Parks Company of Samborondón has managed the park since July 2022. On the banks of the Daule in La Puntilla, its three zones explore coastal wildlife, the wooden buildings of old Guayaquil and rural life shaped by cacao.",
-    rating: "4.6 out of 5 from 11,539 Google Maps reviews, as recorded on the park homepage. See Maps for the current figure.",
+    rating: "4.6 out of 5 from 11,700 Google Maps reviews, as recorded on the park homepage. See Maps for the current figure.",
     country: "Ecuador",
   },
   es: {
     management: "La Empresa Pública Municipal de Parques de Samborondón administra el parque desde julio de 2022. En La Puntilla, junto al Daule, sus tres zonas reúnen fauna costera, casas de madera del antiguo Guayaquil y tradiciones rurales ligadas al cacao.",
-    rating: "4,6 de 5, con 11.539 reseñas de Google Maps, según el registro de la portada. Consulta Maps para ver la cifra actual.",
+    rating: "4,6 de 5, con 11.700 reseñas de Google Maps, según el registro de la portada. Consulta Maps para ver la cifra actual.",
     country: "Ecuador",
   },
   zh: {
     management: "桑博龙东市公共公园管理机构自 2022 年 7 月起管理历史公园。公园位于拉蓬蒂利亚的道莱河畔，三个主题区分别介绍沿海动植物、老瓜亚基尔的木构建筑，以及与可可产业有关的乡村生活。",
-    rating: "首页记录的 Google 地图评分为 4.6／5，共 11,539 条评价。当前数据请查看地图。",
+    rating: "首页记录的 Google 地图评分为 4.6／5，共 11,700 条评价。当前数据请查看地图。",
     country: "厄瓜多尔",
   },
 } as const;
@@ -67,15 +67,11 @@ export default async function GuidePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs).replace(/</g, "\\u003c") }} />
       <header className="guide-hero" style={{ backgroundImage: `linear-gradient(#14281ee0, #14281eba), url("${gallery[0]}")` }}>
         <div className="guide-wrap">
-          <nav className="guide-links">
-            <Link href={home}>{labels.home}</Link>
-            {locales.map((locale) => <Link key={locale} href={guidePath(locale, topic)} hrefLang={locale} lang={locale} aria-current={locale === language ? "page" : undefined}>{{ en: "English", es: "Español", zh: "中文" }[locale]}</Link>)}
-          </nav>
-          <h1>{guide.title}</h1>
+          <h1 className="hero-title">{guide.title}</h1>
           <p>{guide.description}</p>
           <p>{labels.time}</p>
           <p><a href={parkMap}>{park.rating}</a></p>
-          <a href={parkMap}>{labels.map}</a>
+          <a className="hero-cta" href={parkMap}>{labels.map}</a>
         </div>
       </header>
       <div className="guide-wrap guide-body">

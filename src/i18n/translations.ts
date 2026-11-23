@@ -190,7 +190,7 @@ export const translations: Record<Locale, Translations> = {
   es: {
     nav: { about: "Descripción General", visiting: "Guía de Visita", transportation: "Cómo Llegar", tips: "Consejos", gallery: "Galería de Fotos", reviews: "Reseñas", faq: "Preguntas Frecuentes", location: "Ubicación" },
     hero: { tagline: "Una Fusión Perfecta de Naturaleza, Tradición e Historia", title: "Parque Histórico de Guayaquil", subtitle: "El Encanto de la Historia Guayaquileña", cta: "Explora el Parque" },
-    rating: { reviews: "reseñas", source: "Google Reviews" },
+    rating: { reviews: "reseñas", source: "Reseñas de Google" },
     about: {
       title: "Descripción General",
       p1: "El Parque Histórico de Guayaquil está ubicado en la Península de Samborondón, cubriendo aproximadamente 8 hectáreas. Este es un parque temático integral que combina naturaleza ecológica, cultura tradicional y arquitectura histórica.\n\nEl parque tiene como objetivo preservar y mostrar la biodiversidad de la región costera del Ecuador, así como la historia urbana y rural del finales del siglo XIX y principios del siglo XX. Todo el parque está dividido en tres zonas temáticas centrales: Zona de Vida Silvestre, Zona de Tradiciones, y Zona Histórico-Arquitectónica.",

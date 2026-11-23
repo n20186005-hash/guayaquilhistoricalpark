@@ -1,23 +1,21 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import { LangProvider, useLang } from "@/components/LangProvider";
-import { useTheme } from "next-themes";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { guideLabels, guidePath, guides, slugs } from "@/i18n/guides";
+import { useLang } from "@/components/LangProvider";
 import { nearby, nearbyLabels, nearbyPath } from "@/content/nearby";
+import { ui } from "@/i18n/ui";
 import galleryImagesData from "@/gallery-data.json";
 
 const MAPS_URL = "https://maps.app.goo.gl/ze1Vao4UNpSs79hY8";
 
 const GOOGLE_REVIEWS = [
-  { name: "María Fernanda", avatar: "MF", rating: 5, date: "2024-06-10", text: "Un lugar maravilloso que combina historia, naturaleza y cultura. La zona histórica recrea perfectamente la Guayaquil del siglo XIX. Muy recomendado para familias." },
-  { name: "John Smith", avatar: "JS", rating: 5, date: "2024-05-20", text: "Amazing historical park! The reconstructed historical buildings give you a real sense of old Guayaquil. The wildlife section with native animals is also fantastic. A must-visit in Samborondón." },
-  { name: "李明", avatar: "李", rating: 5, date: "2024-07-05", text: "非常棒的历史公园！这里完美重现了19世纪瓜亚基尔的风貌，还有厄瓜多尔本土动物的展示区。非常适合全家出游，孩子们特别喜欢。" },
-  { name: "Carlos Ramírez", avatar: "CR", rating: 4, date: "2024-04-15", text: "Excelente opción para un día de caminata y aprendizaje. La zona botánica tiene plantas fascinantes y los jardines están muy bien cuidados. El personal es muy amable." },
-  { name: "Emma Wilson", avatar: "EW", rating: 5, date: "2024-03-28", text: "What a gem! The Historical Park of Guayaquil is beautifully maintained. Loved the architectural reconstructions and the botanical garden. Great value for money and educational for kids." },
-  { name: "Sofia Vargas", avatar: "SV", rating: 5, date: "2024-06-25", text: "Hermoso parque para compartir en familia. Aprendí mucho sobre la historia de Guayaquil y pude ver animales ecuatorianos en un entorno natural. Volveré pronto." },
+  { name: "María Fernanda", avatar: "MF", rating: 5, date: "2024-06-10", original: "es", text: {"en": "A wonderful place that combines history, nature and culture. The historic area recreates nineteenth-century Guayaquil beautifully. Highly recommended for families.", "zh": "这里融合了历史、自然与文化。历史区生动再现了十九世纪的瓜亚基尔，很适合全家游览。", "es": "Un lugar maravilloso que combina historia, naturaleza y cultura. La zona histórica recrea perfectamente la Guayaquil del siglo XIX. Muy recomendado para familias."} },
+  { name: "John Smith", avatar: "JS", rating: 5, date: "2024-05-20", original: "en", text: {"es": "¡Un parque histórico estupendo! Los edificios reconstruidos ayudan a imaginar el antiguo Guayaquil. La zona de animales nativos también es fantástica. Una visita imprescindible en Samborondón.", "zh": "这座历史公园很棒！重建的建筑让人想象老瓜亚基尔的样子，本土动物区也很精彩，是桑博龙东值得一去的地方。", "en": "Amazing historical park! The reconstructed historical buildings give you a real sense of old Guayaquil. The wildlife section with native animals is also fantastic. A must-visit in Samborondón."} },
+  { name: "李明", avatar: "李", rating: 5, date: "2024-07-05", original: "zh", text: {"en": "A wonderful historical park. It recreates the look of nineteenth-century Guayaquil and has exhibits of Ecuadorian native animals. It is great for families, and the children especially loved it.", "es": "Un parque histórico magnífico. Recrea el aspecto del Guayaquil del siglo XIX y presenta animales nativos del Ecuador. Es ideal para familias y a los niños les encantó.", "zh": "非常棒的历史公园！这里完美重现了19世纪瓜亚基尔的风貌，还有厄瓜多尔本土动物的展示区。非常适合全家出游，孩子们特别喜欢。"} },
+  { name: "Carlos Ramírez", avatar: "CR", rating: 4, date: "2024-04-15", original: "es", text: {"en": "An excellent choice for a day of walking and learning. The botanical area has fascinating plants and well-kept gardens. The staff are very friendly.", "zh": "这里很适合边散步边学习。植物区的植物很有意思，花园也维护得很好，工作人员十分友善。", "es": "Excelente opción para un día de caminata y aprendizaje. La zona botánica tiene plantas fascinantes y los jardines están muy bien cuidados. El personal es muy amable."} },
+  { name: "Emma Wilson", avatar: "EW", rating: 5, date: "2024-03-28", original: "en", text: {"es": "¡Una joya! El Parque Histórico de Guayaquil está muy bien cuidado. Me encantaron las reconstrucciones arquitectónicas y el jardín botánico. Buena relación calidad-precio y educativo para los niños.", "zh": "这真是一处好地方！瓜亚基尔历史公园维护得很好。我很喜欢重建的建筑和植物园，性价比高，孩子也能学到东西。", "en": "What a gem! The Historical Park of Guayaquil is beautifully maintained. Loved the architectural reconstructions and the botanical garden. Great value for money and educational for kids."} },
+  { name: "Sofia Vargas", avatar: "SV", rating: 5, date: "2024-06-25", original: "es", text: {"en": "A lovely park to visit with family. I learned a lot about Guayaquil’s history and saw Ecuadorian animals in a natural setting. I’ll be back soon.", "zh": "这里很适合全家同游。我了解了许多瓜亚基尔的历史，还在自然环境中看到了厄瓜多尔的动物。我会再来。", "es": "Hermoso parque para compartir en familia. Aprendí mucho sobre la historia de Guayaquil y pude ver animales ecuatorianos en un entorno natural. Volveré pronto."} },
 ];
 
 function ScrollReveal({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -33,87 +31,6 @@ function ScrollReveal({ children, className = "" }: { children: React.ReactNode;
     return () => obs.disconnect();
   }, []);
   return <div ref={ref} className={`reveal ${className}`}>{children}</div>;
-}
-
-function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return <div style={{ width: "24px", height: "24px" }} />;
-
-  return (
-    <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="theme-toggle-btn"
-      aria-label="Toggle theme"
-      style={{
-        background: "none",
-        border: "none",
-        color: "#fff",
-        cursor: "pointer",
-        padding: "0.25rem",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      {theme === "dark" ? (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="5" />
-          <line x1="12" y1="1" x2="12" y2="3" />
-          <line x1="12" y1="21" x2="12" y2="23" />
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-          <line x1="1" y1="12" x2="3" y2="12" />
-          <line x1="21" y1="12" x2="23" y2="12" />
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-        </svg>
-      ) : (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
-      )}
-    </button>
-  );
-}
-
-function Nav() {
-  const { t } = useLang();
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  return (
-    <nav className={`site-nav ${scrolled ? "scrolled" : ""}`}>
-      <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
-        <span style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", fontWeight: 700, color: "#fff" }}>
-          Parque Histórico de Guayaquil
-        </span>
-      </div>
-      <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
-        <div className="nav-links">
-          <a href="#about">{t.nav.about}</a>
-          <a href="#visiting">{t.nav.visiting}</a>
-          <a href="#transportation">{t.nav.transportation}</a>
-          <a href="#tips">{t.nav.tips}</a>
-          <a href="#gallery">{t.gallery.title}</a>
-          <a href="#reviews">{t.nav.reviews}</a>
-          <a href="#faq">{t.nav.faq}</a>
-          <a href="#location">{t.nav.location}</a>
-        </div>
-        <ThemeToggle />
-        <LanguageSwitcher />
-      </div>
-    </nav>
-  );
 }
 
 function Hero() {
@@ -138,7 +55,7 @@ function Hero() {
         <div className="hero-meta">
           <div className="hero-rating">4.6</div>
           <div className="hero-stars">★★★★☆</div>
-          <div className="hero-reviews">11,539 {t.rating.reviews} · {t.rating.source}</div>
+          <div className="hero-reviews">11,700 {t.rating.reviews} · {t.rating.source}</div>
         </div>
       </a>
     </section>
@@ -415,7 +332,7 @@ function Tips() {
 }
 
 function Gallery() {
-  const { t } = useLang();
+  const { locale, t } = useLang();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const galleryImages = galleryImagesData;
 
@@ -442,7 +359,7 @@ function Gallery() {
         <div className="gallery-grid">
           {galleryImages.map((src, i) => (
             <div className="gallery-item" key={i} onClick={() => setLightboxIndex(i)}>
-              <img src={src} alt={`Guayaquil Historical Park ${i + 1}`} loading="lazy" />
+              <img src={src} alt={`${t.hero.title} ${i + 1}`} loading="lazy" />
             </div>
           ))}
         </div>
@@ -459,10 +376,10 @@ function Gallery() {
       </ScrollReveal>
       {lightboxIndex !== null && galleryImages.length > 0 && (
         <div className="lightbox" onClick={() => setLightboxIndex(null)}>
-          <button className="lightbox-close" onClick={() => setLightboxIndex(null)}>×</button>
-          <button className="lightbox-prev" onClick={(e) => { e.stopPropagation(); setLightboxIndex((lightboxIndex - 1 + galleryImages.length) % galleryImages.length); }}>‹</button>
-          <img src={galleryImages[lightboxIndex]} alt={`Guayaquil Historical Park ${lightboxIndex + 1}`} className="lightbox-img" />
-          <button className="lightbox-next" onClick={(e) => { e.stopPropagation(); setLightboxIndex((lightboxIndex + 1) % galleryImages.length); }}>›</button>
+          <button className="lightbox-close" aria-label={ui[locale].photoClose} onClick={() => setLightboxIndex(null)}>×</button>
+          <button className="lightbox-prev" aria-label={ui[locale].previous} onClick={(e) => { e.stopPropagation(); setLightboxIndex((lightboxIndex - 1 + galleryImages.length) % galleryImages.length); }}>‹</button>
+          <img src={galleryImages[lightboxIndex]} alt={`${t.hero.title} ${lightboxIndex + 1}`} className="lightbox-img" />
+          <button className="lightbox-next" aria-label={ui[locale].next} onClick={(e) => { e.stopPropagation(); setLightboxIndex((lightboxIndex + 1) % galleryImages.length); }}>›</button>
         </div>
       )}
     </section>
@@ -470,7 +387,7 @@ function Gallery() {
 }
 
 function Reviews() {
-  const { t } = useLang();
+  const { locale, t } = useLang();
 
   return (
     <section id="reviews" className="section">
@@ -494,7 +411,8 @@ function Reviews() {
                   {"★".repeat(review.rating)}{"☆".repeat(5 - review.rating)}
                 </div>
               </div>
-              <p className="review-text">{review.text}</p>
+              <p className="review-text">{review.text[locale]}</p>
+              {review.original !== locale && <small>{ui[locale].translated}</small>}
               <div className="review-source">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#4285F4"/>
@@ -572,7 +490,7 @@ function FAQ() {
 }
 
 function Location() {
-  const { t } = useLang();
+  const { locale, t } = useLang();
   return (
     <section id="location" className="section">
       <ScrollReveal>
@@ -591,7 +509,7 @@ function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Guayaquil Historical Park Location Map"
+              title={ui[locale].map}
             />
           </div>
           <div className="location-info">
@@ -633,54 +551,9 @@ function Nearby() {
   );
 }
 
-function Footer() {
-  const { locale, t } = useLang();
+export default function Home() {
   return (
-    <footer className="site-footer">
-      <section className="footer-links" aria-labelledby="park-guides">
-        <h2 id="park-guides" className="footer-links-title">{guideLabels[locale].guides}</h2>
-        <div className="footer-links-grid">
-          {slugs.map((slug) => (
-            <Link className="footer-link-item" key={slug} href={guidePath(locale, slug)}>
-              {guides[locale][slug].title}
-            </Link>
-          ))}
-        </div>
-      </section>
-      <div className="footer-links">
-        <p className="footer-links-title">{t.footer.linksTitle}</p>
-        <div className="footer-links-grid">
-          {t.footer.links.map((link: { name: string; url: string }, i: number) => (
-            <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="footer-link-item">
-              {link.name}
-            </a>
-          ))}
-        </div>
-      </div>
-      <div className="footer-legal" style={{ maxWidth: "1100px", margin: "0 auto", padding: "1rem 2rem 0", textAlign: "center" }}>
-        <Link href="/privacy" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
-          Privacy Policy
-        </Link>
-        <Link href="/terms" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem", marginRight: "1.5rem" }}>
-          Terms of Service
-        </Link>
-        <Link href="/cookies" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none", fontSize: "0.8rem" }}>
-          Cookie Settings
-        </Link>
-      </div>
-      <p className="footer-text" style={{ marginTop: "2rem", fontSize: "0.9rem", fontWeight: 600, color: "var(--color-gold)" }}>
-        {t.footer.callToAction}
-      </p>
-      <p className="footer-text" style={{ marginTop: "1rem", whiteSpace: "pre-line" }}>{t.footer.text}</p>
-    </footer>
-  );
-}
-
-export default function Home(props: { params: Promise<{ locale: string }> }) {
-  const params = React.use(props.params);
-  return (
-    <LangProvider initialLocale={params.locale as "en" | "zh" | "es"}>
-      <Nav />
+    <main>
       <Hero />
       <About />
       <History />
@@ -693,7 +566,6 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
       <FAQ />
       <Location />
       <Nearby />
-      <Footer />
-    </LangProvider>
+    </main>
   );
 }
