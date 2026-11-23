@@ -2,24 +2,9 @@ import { SiteChrome } from "@/components/SiteChrome";
 import { notFound } from "next/navigation";
 import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "next-themes";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import "../travel-fonts.css";
 import "../globals.css";
 import { siteUrl } from "@/i18n/guides";
-
-const cormorant = Cormorant_Garamond({
-  weight: ["400", "600", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  weight: ["300", "400", "500", "600"],
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap",
-});
 
 const homeMetadata = {
   en: {
@@ -129,7 +114,7 @@ export default async function RootLayout({
   const { locale } = await params;
   if (locale !== "zh" && locale !== "en" && locale !== "es") notFound();
   return (
-    <html lang={locale} suppressHydrationWarning className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang={locale} suppressHydrationWarning>
       <body className="antialiased"><ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem><SiteChrome locale={locale}>{children}</SiteChrome></ThemeProvider></body>
     </html>
   );
